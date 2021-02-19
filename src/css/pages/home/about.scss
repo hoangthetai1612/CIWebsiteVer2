@@ -5,7 +5,7 @@
     background-color: $color-background;
     .title{
         color: $color-text;
-        font: $font-montserrat;
+        font-family: $font-montserrat;
         font-size: 48px;
         margin-bottom: 2rem;
         font-weight: bold;
@@ -13,7 +13,7 @@
     .item{
         p{
             color: $color-text;
-            font: $font-montserrat;
+            font-family: $font-montserrat;
             font-size: 24px;
             font-weight: 500;
             margin-top: 1rem;

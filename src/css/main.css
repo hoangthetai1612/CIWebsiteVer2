@@ -1,6 +1,33 @@
 .ourservice {
   height: 100vh;
-  background-color: #272727; }
-  .ourservice .ourservice-item img {
-    width: 150px;
-    height: 30px; }
+  background-color: #272727;
+}
+.ourservice .ourservice-item img {
+  width: 150px;
+  height: 30px;
+}
+.container-fluid {
+  width: 95%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.header .container-fluid {
+  display: flex;
+  justify-content: space-between;
+}
+.header .container-fluid .header__menu-list {
+  display: flex;
+}
+.header .container-fluid .header__menu-list li {
+  margin-right: 60px;
+}
+.header .container-fluid .header__menu-list li a {
+  display: flex;
+  align-items: center;
+}
+.header .container-fluid .header__menu-list li a img {
+  margin-right: 12px;
+}

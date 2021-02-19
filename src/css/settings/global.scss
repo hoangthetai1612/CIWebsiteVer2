@@ -1,6 +1,20 @@
 .container-fluid{
-    width: 95%;
+    @media(min-width: 1360px) {
+        width: 95%;
+    }
 }
 ul{
     list-style-type: none;
+    margin-bottom: 0;
+}
+a{
+    &:hover{
+        text-decoration: none;
+    }
+}
+body{
+    font-family: $font-lato;
+}
+img{
+    width: 100%;
 }

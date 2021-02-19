@@ -52,10 +52,15 @@
             display: flex;
             justify-content: flex-end;
             button {
+                border: none;
                 border-radius: 60px;
                 background-color: #282828;
                 color: $color-heading;
                 text-align: center;
+                height: 39px;
+                box-shadow: 3px 1px 8px #000000, 0px -1px 6px #6f6d6d;
+                padding: 0 10px;
+                font-weight: 600;
             }
         }
     }

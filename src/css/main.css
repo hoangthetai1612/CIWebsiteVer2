@@ -63,7 +63,12 @@ ul {
     display: flex;
     justify-content: flex-end; }
     .enterpriseapp .enterpriseapp-text .enterpriseapp-button button {
+      border: none;
       border-radius: 60px;
       background-color: #282828;
       color: #bfa871;
-      text-align: center; }
+      text-align: center;
+      height: 39px;
+      box-shadow: 3px 1px 8px #000000, 0px -1px 6px #6f6d6d;
+      padding: 0 10px;
+      font-weight: 600; }

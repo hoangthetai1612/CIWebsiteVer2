@@ -1,0 +1,19 @@
+.home-banner{
+    height: 100vh;
+    background-color: $color-background;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    .left-banner{
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .right-banner{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        text-align: right;
+    }
+}

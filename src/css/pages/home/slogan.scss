@@ -1,0 +1,24 @@
+.home-slogan{
+    height: 100vh;
+    background-color: $color-background;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .slogan{
+        cursor: pointer;
+        p {
+            text-align: center;
+            font: $font-montserrat;
+            font-size: 60px;
+            color: $color-text;
+            font-weight: bold;
+            transition: 1.5s;
+            &:hover{
+                font-size: 75px;
+                transform: rotate(1.5deg);
+                transition: 1.5s;
+                
+            }
+        }
+    }
+}

@@ -1,5 +1,7 @@
 .container-fluid{
-    width: 95%;
+    @media(min-width: 1360px) {
+        width: 95%;
+    }
 }
 ul{
     list-style-type: none;
@@ -12,4 +14,7 @@ a{
 }
 body{
     font-family: $font-lato;
+}
+img{
+    width: 100%;
 }

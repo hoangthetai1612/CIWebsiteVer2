@@ -1,3 +1,30 @@
 .header
-   .container
+   .container-fluid
+      .header__logo
+         img(src="images/home/logo.svg")
       .header__menu
+         ul.header__menu-list 
+            li.list__item
+               a(href="http://")
+                  img(src="images/home/home-icon.svg", alt="")
+                  | Home
+            li.list__item
+               a(href="http://")
+                  img(src="images/home/about-icon.svg", alt="")
+                  | About
+            li.list__item
+               a(href="http://")
+                  img(src="images/home/service-icon.svg", alt="")
+                  | Service
+            li.list__item
+               a(href="http://")
+                  img(src="images/home/contact-icon.svg", alt="")
+                  | Contact
+      .header__language
+         #outerContainer
+            #container.select-left
+               #item
+               .left
+                  span Vi
+               .right
+                  span En

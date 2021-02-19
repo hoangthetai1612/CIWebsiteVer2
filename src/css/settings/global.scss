@@ -1,0 +1,15 @@
+.container-fluid{
+    width: 95%;
+}
+ul{
+    list-style-type: none;
+    margin-bottom: 0;
+}
+a{
+    &:hover{
+        text-decoration: none;
+    }
+}
+body{
+    font-family: $font-lato;
+}

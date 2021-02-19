@@ -1,0 +1,133 @@
+.products {
+    .section-product_mia {
+        border-top: 2px solid #3a3a3a;
+        height: 100vh;
+        background-color: #272727;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .left {
+                position: relative;
+                margin-right: 150px;
+                .text {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: center;
+                    .title {
+                        font-size: 36px;
+                        font-weight: 600;
+                        color: #BFA871;
+                        font-family: 'Montserrat', sans-serif;
+                    }
+                    .subtitle {
+                        font-size: 24px;
+                        font-weight: 500;
+                        color: #BFA871;
+                        font-family: 'Montserrat', sans-serif;
+                    }
+                }
+                button {
+                    position: absolute;
+                    right: -50px;
+                    border: none;
+                    border-radius: 60px;
+                    background-color: #282828;
+                    color: #BFA871;
+                    text-align: center;
+                    height: 39px;
+                    box-shadow: 3px 1px 8px #000000, 0px -1px 6px #6F6D6D;
+                    padding: 0 10px;
+                    font-weight: 600;
+                    &:focus {
+                        outline: none;
+                    }
+                    &:active {
+                        box-shadow: 5px 5px rgba($color: #000000, $alpha: 0.16);
+                    }
+                }
+            }
+        }
+    }
+    .section-product_hopital {
+        border-top: 2px solid #3a3a3a;
+        height: 100vh;
+        background-color: #272727;
+        display: flex;
+        .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            .left {
+                img {
+                    margin-right: 200px;
+                }
+            }
+            .right {
+                position: relative;
+                .text {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: center;
+                    .title {
+                        font-size: 36px;
+                        font-weight: 600;
+                        color: #BFA871;
+                        font-family: 'Montserrat', sans-serif;
+                    }
+                    .subtitle {
+                        font-size: 24px;
+                        font-weight: 500;
+                        color: #BFA871;
+                        font-family: 'Montserrat', sans-serif;
+                    }
+                }
+                button {
+                    position: absolute;
+                    right: -100px;
+                    border: none;
+                    border-radius: 60px;
+                    background-color: #282828;
+                    color: #BFA871;
+                    text-align: center;
+                    height: 39px;
+                    box-shadow: 3px 1px 8px #000000, 0px -1px 6px #6F6D6D;
+                    padding: 0 10px;
+                    font-weight: 600;
+                    &:focus {
+                        outline: none;
+                    }
+                    &:active {
+                        box-shadow: 5px 5px rgba($color: #000000, $alpha: 0.16);
+                    }
+                }
+            }
+        }
+        .view-all {
+            position: absolute;
+            right: 0;
+            bottom: 40px;
+            border: none;
+            border-radius: 60px;
+            background-color: #282828;
+            color: #BFA871;
+            text-align: center;
+            height: 39px;
+            box-shadow: 3px 1px 8px #000000, 0px -1px 6px #6F6D6D;
+            padding: 0 70px;
+            font-weight: 600;
+            &:focus {
+                outline: none;
+            }
+            &:active {
+                box-shadow: 5px 5px rgba($color: #000000, $alpha: 0.16);
+            }
+        }
+    }
+}

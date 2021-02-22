@@ -1139,3 +1139,144 @@ img {
     position: absolute;
     bottom: 15%;
     right: 10%; }
+.banner-section {
+  position: relative;
+  height: 100vh;
+  background-color: #272727;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 0.5px solid rgba(191, 168, 113, 0.5); }
+  .banner-section .circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 600px;
+    transform: translate(-30%, -30%); }
+  .banner-section .heading {
+    font-size: 80px;
+    font-weight: 800;
+    color: #BFA871;
+    font-family: "Montserrat", sans-serif; }
+  .banner-section .description {
+    font-size: 18px;
+    font-weight: 400;
+    color: #BFA871;
+    width: 520px; }
+
+.section-timeline {
+  padding: 300px 0;
+  background-color: #272727;
+  height: auto; }
+  .section-timeline .chicago {
+    position: relative;
+    padding-bottom: 600px; }
+    .section-timeline .chicago .fly {
+      position: absolute;
+      width: 90px;
+      bottom: -200px;
+      left: 50%; }
+    .section-timeline .chicago .left img {
+      width: 100%; }
+    .section-timeline .chicago .right {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column; }
+      .section-timeline .chicago .right .title {
+        font-size: 36px;
+        font-weight: 600;
+        color: #BFA871; }
+      .section-timeline .chicago .right .content {
+        font-size: 18px;
+        font-weight: 400;
+        color: #BFA871; }
+  .section-timeline .vietnam .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end; }
+    .section-timeline .vietnam .left .title {
+      font-size: 36px;
+      font-weight: 600;
+      color: #BFA871; }
+    .section-timeline .vietnam .left .content {
+      font-size: 18px;
+      font-weight: 400;
+      color: #BFA871;
+      text-align: right; }
+  .section-timeline .vietnam .right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; }
+    .section-timeline .vietnam .right img {
+      width: 70%; }
+
+.result {
+  height: 100vh;
+  background-color: #272727;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  overflow: hidden; }
+  .result .title {
+    font-size: 36px;
+    font-weight: 600;
+    color: #BFA871;
+    padding-top: 100px; }
+  .result .content {
+    font-size: 18px;
+    font-weight: 400;
+    color: #BFA871;
+    width: 55%; }
+  .result .cricle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #BFA871;
+    position: absolute;
+    left: 50%;
+    top: 0; }
+  .result .circle-big {
+    position: absolute;
+    width: 75vh;
+    right: 0;
+    top: 100px;
+    transform: translateX(20%); }
+
+.section-email {
+  border-top: 2px solid #3a3a3a;
+  height: 100vh;
+  background-color: #272727;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .section-email .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .section-email .content .title {
+      font-size: 60px;
+      font-weight: 700;
+      color: #BFA871;
+      font-family: 'Montserrat', sans-serif; }
+    .section-email .content button {
+      width: 275px;
+      height: 68px;
+      border: #707070;
+      background-color: #272727;
+      color: #BFA871;
+      font-size: 24px;
+      font-family: 'Montserrat', sans-serif;
+      border-radius: 50px;
+      box-shadow: 3px 1px 8px #000000, 0px -1px 6px #6F6D6D; }
+      .section-email .content button:focus {
+        outline: none; }
+      .section-email .content button:active {
+        box-shadow: 5px 5px rgba(0, 0, 0, 0.16); }

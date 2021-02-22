@@ -91,12 +91,21 @@
         }
     }
     .product-img {
+        width: 375px;
+        height: 786px;
+        position: relative;
+        transform-style: preserve-3d;
         .product-mia {
             width: 375px;
             height: 786px;
+            position: absolute;
+            z-index: -1;
         }
         .product-erp {
-            width: 100%;
+            width: 675px;
+            height: 786px;
+            position: absolute;
+            z-index: -1;
         }
     }
 }

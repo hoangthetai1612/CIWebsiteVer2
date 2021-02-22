@@ -1,18 +1,34 @@
+
+(function ($) {
+
+  "use strict";
+
+  $(".product-img").tilt({
+    maxTilt: 15,
+    perspective: 1400,
+    easing: "cubic-bezier(.03,.98,.52,.99)",
+    speed: 1200,
+    glare: true,
+    maxGlare: 0.2,
+    scale: 1.04
+  });
+
+}(jQuery));
 function menuDot() {
-    let arr = window.location.href.split('/');
-    let page = arr[arr.length-1];
-    if(page == 'index.html'){
-        document.getElementById("home-icon").classList.add('menu-dot')
-    }
-    if(page == 'service.html'){
-        document.getElementById("service-icon").classList.add('menu-dot')
-    }
-    if(page == 'about.html'){
-        document.getElementById("about-icon").classList.add('menu-dot')
-    }
-    if(page == 'contact.html'){
-        document.getElementById("contact-icon").classList.add('menu-dot')
-    }
+  let arr = window.location.href.split('/');
+  let page = arr[arr.length - 1];
+  if (page == 'index.html') {
+    document.getElementById("home-icon").classList.add('menu-dot')
+  }
+  if (page == 'service.html') {
+    document.getElementById("service-icon").classList.add('menu-dot')
+  }
+  if (page == 'about.html') {
+    document.getElementById("about-icon").classList.add('menu-dot')
+  }
+  if (page == 'contact.html') {
+    document.getElementById("contact-icon").classList.add('menu-dot')
+  }
 }
 menuDot();
 
@@ -28,7 +44,7 @@ var itemClick;
 var xOffset = 0;
 var yOffset = 0;
 
-  
+
 if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
   container.addEventListener("mouseup", dragEnd, false);
   container.addEventListener("click", toggleSwitch, false);
@@ -49,14 +65,14 @@ if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
 function dragStart(e) {
   var elm = $(this);
   var xPos = e.pageX - elm.offset().left;
-  
+
   if (e.type === "touchstart") {
     var xPosMobile = e.touches[0].pageX - elm.offset().left;
     initialX = xPosMobile;
   } else {
-    initialX = xPos; 
+    initialX = xPos;
   }
-  
+
   dragItem.style.transition = "all .2s cubic-bezier(0.04, 0.46, 0.36, 0.99)";
 
   if (e.target === dragItem) {
@@ -67,7 +83,7 @@ function dragStart(e) {
 function itemDragStart(e) {
   var elm = $(this);
   var xPos = e.pageX - elm.offset().left;
-  
+
   itemClick = xPos;
 }
 
@@ -83,7 +99,7 @@ function dragEnd(e) {
   initialX = currentX;
 
   active = false;
-    
+
   if (initialX > 25) {
     currentX = 61;
     dragItem.style.transition = "all .2s cubic-bezier(0.04, 0.46, 0.36, 0.99)";
@@ -95,7 +111,7 @@ function dragEnd(e) {
     container.classList.remove('select-right');
     container.classList.add('select-left');
   }
-  
+
   setTranslate(currentX, dragItem);
 }
 
@@ -108,7 +124,7 @@ function drag(e) {
 
       if (e.type === "touchmove") {
         var xPosMobile = e.touches[0].pageX - elm.offset().left;
-        currentX = xPosMobile - initialX; 
+        currentX = xPosMobile - initialX;
         if (initialX > 50) {
           currentX = xPosMobile - itemClick;
         }
@@ -149,11 +165,11 @@ function drag(e) {
     }
   } else {
     active = false;
-    
+
     if (initialX > 200) {
       dragItem.style.transform = "translate3d(50px, 0px, 0)";
     } else {
-      dragItem.style.transform = "translate3d(0, 0px, 0)"; 
+      dragItem.style.transform = "translate3d(0, 0px, 0)";
     }
   }
 }
@@ -162,3 +178,7 @@ function setTranslate(xPos, el) {
   el.style.transform = "translate3d(" + xPos + "px, 0px, 0)";
 }
 new WOW().init();
+
+
+
+

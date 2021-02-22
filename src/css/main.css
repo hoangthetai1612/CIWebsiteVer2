@@ -766,11 +766,21 @@ img {
       padding: 0 10px;
       font-weight: 600;
       outline: none; }
-  .product .product-img .product-mia {
+  .product .product-img {
     width: 375px;
-    height: 786px; }
-  .product .product-img .product-erp {
-    width: 100%; }
+    height: 786px;
+    position: relative;
+    transform-style: preserve-3d; }
+    .product .product-img .product-mia {
+      width: 375px;
+      height: 786px;
+      position: absolute;
+      z-index: -1; }
+    .product .product-img .product-erp {
+      width: 675px;
+      height: 786px;
+      position: absolute;
+      z-index: -1; }
 
 .enterpriseapp-send {
   height: 100vh;

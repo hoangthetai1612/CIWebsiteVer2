@@ -1,0 +1,72 @@
+.home-partner{
+    height: 100vh;
+    background-color: $color-background;
+    border-top: 2px solid $color-border-top;
+    position: relative;
+    &::after{
+        content: '';
+        position: absolute;
+        height: 1px;
+        width: 80%;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: $color-text;
+    }
+    .main{
+        position: absolute;
+        bottom: -100px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .title{
+            font-family: $font-montserrat;
+            font-size: 54px;
+            color: $color-text;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+    }
+    .logo{
+        // border: 1px solid white;
+        width: 70%;
+        border-radius: 20px;
+        background-color: $color-background;
+        box-shadow: /* ie */
+                 0px -4px 12px -6px  #707070, /* top - THE RED SHADOW */
+                 0px  5px  15px  0px  rgba(000,000,000,0.3), /* bottom */
+                 5px  0px  15px  0px  rgba(000,000,000,0.3), /* right */
+                -5px  -3px 18px -6px  #707070; /* left */
+                
+        .container-fluid{
+            .item{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    width: 180px;
+                }
+            }
+            .top-row{
+                padding-top: 100px;
+
+            }
+            .bot-row{
+                padding-top: 100px;
+                padding-bottom: 100px;
+                .item{
+                    .cuongthinh{
+                        width: unset;
+                        height: 180px;
+                    }
+                }
+            }
+        }
+        
+    }
+}

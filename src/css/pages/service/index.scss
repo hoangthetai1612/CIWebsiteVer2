@@ -1,0 +1,68 @@
+.ourservice {
+    height: 100vh;
+    background-color: $background;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .ourservice-item {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        img {
+            width: 530px;
+            height: 85px;
+            margin-left: -43px;
+        }
+        p {
+            color: $color-heading;
+            margin-top: 64px;
+        }
+    }
+}
+
+.enterpriseapp {
+    height: 100vh;
+    background-color: #272727;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .enter-img {
+        width: 405px;
+        height: 405px;
+    }
+    .enter-img1 {
+        margin-left: 200px;
+        width: 405px;
+        height: 405px;
+    }
+    .enterpriseapp-text {
+        h1 {
+            font-family: Montserrat;
+            font-weight: 700;
+            font-size: 80px;
+            color: $color-heading;
+            white-space: nowrap;
+        }
+        p {
+            color: $color-heading;
+            margin-top: 36px;
+        }
+        .enterpriseapp-button {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            button {
+                border: none;
+                border-radius: 60px;
+                background-color: #282828;
+                color: $color-heading;
+                text-align: center;
+                height: 39px;
+                box-shadow: 3px 1px 8px #000000, 0px -1px 6px #6f6d6d;
+                padding: 0 10px;
+                font-weight: 600;
+            }
+        }
+    }
+}

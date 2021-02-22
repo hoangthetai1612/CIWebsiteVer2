@@ -660,7 +660,102 @@ img {
     width: 100%;
     display: flex;
     justify-content: flex-end; }
-    .enterpriseapp .enterpriseapp-text .enterpriseapp-button button {
+    .enterpriseapp .enterpriseapp-text .enterpriseapp-button a {
+      border: none;
+      border-radius: 60px;
+      background-color: #282828;
+      color: #bfa871;
+      text-align: center;
+      height: 39px;
+      box-shadow: 3px 1px 8px #000000, 0px -1px 6px #6f6d6d;
+      padding: 0 10px;
+      font-weight: 600;
+      outline: none;
+      line-height: 39px; }
+
+@media screen and (width: 768px) {
+  .row {
+    flex-direction: column; }
+  .enter-respon {
+    margin-left: 337px;
+    position: absolute;
+    top: 45px;
+    width: 100%; } }
+
+.enterpriseapp {
+  height: 100vh;
+  background-color: #272727;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .enterpriseapp .enterpriseapp-item {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; }
+    @media screen and (max-width: 768px) {
+      .enterpriseapp .enterpriseapp-item {
+        margin-left: 130px; } }
+    .enterpriseapp .enterpriseapp-item h1 {
+      font-family: Montserrat;
+      font-weight: 700;
+      font-size: 80px;
+      color: #bfa871;
+      white-space: nowrap; }
+      @media screen and (min-width: 1440px) and (max-width: 1600px) {
+        .enterpriseapp .enterpriseapp-item h1 {
+          font-size: 73px; } }
+      @media screen and (min-width: 1366px) and (max-width: 1439px) {
+        .enterpriseapp .enterpriseapp-item h1 {
+          font-size: 70px; } }
+      @media screen and (min-width: 1024px) and (max-width: 1365px) {
+        .enterpriseapp .enterpriseapp-item h1 {
+          font-size: 50px; } }
+      @media screen and (max-width: 768px) {
+        .enterpriseapp .enterpriseapp-item h1 {
+          font-size: 30px; } }
+    .enterpriseapp .enterpriseapp-item p {
+      color: #bfa871;
+      margin-top: 64px; }
+    .enterpriseapp .enterpriseapp-item a {
+      border: none;
+      border-radius: 60px;
+      background-color: #282828;
+      color: #bfa871;
+      text-align: center;
+      box-shadow: 3px 1px 8px #000000, 0px -1px 6px #6f6d6d;
+      outline: none;
+      color: #bfa871;
+      font-size: 24px;
+      width: 50%;
+      padding: 10px; }
+
+.product {
+  border-top: 2px solid #3a3a3a;
+  height: 100vh;
+  background-color: #272727;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  @media screen and (max-width: 991px) {
+    .product {
+      height: 120vh; } }
+  .product .product-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center; }
+    .product .product-text h3 {
+      font-size: 36px;
+      font-weight: 600;
+      color: #bfa871;
+      font-family: "Montserrat", sans-serif; }
+    .product .product-text p {
+      font-size: 24px;
+      font-weight: 500;
+      color: #bfa871;
+      font-family: "Montserrat", sans-serif; }
+    .product .product-text button {
       border: none;
       border-radius: 60px;
       background-color: #282828;
@@ -671,15 +766,68 @@ img {
       padding: 0 10px;
       font-weight: 600;
       outline: none; }
+  .product .product-img {
+    width: 375px;
+    height: 786px;
+    position: relative;
+    transform-style: preserve-3d; }
+    .product .product-img .product-mia {
+      width: 375px;
+      height: 786px;
+      position: absolute;
+      z-index: -1; }
+    .product .product-img .product-erp {
+      width: 675px;
+      height: 786px;
+      position: absolute;
+      z-index: -1; }
 
-@media screen and (width: 768px) {
-  .row {
+.enterpriseapp-send {
+  height: 100vh;
+  background-color: #272727;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .enterpriseapp-send .enterpriseapp-send-item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column; }
-  .enter-respon {
-    margin-left: 337px;
-    position: absolute;
-    top: 45px;
-    width: 100%; } }
+    @media screen and (max-width: 768px) {
+      .enterpriseapp-send .enterpriseapp-send-item {
+        margin-left: 130px; } }
+    .enterpriseapp-send .enterpriseapp-send-item h1 {
+      font-family: Montserrat;
+      font-weight: 700;
+      font-size: 80px;
+      color: #bfa871;
+      white-space: nowrap; }
+      @media screen and (min-width: 1440px) and (max-width: 1600px) {
+        .enterpriseapp-send .enterpriseapp-send-item h1 {
+          font-size: 73px; } }
+      @media screen and (min-width: 1366px) and (max-width: 1439px) {
+        .enterpriseapp-send .enterpriseapp-send-item h1 {
+          font-size: 70px; } }
+      @media screen and (min-width: 1024px) and (max-width: 1365px) {
+        .enterpriseapp-send .enterpriseapp-send-item h1 {
+          font-size: 50px; } }
+      @media screen and (max-width: 768px) {
+        .enterpriseapp-send .enterpriseapp-send-item h1 {
+          font-size: 30px; } }
+    .enterpriseapp-send .enterpriseapp-send-item a {
+      border: none;
+      border-radius: 60px;
+      background-color: #282828;
+      color: #bfa871;
+      text-align: center;
+      box-shadow: 3px 1px 8px #000000, 0px -1px 6px #6f6d6d;
+      outline: none;
+      color: #bfa871;
+      font-size: 24px;
+      width: 25%;
+      padding: 10px;
+      margin-top: 40px; }
 
 .cloud-doctor-banner {
   height: 90vh;

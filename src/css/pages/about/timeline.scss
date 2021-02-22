@@ -1,0 +1,63 @@
+.section-timeline {
+    padding: 300px 0;
+    background-color: $color-background;
+    height: auto;
+    .chicago {
+        position: relative;
+        .fly {
+            position: absolute;
+            width: 90px;
+            bottom: -200px;
+            left: 50%;
+        }
+        .left {
+            img {
+                width: 100%;
+            }
+        }
+        .right {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            .title {
+                font-size: 36px;
+                font-weight: 600;
+                color: #BFA871;
+            }
+            .content {
+                font-size: 18px;
+                font-weight: 400;
+                color: #BFA871;
+            }
+        }
+        padding-bottom: 600px;
+    }
+    .vietnam {
+        .left {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            .title {
+                font-size: 36px;
+                font-weight: 600;
+                color: #BFA871;
+            }
+            .content {
+                font-size: 18px;
+                font-weight: 400;
+                color: #BFA871;
+                text-align: right;
+            }
+        }
+        .right {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            img {
+                width: 70%;
+            }
+        }
+    }
+}

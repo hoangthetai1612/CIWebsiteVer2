@@ -39,7 +39,7 @@ img {
   .header .container-fluid {
     display: flex;
     justify-content: space-between;
-    height: 90px;
+    height: 10vh;
     align-items: center; }
     .header .container-fluid .header__menu-list {
       display: flex; }
@@ -190,7 +190,7 @@ img {
   .header .container-fluid {
     display: flex;
     justify-content: space-between;
-    height: 90px;
+    height: 10vh;
     align-items: center; }
     .header .container-fluid .header__menu-list {
       display: flex; }
@@ -680,3 +680,314 @@ img {
     position: absolute;
     top: 45px;
     width: 100%; } }
+
+.cloud-doctor-banner {
+  height: 90vh;
+  background-image: url("../images/cloud-doctor/banner.png");
+  margin-top: 10vh;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; }
+  .cloud-doctor-banner .container-fluid {
+    height: 100%; }
+    .cloud-doctor-banner .container-fluid .row {
+      height: 100%; }
+      .cloud-doctor-banner .container-fluid .row .col {
+        height: 100%; }
+    .cloud-doctor-banner .container-fluid .left-content {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .cloud-doctor-banner .container-fluid .left-content img {
+        width: 65%; }
+      .cloud-doctor-banner .container-fluid .left-content .title {
+        font-family: "Open Sans", sans-serif;
+        color: #FFFFFF;
+        font-size: 54px;
+        font-weight: 600; }
+
+.cloud-doctor-introduce {
+  background-image: url("../images/cloud-doctor/introduce-bg.png");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .cloud-doctor-introduce .main {
+    width: 50%; }
+    .cloud-doctor-introduce .main .title p {
+      color: #FFFFFF;
+      font-size: 36px;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 600; }
+    .cloud-doctor-introduce .main .content p {
+      color: #FFFFFF;
+      font-size: 24px; }
+
+.cloud-doctor-video {
+  height: 100vh;
+  background-color: #272727;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid #3a3a3a; }
+  .cloud-doctor-video .video {
+    width: 45%; }
+
+.cloud-doctor-result {
+  height: 100vh;
+  background-color: #272727;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid #3a3a3a; }
+  .cloud-doctor-result .main {
+    width: 75%; }
+    .cloud-doctor-result .main .circle {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 60px; }
+      .cloud-doctor-result .main .circle .dot {
+        width: 75px;
+        height: 75px;
+        background-color: #7D8B94;
+        border-radius: 100%; }
+    .cloud-doctor-result .main .title {
+      font-family: "Poppins", sans-serif;
+      font-size: 60px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      font-weight: 700;
+      margin-bottom: 20px; }
+    .cloud-doctor-result .main .content {
+      font-size: 24px;
+      color: #7D8B94; }
+
+.cloud-doctor-viewmore {
+  height: 100vh;
+  background-color: #272727;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid #3a3a3a;
+  position: relative;
+  overflow: hidden; }
+  .cloud-doctor-viewmore .icon-bg-top {
+    position: absolute;
+    left: -60px;
+    top: 0; }
+  .cloud-doctor-viewmore .icon-bg-bottom {
+    position: absolute;
+    bottom: 10%;
+    right: -80px; }
+  .cloud-doctor-viewmore img {
+    width: unset; }
+  .cloud-doctor-viewmore .main {
+    width: 90%;
+    display: flex;
+    align-self: center;
+    justify-content: space-between; }
+    .cloud-doctor-viewmore .main .back-button {
+      color: #bfa871;
+      display: flex;
+      align-self: center; }
+      .cloud-doctor-viewmore .main .back-button img {
+        margin-right: 35px; }
+    .cloud-doctor-viewmore .main .next-button {
+      color: #bfa871;
+      display: flex;
+      align-self: center; }
+      .cloud-doctor-viewmore .main .next-button img {
+        margin-left: 35px; }
+    .cloud-doctor-viewmore .main .content .title {
+      font-size: 60px;
+      font-family: "Poppins", sans-serif;
+      font-weight: 700;
+      color: #7D8B94; }
+      @media (max-width: 1919px) {
+        .cloud-doctor-viewmore .main .content .title {
+          font-size: 50px; } }
+    .cloud-doctor-viewmore .main .content .link {
+      text-align: center;
+      margin-top: 40px; }
+      .cloud-doctor-viewmore .main .content .link a {
+        padding: 15px 30px;
+        background: #7D8B94;
+        border-radius: 35px;
+        font-size: 24px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        color: #272727; }
+
+.time-tracker-banner {
+  height: 100vh;
+  background-image: url("../images/time-tracker/HRM.svg");
+  margin-top: 10vh;
+  background-position: center;
+  background-size: cover;
+  position: relative; }
+  .time-tracker-banner .container-fluid {
+    height: 100%; }
+    .time-tracker-banner .container-fluid .row {
+      height: 100%; }
+      .time-tracker-banner .container-fluid .row .col {
+        height: 100%; }
+    .time-tracker-banner .container-fluid .left-content {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .time-tracker-banner .container-fluid .left-content img {
+        width: 65%;
+        z-index: 9; }
+      .time-tracker-banner .container-fluid .left-content .title {
+        font-family: "Open Sans", sans-serif;
+        color: #FFFFFF;
+        font-size: 54px;
+        font-weight: 600;
+        z-index: 9; }
+  .time-tracker-banner img {
+    width: unset; }
+  .time-tracker-banner .circle-1 {
+    position: absolute;
+    bottom: 12%;
+    left: -5%; }
+  .time-tracker-banner .circle-2 {
+    position: absolute;
+    bottom: 12%;
+    right: 40%; }
+  .time-tracker-banner .circle-3 {
+    position: absolute;
+    top: 15%;
+    right: -5%; }
+
+.time-tracker-introduce {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #272727;
+  border-top: 2px solid #3a3a3a;
+  position: relative; }
+  .time-tracker-introduce .main {
+    width: 50%; }
+    .time-tracker-introduce .main .title p {
+      color: #FFFFFF;
+      font-size: 36px;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 600; }
+    .time-tracker-introduce .main .content p {
+      color: #FFFFFF;
+      font-size: 24px; }
+  .time-tracker-introduce .circle-1 {
+    position: absolute;
+    top: 15%;
+    right: -5%; }
+  .time-tracker-introduce .circle-2 {
+    position: absolute;
+    bottom: 12%;
+    left: -50px; }
+
+.time-tracker-about .product-top {
+  height: 100vh;
+  background-color: #272727;
+  border-top: 2px solid #3a3a3a; }
+  .time-tracker-about .product-top .container-fluid {
+    height: 100%; }
+    .time-tracker-about .product-top .container-fluid .row {
+      height: 100%; }
+      .time-tracker-about .product-top .container-fluid .row .col {
+        height: 100%; }
+  .time-tracker-about .product-top .left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; }
+    .time-tracker-about .product-top .left img {
+      width: unset; }
+  .time-tracker-about .product-top .right {
+    height: 100%;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 75%; }
+    .time-tracker-about .product-top .right .content {
+      font-size: 24px; }
+    .time-tracker-about .product-top .right .title {
+      font-size: 40px;
+      font-family: "Poppins", sans-serif;
+      font-weight: 600;
+      margin-bottom: 35px; }
+
+.time-tracker-about .product-bottom {
+  height: 100vh;
+  background-color: #272727;
+  border-top: 2px solid #3a3a3a; }
+  .time-tracker-about .product-bottom .container-fluid {
+    height: 100%; }
+    .time-tracker-about .product-bottom .container-fluid .row {
+      height: 100%; }
+      .time-tracker-about .product-bottom .container-fluid .row .col {
+        height: 100%; }
+  .time-tracker-about .product-bottom .left {
+    height: 100%;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .time-tracker-about .product-bottom .left .content {
+      font-size: 24px;
+      width: 75%; }
+    .time-tracker-about .product-bottom .left .title {
+      width: 75%;
+      font-size: 40px;
+      font-family: "Poppins", sans-serif;
+      font-weight: 600;
+      margin-bottom: 35px; }
+  .time-tracker-about .product-bottom .right {
+    height: 100%;
+    align-items: center;
+    display: flex; }
+    .time-tracker-about .product-bottom .right img {
+      width: 80%; }
+
+.time-tracker-about .viewmore {
+  height: 100vh;
+  background-color: #272727;
+  border-top: 2px solid #3a3a3a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; }
+  .time-tracker-about .viewmore .content .title {
+    font-size: 60px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: #FFFFFF; }
+    @media (max-width: 1919px) {
+      .time-tracker-about .viewmore .content .title {
+        font-size: 50px; } }
+  .time-tracker-about .viewmore .content .link {
+    text-align: center;
+    margin-top: 40px; }
+    .time-tracker-about .viewmore .content .link a {
+      padding: 15px 30px;
+      background: linear-gradient(to right, #AF6BAD, #7F4CB1);
+      border-radius: 35px;
+      font-size: 24px;
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
+      color: #FFFFFF; }
+  .time-tracker-about .viewmore .circle-5 {
+    position: absolute;
+    top: -15%;
+    left: -15%; }
+  .time-tracker-about .viewmore .circle-4 {
+    position: absolute;
+    bottom: 15%;
+    right: 10%; }

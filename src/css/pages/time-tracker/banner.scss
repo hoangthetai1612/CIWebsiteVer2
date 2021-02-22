@@ -1,0 +1,54 @@
+.time-tracker-banner{
+    height: 100vh;
+    background-image: url('../images/time-tracker/HRM.svg');
+    margin-top: 10vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    .container-fluid{
+        height: 100%;
+        .row{
+            height: 100%;
+            .col{
+                height: 100%;
+                
+            }
+        }
+        .left-content{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            img{
+                width: 65%;
+                z-index: 9;
+            }
+            .title{
+                font-family: $font-openSans;
+                color: $color-white;
+                font-size: 54px;
+                font-weight: 600;
+                z-index: 9;
+            }
+        }
+    }
+    img{
+        width: unset;
+    }
+    .circle-1{
+        position: absolute;
+        bottom: 12%;
+        left: -5%;
+
+    }
+    .circle-2{
+        position: absolute;
+        bottom: 12%;
+        right: 40%;
+    }
+    .circle-3{
+        position: absolute;
+        top: 15%;
+        right: -5%;
+    }
+}

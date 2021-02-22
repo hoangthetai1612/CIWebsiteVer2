@@ -161,3 +161,4 @@ function drag(e) {
 function setTranslate(xPos, el) {
   el.style.transform = "translate3d(" + xPos + "px, 0px, 0)";
 }
+new WOW().init();

@@ -149,62 +149,6 @@ img {
   .header .container-fluid .header__menu {
     display: none; } }
 
-.ourservice {
-  height: 100vh;
-  background-color: #272727;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .ourservice .ourservice-item {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column; }
-    .ourservice .ourservice-item img {
-      width: 530px;
-      height: 85px;
-      margin-left: -43px; }
-    .ourservice .ourservice-item p {
-      color: #bfa871;
-      margin-top: 64px; }
-
-.enterpriseapp {
-  height: 100vh;
-  background-color: #272727;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .enterpriseapp .enter-img {
-    width: 405px;
-    height: 405px; }
-  .enterpriseapp .enter-img1 {
-    margin-left: 200px;
-    width: 405px;
-    height: 405px; }
-  .enterpriseapp .enterpriseapp-text h1 {
-    font-family: Montserrat;
-    font-weight: 700;
-    font-size: 80px;
-    color: #bfa871;
-    white-space: nowrap; }
-  .enterpriseapp .enterpriseapp-text p {
-    color: #bfa871;
-    margin-top: 36px; }
-  .enterpriseapp .enterpriseapp-text .enterpriseapp-button {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end; }
-    .enterpriseapp .enterpriseapp-text .enterpriseapp-button button {
-      border: none;
-      border-radius: 60px;
-      background-color: #282828;
-      color: #bfa871;
-      text-align: center;
-      height: 39px;
-      box-shadow: 3px 1px 8px #000000, 0px -1px 6px #6f6d6d;
-      padding: 0 10px;
-      font-weight: 600; }
-
 @media (min-width: 768px) {
   .container-fluid {
     width: 95%; } }
@@ -605,3 +549,106 @@ img {
       .home-partner .logo .container-fluid .bot-row .item .cuongthinh {
         width: unset;
         height: 180px; }
+
+.ourservice {
+  height: 100vh;
+  background-color: #272727;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .ourservice .ourservice-item {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; }
+    @media screen and (max-width: 768px) {
+      .ourservice .ourservice-item {
+        margin-left: 130px; } }
+    .ourservice .ourservice-item img {
+      width: 530px;
+      height: 100px;
+      margin-left: -43px; }
+    .ourservice .ourservice-item p {
+      color: #bfa871;
+      margin-top: 64px;
+      margin-left: -44px; }
+
+.enterpriseapp {
+  height: 100vh;
+  background-color: #272727;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .enterpriseapp .enter-img {
+    width: 405px;
+    height: 405px; }
+    @media screen and (min-width: 1024px) and (max-width: 1365px) {
+      .enterpriseapp .enter-img {
+        margin-left: 140px;
+        width: 330px;
+        height: 330px; } }
+    @media screen and (max-width: 768px) {
+      .enterpriseapp .enter-img {
+        width: 330px;
+        height: 330px;
+        margin-left: 320px; } }
+  .enterpriseapp .enter-img1 {
+    margin-left: 200px;
+    width: 405px;
+    height: 405px; }
+    @media screen and (min-width: 1024px) and (max-width: 1365px) {
+      .enterpriseapp .enter-img1 {
+        margin-left: 140px;
+        width: 330px;
+        height: 330px; } }
+    @media screen and (max-width: 768px) {
+      .enterpriseapp .enter-img1 {
+        width: 330px;
+        height: 330px;
+        margin-top: 380px;
+        margin-left: 0; } }
+  .enterpriseapp .enterpriseapp-text h1 {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 80px;
+    color: #bfa871;
+    white-space: nowrap; }
+    @media screen and (min-width: 1440px) and (max-width: 1600px) {
+      .enterpriseapp .enterpriseapp-text h1 {
+        font-size: 73px; } }
+    @media screen and (min-width: 1366px) and (max-width: 1439px) {
+      .enterpriseapp .enterpriseapp-text h1 {
+        font-size: 70px; } }
+    @media screen and (min-width: 1024px) and (max-width: 1365px) {
+      .enterpriseapp .enterpriseapp-text h1 {
+        font-size: 50px; } }
+    @media screen and (max-width: 768px) {
+      .enterpriseapp .enterpriseapp-text h1 {
+        font-size: 30px; } }
+  .enterpriseapp .enterpriseapp-text p {
+    color: #bfa871;
+    margin-top: 36px; }
+  .enterpriseapp .enterpriseapp-text .enterpriseapp-button {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end; }
+    .enterpriseapp .enterpriseapp-text .enterpriseapp-button button {
+      border: none;
+      border-radius: 60px;
+      background-color: #282828;
+      color: #bfa871;
+      text-align: center;
+      height: 39px;
+      box-shadow: 3px 1px 8px #000000, 0px -1px 6px #6f6d6d;
+      padding: 0 10px;
+      font-weight: 600;
+      outline: none; }
+
+@media screen and (width: 768px) {
+  .row {
+    flex-direction: column; }
+  .enter-respon {
+    margin-left: 337px;
+    position: absolute;
+    top: 45px;
+    width: 100%; } }

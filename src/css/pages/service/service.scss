@@ -1,0 +1,117 @@
+.ourservice {
+    height: 100vh;
+    background-color: $background;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .ourservice-item {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        @media screen and (max-width: 768px) {
+            margin-left: 130px;
+        }
+        img {
+            width: 530px;
+            height: 100px;
+            margin-left: -43px;
+        }
+        p {
+            color: $color-heading;
+            margin-top: 64px;
+            margin-left: -44px;
+        }
+    }
+}
+
+.enterpriseapp {
+    height: 100vh;
+    background-color: #272727;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .enter-img {
+        width: 405px;
+        height: 405px;
+        @media screen and (min-width: 1024px) and (max-width: 1365px) {
+            margin-left: 140px;
+            width: 330px;
+            height: 330px;
+        }
+        @media screen and (max-width: 768px) {
+            width: 330px;
+            height: 330px;
+            margin-left: 320px;
+        }
+    }
+    .enter-img1 {
+        margin-left: 200px;
+        width: 405px;
+        height: 405px;
+        @media screen and (min-width: 1024px) and (max-width: 1365px) {
+            margin-left: 140px;
+            width: 330px;
+            height: 330px;
+        }
+        @media screen and (max-width: 768px) {
+            width: 330px;
+            height: 330px;
+            margin-top: 380px;
+            margin-left: 0;
+        }
+    }
+    .enterpriseapp-text {
+        h1 {
+            font-family: Montserrat;
+            font-weight: 700;
+            font-size: 80px;
+            color: $color-heading;
+            white-space: nowrap;
+            @media screen and (min-width: 1440px) and (max-width: 1600px) {
+                font-size: 73px;
+            }
+            @media screen and (min-width: 1366px) and (max-width: 1439px) {
+                font-size: 70px;
+            }
+            @media screen and (min-width: 1024px) and (max-width: 1365px) {
+                font-size: 50px;
+            }
+            @media screen and (max-width: 768px) {
+                font-size: 30px;
+            }
+        }
+        p {
+            color: $color-heading;
+            margin-top: 36px;
+        }
+        .enterpriseapp-button {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            button {
+                border: none;
+                border-radius: 60px;
+                background-color: #282828;
+                color: $color-heading;
+                text-align: center;
+                height: 39px;
+                box-shadow: 3px 1px 8px #000000, 0px -1px 6px #6f6d6d;
+                padding: 0 10px;
+                font-weight: 600;
+                outline: none;
+            }
+        }
+    }
+}
+@media screen and (width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+    .enter-respon {
+        margin-left: 337px;
+        position: absolute;
+        top: 45px;
+        width: 100%;
+    }
+}

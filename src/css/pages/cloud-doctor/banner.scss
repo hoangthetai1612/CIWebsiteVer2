@@ -1,10 +1,10 @@
 .cloud-doctor-banner{
-    height: 90vh;
+    height: 100vh;
     background-image: url('../images/cloud-doctor/banner.png');
     margin-top: 10vh;
     background-position: center;
     background-size: cover;
-    background-attachment:fixed;
+    // background-attachment:fixed;
     .container-fluid{
         height: 100%;
         .row{
@@ -27,6 +27,10 @@
                 color: $color-white;
                 font-size: 54px;
                 font-weight: 600;
+                margin-top: 20px;
+                @media screen and (max-width: 1560px) {
+                    font-size: 40px;
+                }
             }
         }
     }

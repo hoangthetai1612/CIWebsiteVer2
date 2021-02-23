@@ -29,11 +29,17 @@
                 font-size: 54px;
                 font-weight: 600;
                 z-index: 9;
+                @media screen and (max-width: 1560px) {
+                    font-size: 45px;
+                }
             }
         }
     }
     img{
         width: unset;
+        @media screen and (max-width: 1560px) {
+            width: 70%;
+        }
     }
     .circle-1{
         position: absolute;

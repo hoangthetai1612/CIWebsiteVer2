@@ -29,6 +29,18 @@ img {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: #bfa871; }
 
+.text-content {
+  font-size: 24px; }
+  @media screen and (max-width: 1560px) {
+    .text-content {
+      font-size: 18px; } }
+
+.text-title {
+  font-size: 40px; }
+  @media screen and (max-width: 1560px) {
+    .text-title {
+      font-size: 35px; } }
+
 .header {
   background-color: #272727;
   position: fixed;
@@ -180,6 +192,18 @@ img {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: #bfa871; }
 
+.text-content {
+  font-size: 24px; }
+  @media screen and (max-width: 1560px) {
+    .text-content {
+      font-size: 18px; } }
+
+.text-title {
+  font-size: 40px; }
+  @media screen and (max-width: 1560px) {
+    .text-title {
+      font-size: 35px; } }
+
 .header {
   background-color: #272727;
   position: fixed;
@@ -319,6 +343,9 @@ img {
         flex-direction: column;
         justify-content: center;
         align-items: center; } }
+    @media screen and (max-width: 1560px) {
+      .products .section-product_mia .content .right img {
+        width: 80%; } }
     @media screen and (max-width: 991px) {
       .products .section-product_mia .content .right {
         order: 1;
@@ -344,7 +371,7 @@ img {
           font-weight: 500;
           color: #BFA871;
           font-family: 'Montserrat', sans-serif; }
-      .products .section-product_mia .content .left button {
+      .products .section-product_mia .content .left a {
         position: absolute;
         right: -50px;
         border: none;
@@ -356,9 +383,9 @@ img {
         box-shadow: 3px 1px 8px #000000, 0px -1px 6px #6F6D6D;
         padding: 0 10px;
         font-weight: 600; }
-        .products .section-product_mia .content .left button:focus {
+        .products .section-product_mia .content .left a:focus {
           outline: none; }
-        .products .section-product_mia .content .left button:active {
+        .products .section-product_mia .content .left a:active {
           box-shadow: 5px 5px rgba(0, 0, 0, 0.16); }
 
 .products .section-product_hopital {
@@ -381,7 +408,7 @@ img {
         align-items: center; } }
     .products .section-product_hopital .content .left img {
       margin-right: 200px; }
-      @media screen and (max-width: 1441px) {
+      @media screen and (max-width: 1560px) {
         .products .section-product_hopital .content .left img {
           margin-right: 0;
           width: 100%;
@@ -414,7 +441,8 @@ img {
         height: 39px;
         box-shadow: 3px 1px 8px #000000, 0px -1px 6px #6F6D6D;
         padding: 0 10px;
-        font-weight: 600; }
+        font-weight: 600;
+        cursor: pointer; }
         .products .section-product_hopital .content .right button:focus {
           outline: none; }
         .products .section-product_hopital .content .right button:active {
@@ -549,12 +577,18 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center; }
+    @media screen and (max-width: 1560px) {
+      .home-partner .main {
+        bottom: -60px; } }
     .home-partner .main .title {
       font-family: "Montserrat", sans-serif;
       font-size: 54px;
       color: #bfa871;
       font-weight: bold;
       margin-bottom: 20px; }
+      @media screen and (max-width: 1560px) {
+        .home-partner .main .title {
+          font-size: 40px; } }
   .home-partner .logo {
     width: 70%;
     border-radius: 20px;
@@ -569,14 +603,27 @@ img {
       align-items: center; }
       .home-partner .logo .container-fluid .item img {
         width: 180px; }
+        @media screen and (max-width: 1560px) {
+          .home-partner .logo .container-fluid .item img {
+            width: 150px; } }
     .home-partner .logo .container-fluid .top-row {
       padding-top: 100px; }
+      @media screen and (max-width: 1560px) {
+        .home-partner .logo .container-fluid .top-row {
+          padding-top: 60px; } }
     .home-partner .logo .container-fluid .bot-row {
       padding-top: 100px;
       padding-bottom: 100px; }
+      @media screen and (max-width: 1560px) {
+        .home-partner .logo .container-fluid .bot-row {
+          padding-top: 60px;
+          padding-bottom: 60px; } }
       .home-partner .logo .container-fluid .bot-row .item .cuongthinh {
         width: unset;
         height: 180px; }
+        @media screen and (max-width: 1560px) {
+          .home-partner .logo .container-fluid .bot-row .item .cuongthinh {
+            height: 140px; } }
 
 .ourservice {
   height: 100vh;
@@ -781,6 +828,9 @@ img {
       height: 786px;
       position: absolute;
       z-index: -1; }
+      @media screen and (min-width: 1024px) and (max-width: 1200px) {
+        .product .product-img .product-erp {
+          width: 515px; } }
 
 .enterpriseapp-send {
   height: 100vh;
@@ -830,12 +880,11 @@ img {
       margin-top: 40px; }
 
 .cloud-doctor-banner {
-  height: 90vh;
+  height: 100vh;
   background-image: url("../images/cloud-doctor/banner.png");
   margin-top: 10vh;
   background-position: center;
-  background-size: cover;
-  background-attachment: fixed; }
+  background-size: cover; }
   .cloud-doctor-banner .container-fluid {
     height: 100%; }
     .cloud-doctor-banner .container-fluid .row {
@@ -853,7 +902,11 @@ img {
         font-family: "Open Sans", sans-serif;
         color: #FFFFFF;
         font-size: 54px;
-        font-weight: 600; }
+        font-weight: 600;
+        margin-top: 20px; }
+        @media screen and (max-width: 1560px) {
+          .cloud-doctor-banner .container-fluid .left-content .title {
+            font-size: 40px; } }
 
 .cloud-doctor-introduce {
   background-image: url("../images/cloud-doctor/introduce-bg.png");
@@ -871,8 +924,7 @@ img {
       font-family: "Open Sans", sans-serif;
       font-weight: 600; }
     .cloud-doctor-introduce .main .content p {
-      color: #FFFFFF;
-      font-size: 24px; }
+      color: #FFFFFF; }
 
 .cloud-doctor-video {
   height: 100vh;
@@ -910,8 +962,10 @@ img {
       color: #FFFFFF;
       font-weight: 700;
       margin-bottom: 20px; }
+      @media screen and (max-width: 1560px) {
+        .cloud-doctor-result .main .title {
+          font-size: 45px; } }
     .cloud-doctor-result .main .content {
-      font-size: 24px;
       color: #7D8B94; }
 
 .cloud-doctor-viewmore {
@@ -923,21 +977,32 @@ img {
   border-top: 2px solid #3a3a3a;
   position: relative;
   overflow: hidden; }
+  .cloud-doctor-viewmore img {
+    width: unset; }
+  .cloud-doctor-viewmore a {
+    cursor: pointer; }
   .cloud-doctor-viewmore .icon-bg-top {
     position: absolute;
     left: -60px;
     top: 0; }
+    @media screen and (max-width: 1560px) {
+      .cloud-doctor-viewmore .icon-bg-top img {
+        width: 75%; } }
   .cloud-doctor-viewmore .icon-bg-bottom {
     position: absolute;
     bottom: 10%;
-    right: -80px; }
-  .cloud-doctor-viewmore img {
-    width: unset; }
+    right: -10%; }
+    @media screen and (max-width: 1560px) {
+      .cloud-doctor-viewmore .icon-bg-bottom {
+        right: -12%;
+        bottom: 8%; }
+        .cloud-doctor-viewmore .icon-bg-bottom img {
+          width: 75%; } }
   .cloud-doctor-viewmore .main {
     width: 90%;
     display: flex;
     align-self: center;
-    justify-content: space-between; }
+    justify-content: center; }
     .cloud-doctor-viewmore .main .back-button {
       color: #bfa871;
       display: flex;
@@ -997,8 +1062,14 @@ img {
         font-size: 54px;
         font-weight: 600;
         z-index: 9; }
+        @media screen and (max-width: 1560px) {
+          .time-tracker-banner .container-fluid .left-content .title {
+            font-size: 45px; } }
   .time-tracker-banner img {
     width: unset; }
+    @media screen and (max-width: 1560px) {
+      .time-tracker-banner img {
+        width: 70%; } }
   .time-tracker-banner .circle-1 {
     position: absolute;
     bottom: 12%;
@@ -1021,19 +1092,24 @@ img {
   border-top: 2px solid #3a3a3a;
   position: relative; }
   .time-tracker-introduce .main {
-    width: 50%; }
+    width: 50%;
+    overflow: hidden; }
     .time-tracker-introduce .main .title p {
       color: #FFFFFF;
       font-size: 36px;
       font-family: "Open Sans", sans-serif;
       font-weight: 600; }
     .time-tracker-introduce .main .content p {
-      color: #FFFFFF;
-      font-size: 24px; }
+      color: #FFFFFF; }
   .time-tracker-introduce .circle-1 {
     position: absolute;
     top: 15%;
     right: -5%; }
+    @media screen and (max-width: 1560px) {
+      .time-tracker-introduce .circle-1 {
+        right: -12%; }
+        .time-tracker-introduce .circle-1 img {
+          width: 75%; } }
   .time-tracker-introduce .circle-2 {
     position: absolute;
     bottom: 12%;
@@ -1056,6 +1132,9 @@ img {
     height: 100%; }
     .time-tracker-about .product-top .left img {
       width: unset; }
+      @media screen and (max-width: 1560px) {
+        .time-tracker-about .product-top .left img {
+          height: 80%; } }
   .time-tracker-about .product-top .right {
     height: 100%;
     color: #FFFFFF;
@@ -1063,13 +1142,14 @@ img {
     flex-direction: column;
     justify-content: center;
     width: 75%; }
-    .time-tracker-about .product-top .right .content {
-      font-size: 24px; }
     .time-tracker-about .product-top .right .title {
       font-size: 40px;
       font-family: "Poppins", sans-serif;
       font-weight: 600;
       margin-bottom: 35px; }
+      @media screen and (max-width: 1560px) {
+        .time-tracker-about .product-top .right .title {
+          font-size: 35px; } }
 
 .time-tracker-about .product-bottom {
   height: 100vh;
@@ -1089,7 +1169,6 @@ img {
     justify-content: center;
     align-items: center; }
     .time-tracker-about .product-bottom .left .content {
-      font-size: 24px;
       width: 75%; }
     .time-tracker-about .product-bottom .left .title {
       width: 75%;
@@ -1097,6 +1176,9 @@ img {
       font-family: "Poppins", sans-serif;
       font-weight: 600;
       margin-bottom: 35px; }
+      @media screen and (max-width: 1560px) {
+        .time-tracker-about .product-bottom .left .title {
+          font-size: 35px; } }
   .time-tracker-about .product-bottom .right {
     height: 100%;
     align-items: center;
@@ -1135,10 +1217,16 @@ img {
     position: absolute;
     top: -15%;
     left: -15%; }
+    @media screen and (max-width: 1560px) {
+      .time-tracker-about .viewmore .circle-5 img {
+        width: 60%; } }
   .time-tracker-about .viewmore .circle-4 {
     position: absolute;
     bottom: 15%;
     right: 10%; }
+    .time-tracker-about .viewmore .circle-4 img {
+      width: 70%; }
+
 .banner-section {
   position: relative;
   height: 100vh;

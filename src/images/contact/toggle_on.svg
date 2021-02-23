@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <g id="_toggle_on" data-name=" toggle_on" transform="translate(-134 -4320)">
+    <rect id="Path" width="32" height="32" transform="translate(134 4320)" fill="rgba(0,0,0,0)"/>
+    <g id="facebook" transform="translate(136.126 4322.126)">
+      <circle id="Ellipse_7" data-name="Ellipse 7" cx="13.5" cy="13.5" r="13.5" transform="translate(-0.126 -0.126)" fill="#f0de9f"/>
+      <path id="Path_2666" data-name="Path 2666" d="M44.939,30.526h-2.2v8.8H39.4v-8.8H37.812V27.434H39.4v-2c0-1.431.623-3.671,3.367-3.671l2.472.011v3H43.444c-.294,0-.708.16-.708.843v1.819H45.23Z" transform="translate(-28.304 -16.487)" fill="#0d0d0d"/>
+    </g>
+  </g>
+</svg>

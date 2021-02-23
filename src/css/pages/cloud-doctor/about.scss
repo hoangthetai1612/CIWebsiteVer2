@@ -19,7 +19,6 @@
         .content{
             p {
                 color: $color-white;
-                font-size: 24px;
             }
         }
     }
@@ -63,9 +62,11 @@
             color: $color-white;
             font-weight: 700;
             margin-bottom: 20px;
+            @media screen and (max-width: 1560px) {
+                font-size: 45px;
+            }
         }
         .content{
-            font-size: 24px;
             color: $color-light-blue;
         }
     }
@@ -79,30 +80,47 @@
     border-top: 2px solid $color-border-top;
     position: relative;
     overflow: hidden;
+    img{
+        width: unset;
+    }
+    a{
+        cursor: pointer;
+    }
     .icon-bg-top{
         position: absolute;
         left: -60px;
         top: 0;
+        @media screen and (max-width: 1560px) {
+            img{
+                width: 75%;
+            }
+        }
     }
     .icon-bg-bottom{
         position: absolute;
         bottom: 10%;
-        right: -80px;
+        right: -10%;
+        @media screen and (max-width: 1560px) {
+            right: -12%;
+            bottom: 8%;
+            img{
+                width: 75%;
+            }
+        }
     }
-    img{
-        width: unset;
-    }
+    
     .main{
         width: 90%;
         display: flex;
         align-self: center;
-        justify-content: space-between;
+        justify-content: center;
         .back-button{
             color: $color-text;
             display: flex;
             align-self: center;
             img{
                 margin-right: 35px;
+                
             }
         }
         .next-button{
@@ -111,6 +129,7 @@
             align-self: center;
             img{
                 margin-left: 35px;
+               
             }
             
         }

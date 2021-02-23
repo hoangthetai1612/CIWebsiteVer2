@@ -19,6 +19,9 @@
             height: 100%;
             img{
                 width: unset;
+                @media screen and (max-width: 1560px) {
+                    height: 80%;
+                }
             }
         }
         .right{
@@ -29,13 +32,15 @@
             justify-content: center;
             width: 75%;
             .content{
-                font-size: 24px;
             }
             .title{
                 font-size: 40px;
                 font-family: $font-poppins;
                 font-weight: 600;
                 margin-bottom: 35px;
+                @media screen and (max-width: 1560px) {
+                    font-size: 35px;
+                }
             }
         } 
     }
@@ -60,7 +65,6 @@
             justify-content: center;
             align-items: center;
             .content{
-                font-size: 24px;
                 width: 75%;
             }
             .title{
@@ -69,6 +73,9 @@
                 font-family: $font-poppins;
                 font-weight: 600;
                 margin-bottom: 35px;
+                @media screen and (max-width: 1560px) {
+                    font-size: 35px;
+                }
             }
         } 
         .right{
@@ -116,11 +123,19 @@
             position: absolute;
             top: -15%;
             left: -15%;
+            @media screen and (max-width: 1560px) {
+                img{
+                    width: 60%;
+                }
+            }
         }
         .circle-4{
             position: absolute;
             bottom: 15%;
             right: 10%;
+            img{
+                width: 70%;
+            }
         }
     }
 }

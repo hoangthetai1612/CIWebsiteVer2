@@ -19,6 +19,11 @@
                 align-items: center;
             }
             .right {
+                @media screen and (max-width: 1560px) {
+                    img{
+                        width: 80%;
+                    }
+                }
                 @media screen and (max-width: 991px) {
                     order: 1;
                     margin-bottom: 50px;
@@ -91,7 +96,7 @@
             .left {
                 img {
                     margin-right: 200px;
-                    @media screen and (max-width: 1441px) {
+                    @media screen and (max-width: 1560px) {
                         margin-right: 0;
                         width: 100%;
                         margin-bottom: 50px;
@@ -130,6 +135,7 @@
                     box-shadow: 3px 1px 8px #000000, 0px -1px 6px #6F6D6D;
                     padding: 0 10px;
                     font-weight: 600;
+                    cursor: pointer;
                     &:focus {
                         outline: none;
                     }

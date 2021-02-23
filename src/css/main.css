@@ -825,11 +825,14 @@ img {
       text-align: center;
       box-shadow: 3px 1px 8px #000000, 0px -1px 6px #6f6d6d;
       outline: none;
-      color: #bfa871;
       font-size: 24px;
       width: 25%;
       padding: 10px;
-      margin-top: 40px; }
+      margin-top: 40px;
+      cursor: pointer; }
+    .enterpriseapp-send .enterpriseapp-send-item a:not([href]):not([tabindex]):hover {
+      color: #bfa871;
+      text-decoration: none; }
 
 .contact {
   height: 100vh;

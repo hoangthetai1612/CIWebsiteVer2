@@ -23,6 +23,12 @@ function menuDot() {
   if (page == 'service.html') {
     document.getElementById("service-icon").classList.add('menu-dot')
   }
+  if (page == 'packageapp.html') {
+    document.getElementById("service-icon").classList.add('menu-dot')
+  }
+  if (page == 'enterpriseapp.html') {
+    document.getElementById("service-icon").classList.add('menu-dot')
+  }
   if (page == 'about.html') {
     document.getElementById("about-icon").classList.add('menu-dot')
   }

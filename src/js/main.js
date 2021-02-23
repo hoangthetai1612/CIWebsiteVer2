@@ -179,6 +179,13 @@ function setTranslate(xPos, el) {
 }
 new WOW().init();
 
+function tiltcustom() {
+  $('.tilt').tilt({
+    maxTilt: 10,
+  })
+}
+tiltcustom();
+
 
 
 

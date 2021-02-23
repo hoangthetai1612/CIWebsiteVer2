@@ -1,0 +1,43 @@
+.foot {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: $color-background;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    .title {
+        font-size: 60px;
+        font-weight: 600;
+        color: #BFA871;
+        padding-top: 100px;
+        text-align: left;
+    }
+    a {
+        width: 575px;
+        height: 64px;
+        background-color: #BFA871;
+        font-style: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: $font-montserrat;
+        color: black;
+        border-radius: 50px;
+    }
+    .left {
+        position: absolute;
+        bottom: -100px;
+        width: 420px;
+        left: -100px;
+    }
+    .right {
+        position: absolute;
+        width: 405px;
+        bottom: -50px;
+        right: -50px;
+    }
+}

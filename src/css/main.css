@@ -344,7 +344,7 @@ img {
           font-weight: 500;
           color: #BFA871;
           font-family: 'Montserrat', sans-serif; }
-      .products .section-product_mia .content .left button {
+      .products .section-product_mia .content .left a {
         position: absolute;
         right: -50px;
         border: none;
@@ -356,9 +356,9 @@ img {
         box-shadow: 3px 1px 8px #000000, 0px -1px 6px #6F6D6D;
         padding: 0 10px;
         font-weight: 600; }
-        .products .section-product_mia .content .left button:focus {
+        .products .section-product_mia .content .left a:focus {
           outline: none; }
-        .products .section-product_mia .content .left button:active {
+        .products .section-product_mia .content .left a:active {
           box-shadow: 5px 5px rgba(0, 0, 0, 0.16); }
 
 .products .section-product_hopital {
@@ -822,3 +822,167 @@ img {
         outline: none; }
       .section-email .content button:active {
         box-shadow: 5px 5px rgba(0, 0, 0, 0.16); }
+
+.banner {
+  height: 100vh; }
+
+.discovery {
+  background-color: #272727;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  overflow: hidden;
+  padding: 100px 0; }
+  .discovery img {
+    width: 70%; }
+  .discovery .title {
+    font-size: 36px;
+    font-weight: 600;
+    color: #BFA871;
+    padding-top: 100px; }
+  .discovery .content {
+    font-size: 18px;
+    font-weight: 400;
+    color: #BFA871; }
+    .discovery .content ul li {
+      position: relative;
+      line-height: 32px;
+      padding-bottom: 15px; }
+      .discovery .content ul li::after {
+        content: "";
+        position: absolute;
+        left: -30px;
+        top: 13px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #BFA871; }
+
+.foot {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #272727;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden; }
+  .foot .title {
+    font-size: 60px;
+    font-weight: 600;
+    color: #BFA871;
+    padding-top: 100px;
+    text-align: left; }
+  .foot a {
+    width: 575px;
+    height: 64px;
+    background-color: #BFA871;
+    font-style: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+    color: black;
+    border-radius: 50px; }
+  .foot .left {
+    position: absolute;
+    bottom: -100px;
+    width: 420px;
+    left: -100px; }
+  .foot .right {
+    position: absolute;
+    width: 405px;
+    bottom: -50px;
+    right: -50px; }
+
+.infor {
+  background-color: #272727;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  overflow: hidden; }
+  .infor .top {
+    padding: 200px 0; }
+    .infor .top .title {
+      font-size: 36px;
+      font-weight: 600;
+      color: #BFA871;
+      padding-top: 100px;
+      width: 55%; }
+    .infor .top .content {
+      font-size: 18px;
+      font-weight: 400;
+      color: #BFA871; }
+      .infor .top .content ul li {
+        position: relative;
+        line-height: 32px;
+        padding-bottom: 15px; }
+  .infor .center img {
+    width: 100%; }
+  .infor .bottom {
+    padding: 200px 0; }
+    .infor .bottom .title {
+      font-size: 36px;
+      font-weight: 600;
+      color: #BFA871;
+      padding-top: 100px;
+      width: 55%; }
+    .infor .bottom .content {
+      font-size: 18px;
+      font-weight: 400;
+      color: #BFA871; }
+      .infor .bottom .content ul li {
+        position: relative;
+        line-height: 32px;
+        padding-bottom: 15px; }
+
+.intro {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #272727;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden; }
+  .intro .grape {
+    position: absolute;
+    width: 450px;
+    height: 500px;
+    top: 0;
+    left: -150px; }
+  .intro .banana {
+    position: absolute;
+    width: 350px;
+    height: 300px;
+    bottom: 0;
+    right: -70px; }
+  .intro .title {
+    font-size: 36px;
+    font-weight: 600;
+    color: #BFA871;
+    padding-top: 100px;
+    text-align: left; }
+  .intro .content {
+    font-size: 18px;
+    font-weight: 400;
+    color: #BFA871;
+    text-align: left; }
+
+.video {
+  background-color: #272727;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  padding: 100px 0; }

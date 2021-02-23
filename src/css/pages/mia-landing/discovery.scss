@@ -1,0 +1,41 @@
+.discovery {
+    background-color: $color-background;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    overflow: hidden;
+    padding: 100px 0;
+    img {
+        width: 70%;
+    }
+    .title {
+        font-size: 36px;
+        font-weight: 600;
+        color: #BFA871;
+        padding-top: 100px;
+    }
+    .content {
+        font-size: 18px;
+        font-weight: 400;
+        color: #BFA871;
+        ul {
+            li {
+                position: relative;
+                line-height: 32px;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    left: -30px;
+                    top: 13px;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    background-color: #BFA871;
+                }
+                padding-bottom: 15px;
+            }
+        }
+    }
+}

@@ -6,12 +6,12 @@
         position: relative;
         .fly {
             position: absolute;
-            width: 90px;
-            bottom: -200px;
+            width: 80px;
+            bottom: -100px;
             left: 50%;
             @media screen and(max-width: 1025px) {
-                width: 80px;
-                bottom: -160px;
+                width: 73px;
+                bottom: -67px;
             }
             @media screen and(max-width: 769px) {
                 width: 70px;

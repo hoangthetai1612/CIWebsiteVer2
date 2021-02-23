@@ -11,12 +11,14 @@
         width: 70%;
     }
     .title {
-        font-size: 36px;
+        font-size: 48px;
         font-weight: 600;
         color: #BFA871;
         padding-top: 100px;
+        font-family: $font-montserrat;
         @media screen and(max-width: 769px) {
             margin-bottom: 50px;
+            font-size: 36px;
         }
     }
     .content {

@@ -15,6 +15,12 @@
         left: 0;
         width: 600px;
         transform: translate(-30%, -30%);
+        @media screen and(max-width: 1025px) {
+            transform: translate(-40%, -40%);
+        }
+        @media screen and(max-width: 769px) {
+            transform: translate(-50%, -50%);
+        }
     }
     .heading {
         font-size: 80px;

@@ -5,8 +5,8 @@
     align-items: center;
     background-color: $color-background;
     border-top: 2px solid $color-border-top;
-    position: relative;
-   
+    overflow: hidden;
+    position: relative; 
     .main{
         width: 50%;
         overflow: hidden;

@@ -831,3 +831,79 @@ img {
       width: 25%;
       padding: 10px;
       margin-top: 40px; }
+
+.contact {
+  height: 100vh;
+  background-color: #272727;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .contact .contact-text h1 {
+    color: #bfa871;
+    font-size: 54px;
+    font-weight: 600;
+    margin-bottom: 50px; }
+  .contact .contact-text .contact-text-address,
+  .contact .contact-text .contact-text-email {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px; }
+    .contact .contact-text .contact-text-address h4,
+    .contact .contact-text .contact-text-email h4 {
+      font-size: 24px;
+      color: white;
+      font-weight: 600; }
+    .contact .contact-text .contact-text-address p,
+    .contact .contact-text .contact-text-email p {
+      font-size: 20px;
+      color: #666666; }
+  .contact .contact-social {
+    width: 100%;
+    border: none;
+    border-radius: 60px;
+    background-color: #282828;
+    color: #bfa871;
+    text-align: center;
+    box-shadow: 3px 1px 8px #000000, 0px -1px 6px #6f6d6d;
+    outline: none;
+    color: #bfa871;
+    font-size: 24px;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px; }
+    .contact .contact-social .contact-social-touch {
+      margin-left: 50px; }
+      .contact .contact-social .contact-social-touch p {
+        font-size: 24px;
+        font-weight: 600;
+        color: #bfa871; }
+      .contact .contact-social .contact-social-touch .contact-social-touch-item {
+        justify-content: space-between; }
+        .contact .contact-social .contact-social-touch .contact-social-touch-item img {
+          width: 32px;
+          height: 32px; }
+  .contact .contact-send {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px; }
+    .contact .contact-send img {
+      width: 191px;
+      height: 191px;
+      margin-bottom: 50px; }
+    .contact .contact-send a {
+      border: none;
+      border-radius: 60px;
+      background-color: #282828;
+      color: #bfa871;
+      text-align: center;
+      height: 55px;
+      box-shadow: 3px 1px 8px #000000, 0px -1px 6px #6f6d6d;
+      padding: 0 10px;
+      font-weight: 600;
+      outline: none;
+      line-height: 55px;
+      width: 110%; }

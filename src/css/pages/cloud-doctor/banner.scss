@@ -1,0 +1,37 @@
+.cloud-doctor-banner{
+    height: 100vh;
+    background-image: url('../images/cloud-doctor/banner.png');
+    margin-top: 10vh;
+    background-position: center;
+    background-size: cover;
+    // background-attachment:fixed;
+    .container-fluid{
+        height: 100%;
+        .row{
+            height: 100%;
+            .col{
+                height: 100%;
+                
+            }
+        }
+        .left-content{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            img{
+                width: 65%;
+            }
+            .title{
+                font-family: $font-openSans;
+                color: $color-white;
+                font-size: 54px;
+                font-weight: 600;
+                margin-top: 20px;
+                @media screen and (max-width: 1560px) {
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+}

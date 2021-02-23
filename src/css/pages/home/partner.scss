@@ -22,12 +22,18 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        @media screen and (max-width: 1560px){
+            bottom: -60px;
+        }
         .title{
             font-family: $font-montserrat;
             font-size: 54px;
             color: $color-text;
             font-weight: bold;
             margin-bottom: 20px;
+            @media screen and(max-width: 1560px){
+                font-size: 40px;
+            }
         }
     }
     .logo{
@@ -50,19 +56,32 @@
                 align-items: center;
                 img{
                     width: 180px;
+                    @media screen and(max-width: 1560px){
+                        width: 150px;
+                    }
                 }
             }
             .top-row{
                 padding-top: 100px;
+                @media screen and(max-width: 1560px){
+                    padding-top: 60px;
+                }
 
             }
             .bot-row{
                 padding-top: 100px;
                 padding-bottom: 100px;
+                @media screen and(max-width: 1560px){
+                    padding-top: 60px;
+                    padding-bottom: 60px;
+                }
                 .item{
                     .cuongthinh{
                         width: unset;
                         height: 180px;
+                        @media screen and(max-width: 1560px){
+                            height: 140px;
+                        }
                     }
                 }
             }

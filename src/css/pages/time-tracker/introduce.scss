@@ -1,0 +1,44 @@
+.time-tracker-introduce{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-background;
+    border-top: 2px solid $color-border-top;
+    overflow: hidden;
+    position: relative; 
+    .main{
+        width: 50%;
+        overflow: hidden;
+        .title{
+            p {
+                color: $color-white;
+                font-size: 36px;
+                font-family: $font-openSans;
+                font-weight: 600;
+            }
+        }
+        .content{
+            p {
+                color: $color-white;
+            }
+        }
+    }
+    .circle-1{
+        position: absolute;
+        top: 15%;
+        right: -5%;
+        @media screen and (max-width: 1560px) {
+            right: -12%;
+            img{
+                width: 75%;
+            }
+        }
+
+    }
+    .circle-2{
+        position: absolute;
+        bottom: 12%;
+        left: -50px;
+    }
+}

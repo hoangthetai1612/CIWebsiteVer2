@@ -1,0 +1,17 @@
+.banner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: $color-background;
+    width: 100%;
+    overflow: hidden;
+    @media screen and(max-width: 1025px) {
+        height: 80vh;
+    }
+    @media screen and(max-width: 769px) {
+        height: 70vh;
+    }
+}

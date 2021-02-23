@@ -1,0 +1,161 @@
+.cloud-doctor-introduce{
+    background-image: url('../images/cloud-doctor/introduce-bg.png');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .main{
+        width: 50%;
+        .title{
+            p {
+                color: $color-white;
+                font-size: 36px;
+                font-family: $font-openSans;
+                font-weight: 600;
+            }
+        }
+        .content{
+            p {
+                color: $color-white;
+            }
+        }
+    }
+}
+.cloud-doctor-video{
+    height: 100vh;
+    background-color: $color-background;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid $color-border-top;
+    .video{
+        width: 45%;
+    }
+}
+.cloud-doctor-result{
+    height: 100vh;
+    background-color: $color-background;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid $color-border-top;
+    .main{
+        width: 75%;
+        .circle{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 60px;
+            .dot{
+                width: 75px;
+                height: 75px;
+                background-color: $color-light-blue;
+                border-radius: 100%;
+            }
+        }
+        .title{
+            font-family: $font-poppins;
+            font-size: 60px;
+            text-transform: uppercase;
+            color: $color-white;
+            font-weight: 700;
+            margin-bottom: 20px;
+            @media screen and (max-width: 1560px) {
+                font-size: 45px;
+            }
+        }
+        .content{
+            color: $color-light-blue;
+        }
+    }
+}
+.cloud-doctor-viewmore{
+    height: 100vh;
+    background-color: $color-background;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid $color-border-top;
+    position: relative;
+    overflow: hidden;
+    img{
+        width: unset;
+    }
+    a{
+        cursor: pointer;
+    }
+    .icon-bg-top{
+        position: absolute;
+        left: -60px;
+        top: 0;
+        @media screen and (max-width: 1560px) {
+            img{
+                width: 75%;
+            }
+        }
+    }
+    .icon-bg-bottom{
+        position: absolute;
+        bottom: 10%;
+        right: -10%;
+        @media screen and (max-width: 1560px) {
+            right: -12%;
+            bottom: 8%;
+            img{
+                width: 75%;
+            }
+        }
+    }
+    
+    .main{
+        width: 90%;
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        .back-button{
+            color: $color-text;
+            display: flex;
+            align-self: center;
+            img{
+                margin-right: 35px;
+                
+            }
+        }
+        .next-button{
+            color: $color-text;
+            display: flex;
+            align-self: center;
+            img{
+                margin-left: 35px;
+               
+            }
+            
+        }
+        .content{
+            .title{
+                font-size: 60px;
+                font-family: $font-poppins;
+                font-weight: 700;
+                color: $color-light-blue;
+                @media(max-width: 1919px){
+                    font-size: 50px;
+                }
+            }
+            .link{
+                text-align: center;
+                margin-top: 40px;
+                a{
+                    padding: 15px 30px;
+                    background: $color-light-blue;
+                    border-radius: 35px;
+                    font-size: 24px;
+                    font-family: $font-montserrat;
+                    font-weight: 500;
+                    color: #272727;
+                }
+            }
+        }
+    }
+}

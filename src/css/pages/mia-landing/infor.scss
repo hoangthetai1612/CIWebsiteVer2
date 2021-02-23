@@ -8,12 +8,21 @@
     overflow: hidden;
     .top {
         padding: 200px 0;
+        @media screen and(max-width: 769px) {
+            padding: 100px 0;
+        }
         .title {
             font-size: 36px;
             font-weight: 600;
             color: #BFA871;
             padding-top: 100px;
             width: 55%;
+            @media screen and(max-width: 769px) {
+                margin-bottom: 50px;
+            }
+            @media screen and(max-width: 1025px) {
+                width: 75%;
+            }
         }
         .content {
             font-size: 18px;
@@ -31,16 +40,28 @@
     .center {
         img {
             width: 100%;
+            @media screen and(max-width: 769px) {
+                width: 80%;
+            }
         }
     }
     .bottom {
         padding: 200px 0;
+        @media screen and(max-width: 769px) {
+            padding: 100px 0;
+        }
         .title {
             font-size: 36px;
             font-weight: 600;
             color: #BFA871;
             padding-top: 100px;
             width: 55%;
+            @media screen and(max-width: 1025px) {
+                width: 75%;
+            }
+            @media screen and(max-width: 769px) {
+                margin-bottom: 50px;
+            }
         }
         .content {
             font-size: 18px;

@@ -355,7 +355,10 @@ img {
         height: 39px;
         box-shadow: 3px 1px 8px #000000, 0px -1px 6px #6F6D6D;
         padding: 0 10px;
-        font-weight: 600; }
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
         .products .section-product_mia .content .left a:focus {
           outline: none; }
         .products .section-product_mia .content .left a:active {
@@ -698,6 +701,12 @@ img {
     left: 0;
     width: 600px;
     transform: translate(-30%, -30%); }
+    @media screen and (max-width: 1025px) {
+      .banner-section .circle {
+        transform: translate(-40%, -40%); } }
+    @media screen and (max-width: 769px) {
+      .banner-section .circle {
+        transform: translate(-50%, -50%); } }
   .banner-section .heading {
     font-size: 80px;
     font-weight: 800;
@@ -721,8 +730,20 @@ img {
       width: 90px;
       bottom: -200px;
       left: 50%; }
+      @media screen and (max-width: 1025px) {
+        .section-timeline .chicago .fly {
+          width: 80px;
+          bottom: -160px; } }
+      @media screen and (max-width: 769px) {
+        .section-timeline .chicago .fly {
+          width: 70px;
+          bottom: -21px;
+          transform: translateX(-50%); } }
     .section-timeline .chicago .left img {
       width: 100%; }
+      @media screen and (max-width: 769px) {
+        .section-timeline .chicago .left img {
+          margin-bottom: 50px; } }
     .section-timeline .chicago .right {
       display: flex;
       justify-content: center;
@@ -741,6 +762,9 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: flex-end; }
+    @media screen and (max-width: 769px) {
+      .section-timeline .vietnam .left {
+        align-items: flex-start; } }
     .section-timeline .vietnam .left .title {
       font-size: 36px;
       font-weight: 600;
@@ -750,12 +774,21 @@ img {
       font-weight: 400;
       color: #BFA871;
       text-align: right; }
+      @media screen and (max-width: 769px) {
+        .section-timeline .vietnam .left .content {
+          text-align: left; } }
   .section-timeline .vietnam .right {
     display: flex;
     align-items: center;
     justify-content: flex-end; }
+    @media screen and (max-width: 769px) {
+      .section-timeline .vietnam .right {
+        justify-content: center; } }
     .section-timeline .vietnam .right img {
       width: 70%; }
+      @media screen and (max-width: 769px) {
+        .section-timeline .vietnam .right img {
+          margin-top: 50px; } }
 
 .result {
   height: 100vh;
@@ -776,6 +809,9 @@ img {
     font-weight: 400;
     color: #BFA871;
     width: 55%; }
+    @media screen and (max-width: 1025px) {
+      .result .content {
+        width: 70%; } }
   .result .cricle {
     width: 50px;
     height: 50px;
@@ -790,6 +826,17 @@ img {
     right: 0;
     top: 100px;
     transform: translateX(20%); }
+    @media screen and (max-width: 1441px) {
+      .result .circle-big {
+        transform: translateX(33%); } }
+    @media screen and (max-width: 1025px) {
+      .result .circle-big {
+        transform: translateX(40%);
+        width: 70vh; } }
+    @media screen and (max-width: 769px) {
+      .result .circle-big {
+        width: 50vh;
+        top: 200px; } }
 
 .section-email {
   border-top: 2px solid #3a3a3a;
@@ -824,7 +871,24 @@ img {
         box-shadow: 5px 5px rgba(0, 0, 0, 0.16); }
 
 .banner {
-  height: 100vh; }
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #272727;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden; }
+  .banner img {
+    height: 100%; }
+  @media screen and (max-width: 1025px) {
+    .banner {
+      height: 80vh; } }
+  @media screen and (max-width: 769px) {
+    .banner {
+      height: 70vh; } }
 
 .discovery {
   background-color: #272727;
@@ -842,6 +906,9 @@ img {
     font-weight: 600;
     color: #BFA871;
     padding-top: 100px; }
+    @media screen and (max-width: 769px) {
+      .discovery .title {
+        margin-bottom: 50px; } }
   .discovery .content {
     font-size: 18px;
     font-weight: 400;
@@ -909,12 +976,21 @@ img {
   overflow: hidden; }
   .infor .top {
     padding: 200px 0; }
+    @media screen and (max-width: 769px) {
+      .infor .top {
+        padding: 100px 0; } }
     .infor .top .title {
       font-size: 36px;
       font-weight: 600;
       color: #BFA871;
       padding-top: 100px;
       width: 55%; }
+      @media screen and (max-width: 769px) {
+        .infor .top .title {
+          margin-bottom: 50px; } }
+      @media screen and (max-width: 1025px) {
+        .infor .top .title {
+          width: 75%; } }
     .infor .top .content {
       font-size: 18px;
       font-weight: 400;
@@ -925,14 +1001,26 @@ img {
         padding-bottom: 15px; }
   .infor .center img {
     width: 100%; }
+    @media screen and (max-width: 769px) {
+      .infor .center img {
+        width: 80%; } }
   .infor .bottom {
     padding: 200px 0; }
+    @media screen and (max-width: 769px) {
+      .infor .bottom {
+        padding: 100px 0; } }
     .infor .bottom .title {
       font-size: 36px;
       font-weight: 600;
       color: #BFA871;
       padding-top: 100px;
       width: 55%; }
+      @media screen and (max-width: 1025px) {
+        .infor .bottom .title {
+          width: 75%; } }
+      @media screen and (max-width: 769px) {
+        .infor .bottom .title {
+          margin-bottom: 50px; } }
     .infor .bottom .content {
       font-size: 18px;
       font-weight: 400;
@@ -959,6 +1047,10 @@ img {
     height: 500px;
     top: 0;
     left: -150px; }
+    @media screen and (max-width: 1025px) {
+      .intro .grape {
+        width: 400px;
+        height: 450px; } }
   .intro .banana {
     position: absolute;
     width: 350px;

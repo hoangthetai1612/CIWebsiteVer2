@@ -18,6 +18,12 @@
         font-weight: 400;
         color: #BFA871;
         width: 55%;
+        @media screen and(max-width: 1025px) {
+            width: 70%;
+        }
+        // @media screen and(max-width: 769px) {
+        //     width: 100%;
+        // }
     }
     .cricle {
         width: 50px;
@@ -34,5 +40,16 @@
         right: 0;
         top: 100px;
         transform: translateX(20%);
+        @media screen and (max-width: 1441px) {
+            transform: translateX(33%);
+        }
+        @media screen and(max-width: 1025px) {
+            transform: translateX(40%);
+            width: 70vh;
+        }
+        @media screen and(max-width: 769px) {
+            width: 50vh;
+            top: 200px;
+        }
     }
 }

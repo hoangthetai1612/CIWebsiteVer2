@@ -34,6 +34,8 @@
         p {
             color: $color-heading;
             margin-top: 64px;
+            font-size: 18px;
+            font-family: "Helvetica";
         }
         a {
             border: none;
@@ -68,14 +70,16 @@
         h3 {
             font-size: 36px;
             font-weight: 600;
-            color: #bfa871;
+            color: $color-heading;
             font-family: "Montserrat", sans-serif;
         }
         p {
             font-size: 24px;
             font-weight: 500;
-            color: #bfa871;
-            font-family: "Montserrat", sans-serif;
+            color: $color-heading;
+            font-family: "Helvetica";
+            text-align: justify;
+            font-size: 18px;
         }
         button {
             border: none;

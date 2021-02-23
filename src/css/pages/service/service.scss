@@ -12,15 +12,31 @@
         @media screen and (max-width: 768px) {
             margin-left: 130px;
         }
-        img {
-            width: 530px;
-            height: 100px;
-            margin-left: -43px;
+        h1 {
+            font-family: Montserrat;
+            font-weight: 700;
+            font-size: 80px;
+            color: $color-heading;
+            white-space: nowrap;
+            @media screen and (min-width: 1440px) and (max-width: 1600px) {
+                font-size: 73px;
+            }
+            @media screen and (min-width: 1366px) and (max-width: 1439px) {
+                font-size: 70px;
+            }
+            @media screen and (min-width: 1024px) and (max-width: 1365px) {
+                font-size: 50px;
+            }
+            @media screen and (max-width: 768px) {
+                font-size: 30px;
+            }
         }
         p {
             color: $color-heading;
             margin-top: 64px;
-            margin-left: -44px;
+            font-family: "Helvetica";
+            text-align: justify;
+            font-size: 18px;
         }
     }
 }
@@ -84,6 +100,9 @@
         p {
             color: $color-heading;
             margin-top: 36px;
+            font-family: "Helvetica";
+            text-align: justify;
+            font-size: 18px;
         }
         .enterpriseapp-button {
             width: 100%;

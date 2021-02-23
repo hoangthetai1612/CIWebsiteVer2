@@ -592,14 +592,30 @@ img {
     @media screen and (max-width: 768px) {
       .ourservice .ourservice-item {
         margin-left: 130px; } }
-    .ourservice .ourservice-item img {
-      width: 530px;
-      height: 100px;
-      margin-left: -43px; }
+    .ourservice .ourservice-item h1 {
+      font-family: Montserrat;
+      font-weight: 700;
+      font-size: 80px;
+      color: #bfa871;
+      white-space: nowrap; }
+      @media screen and (min-width: 1440px) and (max-width: 1600px) {
+        .ourservice .ourservice-item h1 {
+          font-size: 73px; } }
+      @media screen and (min-width: 1366px) and (max-width: 1439px) {
+        .ourservice .ourservice-item h1 {
+          font-size: 70px; } }
+      @media screen and (min-width: 1024px) and (max-width: 1365px) {
+        .ourservice .ourservice-item h1 {
+          font-size: 50px; } }
+      @media screen and (max-width: 768px) {
+        .ourservice .ourservice-item h1 {
+          font-size: 30px; } }
     .ourservice .ourservice-item p {
       color: #bfa871;
       margin-top: 64px;
-      margin-left: -44px; }
+      font-family: "Helvetica";
+      text-align: justify;
+      font-size: 18px; }
 
 .enterpriseapp {
   height: 100vh;
@@ -655,7 +671,10 @@ img {
         font-size: 30px; } }
   .enterpriseapp .enterpriseapp-text p {
     color: #bfa871;
-    margin-top: 36px; }
+    margin-top: 36px;
+    font-family: "Helvetica";
+    text-align: justify;
+    font-size: 18px; }
   .enterpriseapp .enterpriseapp-text .enterpriseapp-button {
     width: 100%;
     display: flex;
@@ -715,7 +734,9 @@ img {
           font-size: 30px; } }
     .enterpriseapp .enterpriseapp-item p {
       color: #bfa871;
-      margin-top: 64px; }
+      margin-top: 64px;
+      font-size: 18px;
+      font-family: "Helvetica"; }
     .enterpriseapp .enterpriseapp-item a {
       border: none;
       border-radius: 60px;
@@ -753,7 +774,9 @@ img {
       font-size: 24px;
       font-weight: 500;
       color: #bfa871;
-      font-family: "Montserrat", sans-serif; }
+      font-family: "Helvetica";
+      text-align: justify;
+      font-size: 18px; }
     .product .product-text button {
       border: none;
       border-radius: 60px;

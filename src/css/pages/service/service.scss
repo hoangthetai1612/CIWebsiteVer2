@@ -104,15 +104,15 @@
             }
         }
     }
-}
-@media screen and (width: 768px) {
-    .row {
-        flex-direction: column;
-    }
-    .enter-respon {
-        margin-left: 337px;
-        position: absolute;
-        top: 45px;
-        width: 100%;
+    @media screen and (width: 768px) {
+        .row {
+            flex-direction: column;
+        }
+        .enter-respon {
+            margin-left: 337px;
+            position: absolute;
+            top: 45px;
+            width: 100%;
+        }
     }
 }

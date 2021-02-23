@@ -781,6 +781,9 @@ img {
       height: 786px;
       position: absolute;
       z-index: -1; }
+      @media screen and (min-width: 1024px) and (max-width: 1200px) {
+        .product .product-img .product-erp {
+          width: 515px; } }
 
 .enterpriseapp-send {
   height: 100vh;

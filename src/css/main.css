@@ -47,7 +47,8 @@ img {
   width: 100%;
   left: 0;
   top: 0;
-  z-index: 999; }
+  z-index: 999;
+  box-shadow: 1px 0 15px 2px #bfa871; }
   .header .container-fluid {
     display: flex;
     justify-content: space-between;
@@ -262,7 +263,8 @@ img {
   width: 100%;
   left: 0;
   top: 0;
-  z-index: 999; }
+  z-index: 999;
+  box-shadow: 1px 0 15px 2px #bfa871; }
   .header .container-fluid {
     display: flex;
     justify-content: space-between;
@@ -1142,7 +1144,16 @@ img {
   background-image: url("../images/cloud-doctor/banner.png");
   margin-top: 10vh;
   background-position: center;
-  background-size: cover; }
+  background-size: cover;
+  position: relative; }
+  @media screen and (max-width: 991px) {
+    .cloud-doctor-banner .bg-cover {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.6); } }
   .cloud-doctor-banner .container-fluid {
     height: 100%; }
     .cloud-doctor-banner .container-fluid .row {
@@ -1153,9 +1164,19 @@ img {
       height: 100%;
       display: flex;
       flex-direction: column;
-      justify-content: center; }
+      justify-content: center;
+      align-items: center; }
+      @media screen and (max-width: 991px) {
+        .cloud-doctor-banner .container-fluid .left-content img {
+          order: 2; }
+        .cloud-doctor-banner .container-fluid .left-content .title {
+          order: 1; } }
       .cloud-doctor-banner .container-fluid .left-content img {
         width: 65%; }
+        @media screen and (max-width: 576px) {
+          .cloud-doctor-banner .container-fluid .left-content img {
+            width: 80%;
+            margin-top: 30px; } }
       .cloud-doctor-banner .container-fluid .left-content .title {
         font-family: "Open Sans", sans-serif;
         color: #FFFFFF;
@@ -1165,6 +1186,9 @@ img {
         @media screen and (max-width: 1560px) {
           .cloud-doctor-banner .container-fluid .left-content .title {
             font-size: 40px; } }
+        @media screen and (max-width: 576px) {
+          .cloud-doctor-banner .container-fluid .left-content .title {
+            text-align: center; } }
 
 .cloud-doctor-introduce {
   background-image: url("../images/cloud-doctor/introduce-bg.png");
@@ -1188,11 +1212,14 @@ img {
       font-size: 36px;
       font-family: "Open Sans", sans-serif;
       font-weight: 600; }
+      @media screen and (max-width: 576px) {
+        .cloud-doctor-introduce .main .title p {
+          font-size: 30px;
+          margin-bottom: 30px; } }
     .cloud-doctor-introduce .main .content p {
       color: #FFFFFF; }
 
 .cloud-doctor-video {
-  height: 100vh;
   background-color: #272727;
   display: flex;
   justify-content: center;
@@ -1211,6 +1238,10 @@ img {
   justify-content: center;
   align-items: center;
   border-top: 2px solid #3a3a3a; }
+  @media screen and (max-width: 576px) {
+    .cloud-doctor-result {
+      height: unset;
+      padding: 2rem 0; } }
   .cloud-doctor-result .main {
     width: 75%; }
     .cloud-doctor-result .main .circle {
@@ -1223,6 +1254,11 @@ img {
         height: 75px;
         background-color: #7D8B94;
         border-radius: 100%; }
+        @media screen and (max-width: 576px) {
+          .cloud-doctor-result .main .circle .dot {
+            width: 45px;
+            height: 45px;
+            margin-bottom: -30px; } }
     .cloud-doctor-result .main .title {
       font-family: "Poppins", sans-serif;
       font-size: 60px;
@@ -1233,9 +1269,12 @@ img {
       @media screen and (max-width: 1560px) {
         .cloud-doctor-result .main .title {
           font-size: 45px; } }
-      @media screen and (max-width: 1560px) {
+      @media screen and (max-width: 991px) {
         .cloud-doctor-result .main .title {
           text-align: center; } }
+      @media screen and (max-width: 576px) {
+        .cloud-doctor-result .main .title {
+          font-size: 30px; } }
     .cloud-doctor-result .main .content {
       color: #7D8B94; }
 
@@ -1259,6 +1298,14 @@ img {
     @media screen and (max-width: 1560px) {
       .cloud-doctor-viewmore .icon-bg-top img {
         width: 75%; } }
+    @media screen and (max-width: 991px) {
+      .cloud-doctor-viewmore .icon-bg-top img {
+        width: 65%; } }
+    @media screen and (max-width: 576px) {
+      .cloud-doctor-viewmore .icon-bg-top {
+        left: -45px; }
+        .cloud-doctor-viewmore .icon-bg-top img {
+          width: 50%; } }
   .cloud-doctor-viewmore .icon-bg-bottom {
     position: absolute;
     bottom: 10%;
@@ -1271,8 +1318,16 @@ img {
           width: 75%; } }
     @media screen and (max-width: 991px) {
       .cloud-doctor-viewmore .icon-bg-bottom {
-        right: -25%;
-        bottom: 8%; } }
+        right: -30%;
+        bottom: 17%; }
+        .cloud-doctor-viewmore .icon-bg-bottom img {
+          width: 65%; } }
+    @media screen and (max-width: 576px) {
+      .cloud-doctor-viewmore .icon-bg-bottom {
+        right: -60%;
+        bottom: 2%; }
+        .cloud-doctor-viewmore .icon-bg-bottom img {
+          width: 50%; } }
   .cloud-doctor-viewmore .main {
     width: 90%;
     display: flex;
@@ -1298,6 +1353,10 @@ img {
       @media (max-width: 1919px) {
         .cloud-doctor-viewmore .main .content .title {
           font-size: 50px; } }
+      @media (max-width: 576px) {
+        .cloud-doctor-viewmore .main .content .title {
+          font-size: 30px;
+          text-align: center; } }
     .cloud-doctor-viewmore .main .content .link {
       text-align: center;
       margin-top: 40px; }
@@ -1309,6 +1368,10 @@ img {
         font-family: "Montserrat", sans-serif;
         font-weight: 500;
         color: #272727; }
+        @media (max-width: 576px) {
+          .cloud-doctor-viewmore .main .content .link a {
+            font-size: 18px;
+            padding: 10px 20px; } }
 
 .time-tracker-banner {
   height: 100vh;

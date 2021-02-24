@@ -642,6 +642,10 @@ img {
     @media screen and (max-width: 768px) {
       .ourservice .ourservice-item {
         margin-left: 130px; } }
+    @media screen and (min-width: 375px) and (max-width: 430px) {
+      .ourservice .ourservice-item {
+        margin-left: 0;
+        width: 90%; } }
     .ourservice .ourservice-item h1 {
       font-family: Montserrat;
       font-weight: 700;
@@ -686,6 +690,13 @@ img {
         width: 330px;
         height: 330px;
         margin-left: 320px; } }
+    @media screen and (min-width: 375px) and (max-width: 430px) {
+      .enterpriseapp .enter-img {
+        width: 220px;
+        height: 220px;
+        margin-top: 50px;
+        margin-left: 50px;
+        margin-bottom: 45px; } }
   .enterpriseapp .enter-img1 {
     margin-left: 200px;
     width: 405px;
@@ -701,6 +712,12 @@ img {
         height: 330px;
         margin-top: 380px;
         margin-left: 0; } }
+    @media screen and (min-width: 375px) and (max-width: 430px) {
+      .enterpriseapp .enter-img1 {
+        width: 220px;
+        height: 220px;
+        margin-top: 50px;
+        margin-left: 50px; } }
   .enterpriseapp .enterpriseapp-text h1 {
     font-family: Montserrat;
     font-weight: 700;
@@ -763,7 +780,11 @@ img {
     flex-direction: column; }
     @media screen and (max-width: 768px) {
       .enterpriseapp .enterpriseapp-item {
-        margin-left: 130px; } }
+        margin-left: 190px; } }
+    @media screen and (min-width: 375px) and (max-width: 430px) {
+      .enterpriseapp .enterpriseapp-item {
+        margin-left: 0;
+        width: 90%; } }
     .enterpriseapp .enterpriseapp-item h1 {
       font-family: Montserrat;
       font-weight: 700;
@@ -802,7 +823,6 @@ img {
       padding: 10px; }
 
 .product {
-  border-top: 2px solid #3a3a3a;
   height: 100vh;
   background-color: #272727;
   display: flex;
@@ -811,11 +831,17 @@ img {
   @media screen and (max-width: 991px) {
     .product {
       height: 120vh; } }
+  @media screen and (min-width: 375px) and (max-width: 430px) {
+    .product .product-text-respon {
+      justify-content: flex-end !important; } }
   .product .product-text {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center; }
+    @media screen and (min-width: 375px) and (max-width: 430px) {
+      .product .product-text {
+        margin-top: 100px; } }
     .product .product-text h3 {
       font-size: 36px;
       font-weight: 600;
@@ -839,16 +865,43 @@ img {
       padding: 0 10px;
       font-weight: 600;
       outline: none; }
+  @media screen and (min-width: 375px) and (max-width: 430px) {
+    .product .product-img-respon {
+      width: 375px !important;
+      height: 475px !important;
+      display: flex;
+      justify-content: center; } }
   .product .product-img {
     width: 375px;
     height: 786px;
     position: relative;
     transform-style: preserve-3d; }
+    @media screen and (min-width: 375px) and (max-width: 430px) {
+      .product .product-img {
+        width: 375px;
+        height: 400px; } }
     .product .product-img .product-mia {
       width: 375px;
       height: 786px;
       position: absolute;
       z-index: -1; }
+      @media screen and (min-width: 375px) and (max-width: 430px) {
+        .product .product-img .product-mia {
+          width: 375px;
+          height: 415px;
+          margin-top: 100px; } }
+      @media screen and (max-width: 768px) {
+        .product .product-img .product-mia {
+          width: 209px;
+          height: 786px; } }
+    @media screen and (min-width: 375px) and (max-width: 430px) {
+      .product .product-img .product-mia-respon {
+        width: 220px;
+        height: 412px;
+        margin-top: 100px; } }
+    @media screen and (max-width: 768px) {
+      .product .product-img .product-mia-respon {
+        height: 470px; } }
     .product .product-img .product-erp {
       width: 675px;
       height: 786px;
@@ -857,6 +910,15 @@ img {
       @media screen and (min-width: 1024px) and (max-width: 1200px) {
         .product .product-img .product-erp {
           width: 515px; } }
+      @media screen and (min-width: 375px) and (max-width: 430px) {
+        .product .product-img .product-erp {
+          width: 100%;
+          height: 415px;
+          margin-top: 100px; } }
+      @media screen and (max-width: 768px) {
+        .product .product-img .product-erp {
+          width: 425px;
+          height: 786px; } }
 
 .enterpriseapp-send {
   height: 100vh;
@@ -870,9 +932,9 @@ img {
     justify-content: center;
     align-items: center;
     flex-direction: column; }
-    @media screen and (max-width: 768px) {
+    @media screen and (min-width: 375px) and (max-width: 430px) {
       .enterpriseapp-send .enterpriseapp-send-item {
-        margin-left: 130px; } }
+        margin-left: 0; } }
     .enterpriseapp-send .enterpriseapp-send-item h1 {
       font-family: Montserrat;
       font-weight: 700;
@@ -904,6 +966,12 @@ img {
       padding: 10px;
       margin-top: 40px;
       cursor: pointer; }
+      @media screen and (min-width: 768px) and (max-width: 900px) {
+        .enterpriseapp-send .enterpriseapp-send-item a {
+          width: 40%; } }
+      @media screen and (min-width: 375px) and (max-width: 430px) {
+        .enterpriseapp-send .enterpriseapp-send-item a {
+          width: 60%; } }
     .enterpriseapp-send .enterpriseapp-send-item a:not([href]):not([tabindex]):hover {
       color: #bfa871;
       text-decoration: none; }

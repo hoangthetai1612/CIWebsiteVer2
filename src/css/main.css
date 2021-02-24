@@ -71,7 +71,7 @@ img {
             height: 6px;
             border-radius: 100%;
             background-color: #bfa871;
-            content: '';
+            content: "";
             top: 100%;
             margin-top: 4px;
             left: 9px; }
@@ -129,7 +129,7 @@ img {
           pointer-events: none;
           user-select: none;
           color: #bfa871;
-          transition: all .2s ease;
+          transition: all 0.2s ease;
           font-weight: 500;
           font-weight: bold; }
       .header .container-fluid .header__language #container .right {
@@ -149,7 +149,7 @@ img {
           pointer-events: none;
           user-select: none;
           color: #bfa871;
-          transition: all .2s ease;
+          transition: all 0.2s ease;
           font-weight: bold; }
     .header .container-fluid .header__menu-icon {
       display: none;
@@ -171,7 +171,7 @@ img {
         width: 250px;
         height: 100vh;
         transition: 0.5s;
-        background-color: black;
+        background-color: #272727;
         z-index: 99;
         box-shadow: 1px 0 15px 2px #bfa871; }
         .header .container-fluid .header__menu-list {
@@ -286,7 +286,7 @@ img {
             height: 6px;
             border-radius: 100%;
             background-color: #bfa871;
-            content: '';
+            content: "";
             top: 100%;
             margin-top: 4px;
             left: 9px; }
@@ -344,7 +344,7 @@ img {
           pointer-events: none;
           user-select: none;
           color: #bfa871;
-          transition: all .2s ease;
+          transition: all 0.2s ease;
           font-weight: 500;
           font-weight: bold; }
       .header .container-fluid .header__language #container .right {
@@ -364,7 +364,7 @@ img {
           pointer-events: none;
           user-select: none;
           color: #bfa871;
-          transition: all .2s ease;
+          transition: all 0.2s ease;
           font-weight: bold; }
     .header .container-fluid .header__menu-icon {
       display: none;
@@ -386,7 +386,7 @@ img {
         width: 250px;
         height: 100vh;
         transition: 0.5s;
-        background-color: black;
+        background-color: #272727;
         z-index: 99;
         box-shadow: 1px 0 15px 2px #bfa871; }
         .header .container-fluid .header__menu-list {
@@ -801,7 +801,7 @@ img {
     @media screen and (width: 375px) {
       .products .section-product_hopital .view-all {
         right: 162px;
-        bottom: 253px; } }
+        bottom: 229px; } }
     @media screen and (width: 425px) {
       .products .section-product_hopital .view-all {
         right: 182px;
@@ -1095,8 +1095,8 @@ img {
           width: 515px; } }
       @media screen and (min-width: 375px) and (max-width: 430px) {
         .product .product-img .product-erp {
-          width: 100%;
-          height: 415px;
+          width: 100% !important;
+          height: 415px !important;
           margin-top: 100px; } }
       @media screen and (max-width: 768px) {
         .product .product-img .product-erp {
@@ -1950,6 +1950,9 @@ img {
   display: flex;
   justify-content: center;
   align-items: center; }
+  @media screen and (min-width: 375px) and (max-width: 430px) {
+    .contact {
+      height: 140vh; } }
   .contact .contact-text h1 {
     color: #bfa871;
     font-size: 54px;
@@ -1987,6 +1990,9 @@ img {
     padding: 20px; }
     .contact .contact-social .contact-social-touch {
       margin-left: 50px; }
+      @media screen and (min-width: 375px) and (max-width: 430px) {
+        .contact .contact-social .contact-social-touch {
+          margin-left: 0; } }
       .contact .contact-social .contact-social-touch p {
         font-size: 24px;
         font-weight: 600;
@@ -1996,12 +2002,23 @@ img {
         .contact .contact-social .contact-social-touch .contact-social-touch-item img {
           width: 32px;
           height: 32px; }
+          @media screen and (min-width: 375px) and (max-width: 430px) {
+            .contact .contact-social .contact-social-touch .contact-social-touch-item img {
+              width: 25px;
+              height: 25px; } }
+    @media screen and (min-width: 375px) and (max-width: 430px) {
+      .contact .contact-social .contact-social-map img {
+        width: 150px; } }
   .contact .contact-send {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-left: 100px; }
+    @media screen and (min-width: 375px) and (max-width: 430px) {
+      .contact .contact-send {
+        margin-left: 0;
+        margin-top: 25px; } }
     .contact .contact-send img {
       width: 191px;
       height: 191px;

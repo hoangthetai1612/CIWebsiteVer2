@@ -4,6 +4,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @media screen and (min-width: 375px) and (max-width: 430px) {
+        height: 140vh;
+    }
+
     .contact-text {
         h1 {
             color: $color-heading;
@@ -45,6 +49,9 @@
         padding: 20px;
         .contact-social-touch {
             margin-left: 50px;
+            @media screen and (min-width: 375px) and (max-width: 430px) {
+                margin-left: 0;
+            }
             p {
                 font-size: 24px;
                 font-weight: 600;
@@ -55,10 +62,19 @@
                 img {
                     width: 32px;
                     height: 32px;
+                    @media screen and (min-width: 375px) and (max-width: 430px) {
+                        width: 25px;
+                        height: 25px;
+                    }
                 }
             }
         }
         .contact-social-map {
+            img {
+                @media screen and (min-width: 375px) and (max-width: 430px) {
+                    width: 150px;
+                }
+            }
         }
     }
     .contact-send {
@@ -67,6 +83,10 @@
         justify-content: center;
         align-items: center;
         margin-left: 100px;
+        @media screen and (min-width: 375px) and (max-width: 430px) {
+            margin-left: 0;
+            margin-top: 25px;
+        }
         img {
             width: 191px;
             height: 191px;

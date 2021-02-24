@@ -192,6 +192,25 @@ function tiltcustom() {
 }
 tiltcustom();
 
+function toogleMenu() {
+  let menuButton = document.querySelector(".header__menu-icon ");
+  let menu = document.querySelector(".header__menu");
+  let closeBtn = document.querySelector(".close-menu");
+  let body = document.getElementsByTagName("body")[0];
+  let bodyOverlay = document.querySelector(".body-overlay");
+
+  menuButton.addEventListener("click", () => {
+      menu.classList.toggle('set-width')
+      body.style.backgroundColor = "rgba(0, 0, 0, 0.4)";
+      menuButton.classList.toggle('toggle')
+      // bodyOverlay.style.display = "block";
+  });
+  // closeBtn.addEventListener("click", () => {
+  //     menu.classList.remove('set-width')
+  //     bodyOverlay.style.display = "none";
+  // });
+}
+toogleMenu();
 
 
 

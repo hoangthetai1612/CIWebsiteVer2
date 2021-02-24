@@ -1,17 +1,21 @@
 .home-about{
-    height: 100vh;
     display: flex;
     align-items: center;
     background-color: $color-background;
     border-top: 2px solid $color-border-top;
+    padding: 10% 0;
     .title{
         color: $color-text;
         font-family: $font-montserrat;
         font-size: 48px;
         margin-bottom: 2rem;
         font-weight: bold;
+        @media screen and(max-width: 576px) {
+            font-size: 30px;
+        }
     }
     .item{
+        margin-top: 2rem;
         p{
             color: $color-text;
             font-family: $font-montserrat;

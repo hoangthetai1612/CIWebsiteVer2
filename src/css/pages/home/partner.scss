@@ -25,14 +25,27 @@
         @media screen and (max-width: 1560px){
             bottom: -60px;
         }
+        @media screen and (max-width: 991px){
+            top: 50%;
+            transform: translate(-50%,-50%);
+        }
+        @media screen and (max-width: 576px){
+            top: 3rem;
+            transform: translateX(-50%);
+        }
         .title{
             font-family: $font-montserrat;
             font-size: 54px;
             color: $color-text;
             font-weight: bold;
             margin-bottom: 20px;
+            padding: 0 20px;
+            text-align: center;
             @media screen and(max-width: 1560px){
                 font-size: 40px;
+            }
+            @media screen and(max-width: 576px){
+                font-size: 25px;
             }
         }
     }
@@ -46,8 +59,47 @@
                  0px  5px  15px  0px  rgba(000,000,000,0.3), /* bottom */
                  5px  0px  15px  0px  rgba(000,000,000,0.3), /* right */
                 -5px  -3px 18px -6px  #707070; /* left */
+                @media screen and(max-width: 576px){
+                    width: 90%;
+                }
                 
         .container-fluid{
+            @media screen and(max-width: 576px){
+                padding: 50px 20px;
+            }
+            .top-row{
+                padding-top: 100px;
+                @media screen and(max-width: 1560px){
+                    padding-top: 60px;
+                }
+                @media screen and(max-width: 576px){
+                    padding-top: 0;
+                }
+
+            }
+            .bot-row{
+                padding-top: 100px;
+                padding-bottom: 100px;
+                @media screen and(max-width: 1560px){
+                    padding-top: 60px;
+                    padding-bottom: 60px;
+                }
+                @media screen and(max-width: 576px){
+                    padding: 0;
+                }
+                .item{
+                    .cuongthinh{
+                        width: unset;
+                        height: 180px;
+                        @media screen and(max-width: 1560px){
+                            height: 140px;
+                        }
+                        @media screen and(max-width: 991px){
+                            height: 120px;
+                        }
+                    }
+                }
+            }
             .item{
                 width: 100%;
                 height: 100%;
@@ -59,32 +111,18 @@
                     @media screen and(max-width: 1560px){
                         width: 150px;
                     }
-                }
-            }
-            .top-row{
-                padding-top: 100px;
-                @media screen and(max-width: 1560px){
-                    padding-top: 60px;
-                }
-
-            }
-            .bot-row{
-                padding-top: 100px;
-                padding-bottom: 100px;
-                @media screen and(max-width: 1560px){
-                    padding-top: 60px;
-                    padding-bottom: 60px;
-                }
-                .item{
-                    .cuongthinh{
-                        width: unset;
-                        height: 180px;
-                        @media screen and(max-width: 1560px){
-                            height: 140px;
-                        }
+                    @media screen and(max-width: 991px){
+                        width: 135px;
+                    }
+                    @media screen and(max-width: 576px){
+                        width: 100%;
                     }
                 }
+                @media screen and(max-width: 576px){
+                    padding: 20px 0;
+                }
             }
+            
         }
         
     }

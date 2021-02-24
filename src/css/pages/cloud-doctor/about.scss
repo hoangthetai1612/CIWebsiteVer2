@@ -6,8 +6,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @media screen and(max-width: 991px) {
+        height: unset;
+        padding: 30% 0;
+    }
     .main{
         width: 50%;
+        @media screen and(max-width: 991px) {
+            width: 65%;
+        }
         .title{
             p {
                 color: $color-white;
@@ -32,6 +39,9 @@
     border-top: 2px solid $color-border-top;
     .video{
         width: 45%;
+        @media screen and(max-width: 991px) {
+            width: 80%;
+        }
     }
 }
 .cloud-doctor-result{
@@ -64,6 +74,9 @@
             margin-bottom: 20px;
             @media screen and (max-width: 1560px) {
                 font-size: 45px;
+            }
+            @media screen and (max-width: 1560px) {
+                text-align: center;
             }
         }
         .content{
@@ -106,6 +119,10 @@
             img{
                 width: 75%;
             }
+        }
+        @media screen and (max-width: 991px) {
+            right: -25%;
+            bottom: 8%;
         }
     }
     

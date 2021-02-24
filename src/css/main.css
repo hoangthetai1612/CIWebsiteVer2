@@ -48,12 +48,7 @@ img {
   left: 0;
   top: 0;
   z-index: 999;
-  background-color: #272727;
-  position: fixed;
-  width: 100%;
-  left: 0;
-  top: 0;
-  z-index: 999; }
+  box-shadow: 1px 0 15px 2px #bfa871; }
   .header .container-fluid {
     display: flex;
     justify-content: space-between;
@@ -269,12 +264,7 @@ img {
   left: 0;
   top: 0;
   z-index: 999;
-  background-color: #272727;
-  position: fixed;
-  width: 100%;
-  left: 0;
-  top: 0;
-  z-index: 999; }
+  box-shadow: 1px 0 15px 2px #bfa871; }
   .header .container-fluid {
     display: flex;
     justify-content: space-between;
@@ -759,16 +749,18 @@ img {
         flex-direction: column;
         justify-content: center;
         align-items: center; } }
-    .products .section-product_hopital .content .left img {
-      margin-right: 200px; }
-      @media screen and (max-width: 1560px) {
-        .products .section-product_hopital .content .left img {
-          margin-right: 0;
-          width: 100%;
-          margin-bottom: 50px; } }
-      @media screen and (min-width: 375px) and (max-width: 430px) {
-        .products .section-product_hopital .content .left img {
-          margin-right: 0; } }
+    .products .section-product_hopital .content .left {
+      margin-right: 20px; }
+      .products .section-product_hopital .content .left img {
+        margin-right: 200px; }
+        @media screen and (max-width: 1560px) {
+          .products .section-product_hopital .content .left img {
+            margin-right: 0;
+            width: 100%;
+            margin-bottom: 50px; } }
+        @media screen and (min-width: 375px) and (max-width: 430px) {
+          .products .section-product_hopital .content .left img {
+            margin-right: 0; } }
     .products .section-product_hopital .content .right {
       position: relative; }
       .products .section-product_hopital .content .right .text {

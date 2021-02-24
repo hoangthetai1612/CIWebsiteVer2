@@ -71,7 +71,7 @@ img {
             height: 6px;
             border-radius: 100%;
             background-color: #bfa871;
-            content: '';
+            content: "";
             top: 100%;
             margin-top: 4px;
             left: 9px; }
@@ -129,7 +129,7 @@ img {
           pointer-events: none;
           user-select: none;
           color: #bfa871;
-          transition: all .2s ease;
+          transition: all 0.2s ease;
           font-weight: 500;
           font-weight: bold; }
       .header .container-fluid .header__language #container .right {
@@ -149,7 +149,7 @@ img {
           pointer-events: none;
           user-select: none;
           color: #bfa871;
-          transition: all .2s ease;
+          transition: all 0.2s ease;
           font-weight: bold; }
     .header .container-fluid .header__menu-icon {
       display: none;
@@ -171,7 +171,7 @@ img {
         width: 250px;
         height: 100vh;
         transition: 0.5s;
-        background-color: black;
+        background-color: #272727;
         z-index: 99;
         box-shadow: 1px 0 15px 2px #bfa871; }
         .header .container-fluid .header__menu-list {
@@ -286,7 +286,7 @@ img {
             height: 6px;
             border-radius: 100%;
             background-color: #bfa871;
-            content: '';
+            content: "";
             top: 100%;
             margin-top: 4px;
             left: 9px; }
@@ -344,7 +344,7 @@ img {
           pointer-events: none;
           user-select: none;
           color: #bfa871;
-          transition: all .2s ease;
+          transition: all 0.2s ease;
           font-weight: 500;
           font-weight: bold; }
       .header .container-fluid .header__language #container .right {
@@ -364,7 +364,7 @@ img {
           pointer-events: none;
           user-select: none;
           color: #bfa871;
-          transition: all .2s ease;
+          transition: all 0.2s ease;
           font-weight: bold; }
     .header .container-fluid .header__menu-icon {
       display: none;
@@ -386,7 +386,7 @@ img {
         width: 250px;
         height: 100vh;
         transition: 0.5s;
-        background-color: black;
+        background-color: #272727;
         z-index: 99;
         box-shadow: 1px 0 15px 2px #bfa871; }
         .header .container-fluid .header__menu-list {
@@ -427,179 +427,6 @@ img {
         top: -7px; }
       .header .container-fluid .header__language {
         display: none; } }
-
-.products .section-product_mia {
-  border-top: 2px solid #3a3a3a;
-  height: 100vh;
-  background-color: #272727;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  @media screen and (max-width: 991px) {
-    .products .section-product_mia {
-      height: 120vh; } }
-  .products .section-product_mia .content {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    @media screen and (max-width: 991px) {
-      .products .section-product_mia .content {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center; } }
-    @media screen and (max-width: 1560px) {
-      .products .section-product_mia .content .right img {
-        width: 80%; } }
-    @media screen and (max-width: 991px) {
-      .products .section-product_mia .content .right {
-        order: 1;
-        margin-bottom: 50px; } }
-    @media screen and (max-width: 521px) {
-      .products .section-product_mia .content .right {
-        display: flex;
-        align-items: center;
-        justify-content: center; } }
-    .products .section-product_mia .content .left {
-      position: relative;
-      margin-right: 150px; }
-      @media screen and (max-width: 521px) {
-        .products .section-product_mia .content .left {
-          margin-right: 0; } }
-      @media screen and (max-width: 991px) {
-        .products .section-product_mia .content .left {
-          order: 2; } }
-      .products .section-product_mia .content .left .text {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center; }
-        .products .section-product_mia .content .left .text .title {
-          font-size: 36px;
-          font-weight: 600;
-          color: #BFA871;
-          font-family: 'Montserrat', sans-serif; }
-          @media screen and (max-width: 521px) {
-            .products .section-product_mia .content .left .text .title {
-              font-size: 26px; } }
-        .products .section-product_mia .content .left .text .subtitle {
-          font-size: 24px;
-          font-weight: 500;
-          color: #BFA871;
-          font-family: 'Montserrat', sans-serif; }
-          @media screen and (max-width: 521px) {
-            .products .section-product_mia .content .left .text .subtitle {
-              font-size: 18px; } }
-      .products .section-product_mia .content .left a {
-        position: absolute;
-        right: -50px;
-        border: none;
-        border-radius: 60px;
-        background-color: #282828;
-        color: #BFA871;
-        text-align: center;
-        height: 39px;
-        box-shadow: 3px 1px 8px #000000, 0px -1px 6px #6F6D6D;
-        padding: 0 10px;
-        font-weight: 600;
-        display: flex;
-        align-items: center;
-        justify-content: center; }
-        .products .section-product_mia .content .left a:focus {
-          outline: none; }
-        .products .section-product_mia .content .left a:active {
-          box-shadow: 5px 5px rgba(0, 0, 0, 0.16); }
-        @media screen and (max-width: 521px) {
-          .products .section-product_mia .content .left a {
-            right: 0; } }
-
-.products .section-product_hopital {
-  border-top: 2px solid #3a3a3a;
-  height: 100vh;
-  background-color: #272727;
-  display: flex; }
-  @media screen and (max-width: 521px) {
-    .products .section-product_hopital {
-      height: 80vh; } }
-  @media screen and (max-width: 1441px) {
-    .products .section-product_hopital {
-      height: 120vh; } }
-  .products .section-product_hopital .content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative; }
-    @media screen and (max-width: 1441px) {
-      .products .section-product_hopital .content {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center; } }
-    .products .section-product_hopital .content .left img {
-      margin-right: 200px; }
-      @media screen and (max-width: 1560px) {
-        .products .section-product_hopital .content .left img {
-          margin-right: 0;
-          width: 100%;
-          margin-bottom: 50px; } }
-    .products .section-product_hopital .content .right {
-      position: relative; }
-      .products .section-product_hopital .content .right .text {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center; }
-        .products .section-product_hopital .content .right .text .title {
-          font-size: 36px;
-          font-weight: 600;
-          color: #BFA871;
-          font-family: 'Montserrat', sans-serif; }
-          @media screen and (max-width: 521px) {
-            .products .section-product_hopital .content .right .text .title {
-              font-size: 26px; } }
-        .products .section-product_hopital .content .right .text .subtitle {
-          font-size: 24px;
-          font-weight: 500;
-          color: #BFA871;
-          font-family: 'Montserrat', sans-serif; }
-          @media screen and (max-width: 521px) {
-            .products .section-product_hopital .content .right .text .subtitle {
-              font-size: 18px; } }
-      .products .section-product_hopital .content .right button {
-        position: absolute;
-        right: -100px;
-        border: none;
-        border-radius: 60px;
-        background-color: #282828;
-        color: #BFA871;
-        text-align: center;
-        height: 39px;
-        box-shadow: 3px 1px 8px #000000, 0px -1px 6px #6F6D6D;
-        padding: 0 10px;
-        font-weight: 600;
-        cursor: pointer; }
-        @media screen and (max-width: 521px) {
-          .products .section-product_hopital .content .right button {
-            right: 0; } }
-        .products .section-product_hopital .content .right button:focus {
-          outline: none; }
-        .products .section-product_hopital .content .right button:active {
-          box-shadow: 5px 5px rgba(0, 0, 0, 0.16); }
-  .products .section-product_hopital .view-all {
-    position: absolute;
-    right: 50px;
-    bottom: 40px;
-    border: none;
-    border-radius: 60px;
-    background-color: #282828;
-    color: #BFA871;
-    text-align: center;
-    height: 39px;
-    box-shadow: 3px 1px 8px #000000, 0px -1px 6px #6F6D6D;
-    padding: 0 70px;
-    font-weight: 600; }
-    .products .section-product_hopital .view-all:focus {
-      outline: none; }
-    .products .section-product_hopital .view-all:active {
-      box-shadow: 5px 5px rgba(0, 0, 0, 0.16); }
 
 .section-email {
   border-top: 2px solid #3a3a3a;
@@ -817,6 +644,199 @@ img {
       @media screen and (max-width: 576px) {
         .home-partner .logo .container-fluid .item {
           padding: 20px 0; } }
+
+.products .section-product_mia {
+  border-top: 2px solid #3a3a3a;
+  height: 100vh;
+  background-color: #272727;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  @media screen and (max-width: 991px) {
+    .products .section-product_mia {
+      height: 120vh; } }
+  .products .section-product_mia .content {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    @media screen and (max-width: 991px) {
+      .products .section-product_mia .content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; } }
+    @media screen and (max-width: 1560px) {
+      .products .section-product_mia .content .right img {
+        width: 80%; } }
+    @media screen and (max-width: 991px) {
+      .products .section-product_mia .content .right {
+        order: 1;
+        margin-bottom: 50px; } }
+    @media screen and (max-width: 521px) {
+      .products .section-product_mia .content .right {
+        display: flex;
+        align-items: center;
+        justify-content: center; } }
+    .products .section-product_mia .content .left {
+      position: relative;
+      margin-right: 150px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      @media screen and (max-width: 521px) {
+        .products .section-product_mia .content .left {
+          margin-right: 0; } }
+      @media screen and (max-width: 991px) {
+        .products .section-product_mia .content .left {
+          order: 2; } }
+      .products .section-product_mia .content .left .text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center; }
+        .products .section-product_mia .content .left .text .title {
+          font-size: 36px;
+          font-weight: 600;
+          color: #BFA871;
+          font-family: 'Montserrat', sans-serif; }
+          @media screen and (max-width: 521px) {
+            .products .section-product_mia .content .left .text .title {
+              font-size: 26px; } }
+        .products .section-product_mia .content .left .text .subtitle {
+          font-size: 24px;
+          font-weight: 500;
+          color: #BFA871;
+          font-family: 'Montserrat', sans-serif; }
+          @media screen and (max-width: 521px) {
+            .products .section-product_mia .content .left .text .subtitle {
+              font-size: 18px; } }
+      .products .section-product_mia .content .left a {
+        right: -50px;
+        border: none;
+        border-radius: 60px;
+        background-color: #282828;
+        color: #bfa871;
+        text-align: center;
+        height: 39px;
+        box-shadow: 3px 1px 8px #000000, 0px -1px 6px #6f6d6d;
+        padding: 0 10px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .products .section-product_mia .content .left a:focus {
+          outline: none; }
+        .products .section-product_mia .content .left a:active {
+          box-shadow: 5px 5px rgba(0, 0, 0, 0.16); }
+        @media screen and (max-width: 521px) {
+          .products .section-product_mia .content .left a {
+            right: 0; } }
+
+.products .section-product_hopital {
+  border-top: 2px solid #3a3a3a;
+  height: 100vh;
+  background-color: #272727;
+  display: flex; }
+  @media screen and (max-width: 521px) {
+    .products .section-product_hopital {
+      height: 80vh; } }
+  @media screen and (max-width: 1441px) {
+    .products .section-product_hopital {
+      height: 120vh; } }
+  .products .section-product_hopital .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; }
+    @media screen and (max-width: 1441px) {
+      .products .section-product_hopital .content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; } }
+    .products .section-product_hopital .content .left img {
+      margin-right: 200px; }
+      @media screen and (max-width: 1560px) {
+        .products .section-product_hopital .content .left img {
+          margin-right: 0;
+          width: 100%;
+          margin-bottom: 50px; } }
+      @media screen and (min-width: 375px) and (max-width: 430px) {
+        .products .section-product_hopital .content .left img {
+          margin-right: 0; } }
+    .products .section-product_hopital .content .right {
+      position: relative; }
+      .products .section-product_hopital .content .right .text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center; }
+        @media screen and (min-width: 375px) and (max-width: 430px) {
+          .products .section-product_hopital .content .right .text {
+            width: 100%; } }
+        .products .section-product_hopital .content .right .text .title {
+          font-size: 36px;
+          font-weight: 600;
+          color: #BFA871;
+          font-family: 'Montserrat', sans-serif; }
+          @media screen and (max-width: 521px) {
+            .products .section-product_hopital .content .right .text .title {
+              font-size: 26px; } }
+        .products .section-product_hopital .content .right .text .subtitle {
+          font-size: 24px;
+          font-weight: 500;
+          color: #BFA871;
+          font-family: 'Montserrat', sans-serif; }
+          @media screen and (max-width: 521px) {
+            .products .section-product_hopital .content .right .text .subtitle {
+              font-size: 18px; } }
+      .products .section-product_hopital .content .right button {
+        position: absolute;
+        right: -100px;
+        border: none;
+        border-radius: 60px;
+        background-color: #282828;
+        color: #bfa871;
+        text-align: center;
+        height: 39px;
+        box-shadow: 3px 1px 8px #000000, 0px -1px 6px #6F6D6D;
+        padding: 0 10px;
+        font-weight: 600;
+        cursor: pointer; }
+        @media screen and (max-width: 521px) {
+          .products .section-product_hopital .content .right button {
+            right: 0; } }
+        @media screen and (min-width: 375px) and (max-width: 430px) {
+          .products .section-product_hopital .content .right button {
+            right: 0px; } }
+        .products .section-product_hopital .content .right button:focus {
+          outline: none; }
+        .products .section-product_hopital .content .right button:active {
+          box-shadow: 5px 5px rgba(0, 0, 0, 0.16); }
+  .products .section-product_hopital .view-all {
+    position: absolute;
+    right: 50px;
+    bottom: 40px;
+    border: none;
+    border-radius: 60px;
+    background-color: #282828;
+    color: #bfa871;
+    text-align: center;
+    height: 39px;
+    box-shadow: 3px 1px 8px #000000, 0px -1px 6px #6f6d6d;
+    padding: 0 70px;
+    font-weight: 600; }
+    @media screen and (width: 375px) {
+      .products .section-product_hopital .view-all {
+        right: 162px;
+        bottom: 229px; } }
+    @media screen and (width: 425px) {
+      .products .section-product_hopital .view-all {
+        right: 182px;
+        bottom: 233px; } }
+    .products .section-product_hopital .view-all:focus {
+      outline: none; }
+    .products .section-product_hopital .view-all:active {
+      box-shadow: 5px 5px rgba(0, 0, 0, 0.16); }
 
 .ourservice {
   height: 100vh;
@@ -1102,8 +1122,8 @@ img {
           width: 515px; } }
       @media screen and (min-width: 375px) and (max-width: 430px) {
         .product .product-img .product-erp {
-          width: 100%;
-          height: 415px;
+          width: 100% !important;
+          height: 415px !important;
           margin-top: 100px; } }
       @media screen and (max-width: 768px) {
         .product .product-img .product-erp {
@@ -1171,7 +1191,16 @@ img {
   background-image: url("../images/cloud-doctor/banner.png");
   margin-top: 10vh;
   background-position: center;
-  background-size: cover; }
+  background-size: cover;
+  position: relative; }
+  @media screen and (max-width: 991px) {
+    .cloud-doctor-banner .bg-cover {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.6); } }
   .cloud-doctor-banner .container-fluid {
     height: 100%; }
     .cloud-doctor-banner .container-fluid .row {
@@ -1182,9 +1211,19 @@ img {
       height: 100%;
       display: flex;
       flex-direction: column;
-      justify-content: center; }
+      justify-content: center;
+      align-items: center; }
+      @media screen and (max-width: 991px) {
+        .cloud-doctor-banner .container-fluid .left-content img {
+          order: 2; }
+        .cloud-doctor-banner .container-fluid .left-content .title {
+          order: 1; } }
       .cloud-doctor-banner .container-fluid .left-content img {
         width: 65%; }
+        @media screen and (max-width: 576px) {
+          .cloud-doctor-banner .container-fluid .left-content img {
+            width: 80%;
+            margin-top: 30px; } }
       .cloud-doctor-banner .container-fluid .left-content .title {
         font-family: "Open Sans", sans-serif;
         color: #FFFFFF;
@@ -1194,6 +1233,9 @@ img {
         @media screen and (max-width: 1560px) {
           .cloud-doctor-banner .container-fluid .left-content .title {
             font-size: 40px; } }
+        @media screen and (max-width: 576px) {
+          .cloud-doctor-banner .container-fluid .left-content .title {
+            text-align: center; } }
 
 .cloud-doctor-introduce {
   background-image: url("../images/cloud-doctor/introduce-bg.png");
@@ -1217,11 +1259,14 @@ img {
       font-size: 36px;
       font-family: "Open Sans", sans-serif;
       font-weight: 600; }
+      @media screen and (max-width: 576px) {
+        .cloud-doctor-introduce .main .title p {
+          font-size: 30px;
+          margin-bottom: 30px; } }
     .cloud-doctor-introduce .main .content p {
       color: #FFFFFF; }
 
 .cloud-doctor-video {
-  height: 100vh;
   background-color: #272727;
   display: flex;
   justify-content: center;
@@ -1240,6 +1285,10 @@ img {
   justify-content: center;
   align-items: center;
   border-top: 2px solid #3a3a3a; }
+  @media screen and (max-width: 576px) {
+    .cloud-doctor-result {
+      height: unset;
+      padding: 2rem 0; } }
   .cloud-doctor-result .main {
     width: 75%; }
     .cloud-doctor-result .main .circle {
@@ -1252,6 +1301,11 @@ img {
         height: 75px;
         background-color: #7D8B94;
         border-radius: 100%; }
+        @media screen and (max-width: 576px) {
+          .cloud-doctor-result .main .circle .dot {
+            width: 45px;
+            height: 45px;
+            margin-bottom: -30px; } }
     .cloud-doctor-result .main .title {
       font-family: "Poppins", sans-serif;
       font-size: 60px;
@@ -1262,9 +1316,12 @@ img {
       @media screen and (max-width: 1560px) {
         .cloud-doctor-result .main .title {
           font-size: 45px; } }
-      @media screen and (max-width: 1560px) {
+      @media screen and (max-width: 991px) {
         .cloud-doctor-result .main .title {
           text-align: center; } }
+      @media screen and (max-width: 576px) {
+        .cloud-doctor-result .main .title {
+          font-size: 30px; } }
     .cloud-doctor-result .main .content {
       color: #7D8B94; }
 
@@ -1288,6 +1345,14 @@ img {
     @media screen and (max-width: 1560px) {
       .cloud-doctor-viewmore .icon-bg-top img {
         width: 75%; } }
+    @media screen and (max-width: 991px) {
+      .cloud-doctor-viewmore .icon-bg-top img {
+        width: 65%; } }
+    @media screen and (max-width: 576px) {
+      .cloud-doctor-viewmore .icon-bg-top {
+        left: -45px; }
+        .cloud-doctor-viewmore .icon-bg-top img {
+          width: 50%; } }
   .cloud-doctor-viewmore .icon-bg-bottom {
     position: absolute;
     bottom: 10%;
@@ -1300,8 +1365,16 @@ img {
           width: 75%; } }
     @media screen and (max-width: 991px) {
       .cloud-doctor-viewmore .icon-bg-bottom {
-        right: -25%;
-        bottom: 8%; } }
+        right: -30%;
+        bottom: 17%; }
+        .cloud-doctor-viewmore .icon-bg-bottom img {
+          width: 65%; } }
+    @media screen and (max-width: 576px) {
+      .cloud-doctor-viewmore .icon-bg-bottom {
+        right: -60%;
+        bottom: 2%; }
+        .cloud-doctor-viewmore .icon-bg-bottom img {
+          width: 50%; } }
   .cloud-doctor-viewmore .main {
     width: 90%;
     display: flex;
@@ -1327,6 +1400,10 @@ img {
       @media (max-width: 1919px) {
         .cloud-doctor-viewmore .main .content .title {
           font-size: 50px; } }
+      @media (max-width: 576px) {
+        .cloud-doctor-viewmore .main .content .title {
+          font-size: 30px;
+          text-align: center; } }
     .cloud-doctor-viewmore .main .content .link {
       text-align: center;
       margin-top: 40px; }
@@ -1338,6 +1415,10 @@ img {
         font-family: "Montserrat", sans-serif;
         font-weight: 500;
         color: #272727; }
+        @media (max-width: 576px) {
+          .cloud-doctor-viewmore .main .content .link a {
+            font-size: 18px;
+            padding: 10px 20px; } }
 
 .time-tracker-banner {
   height: 100vh;
@@ -2031,6 +2112,9 @@ img {
   display: flex;
   justify-content: center;
   align-items: center; }
+  @media screen and (min-width: 375px) and (max-width: 430px) {
+    .contact {
+      height: 140vh; } }
   .contact .contact-text h1 {
     color: #bfa871;
     font-size: 54px;
@@ -2068,6 +2152,9 @@ img {
     padding: 20px; }
     .contact .contact-social .contact-social-touch {
       margin-left: 50px; }
+      @media screen and (min-width: 375px) and (max-width: 430px) {
+        .contact .contact-social .contact-social-touch {
+          margin-left: 0; } }
       .contact .contact-social .contact-social-touch p {
         font-size: 24px;
         font-weight: 600;
@@ -2077,12 +2164,23 @@ img {
         .contact .contact-social .contact-social-touch .contact-social-touch-item img {
           width: 32px;
           height: 32px; }
+          @media screen and (min-width: 375px) and (max-width: 430px) {
+            .contact .contact-social .contact-social-touch .contact-social-touch-item img {
+              width: 25px;
+              height: 25px; } }
+    @media screen and (min-width: 375px) and (max-width: 430px) {
+      .contact .contact-social .contact-social-map img {
+        width: 150px; } }
   .contact .contact-send {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-left: 100px; }
+    @media screen and (min-width: 375px) and (max-width: 430px) {
+      .contact .contact-send {
+        margin-left: 0;
+        margin-top: 25px; } }
     .contact .contact-send img {
       width: 191px;
       height: 191px;

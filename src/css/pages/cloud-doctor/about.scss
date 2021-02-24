@@ -21,7 +21,12 @@
                 font-size: 36px;
                 font-family: $font-openSans;
                 font-weight: 600;
+                @media screen and(max-width: 576px) {
+                    font-size: 30px;
+                    margin-bottom: 30px;
+                }
             }
+            
         }
         .content{
             p {
@@ -31,7 +36,6 @@
     }
 }
 .cloud-doctor-video{
-    height: 100vh;
     background-color: $color-background;
     display: flex;
     justify-content: center;
@@ -51,6 +55,10 @@
     justify-content: center;
     align-items: center;
     border-top: 2px solid $color-border-top;
+    @media screen and(max-width: 576px) {
+        height: unset;
+        padding: 2rem 0;
+    }
     .main{
         width: 75%;
         .circle{
@@ -63,6 +71,11 @@
                 height: 75px;
                 background-color: $color-light-blue;
                 border-radius: 100%;
+                @media screen and(max-width: 576px) {
+                    width: 45px;
+                    height: 45px;
+                    margin-bottom: -30px;
+                }
             }
         }
         .title{
@@ -75,8 +88,11 @@
             @media screen and (max-width: 1560px) {
                 font-size: 45px;
             }
-            @media screen and (max-width: 1560px) {
+            @media screen and (max-width: 991px) {
                 text-align: center;
+            }
+            @media screen and (max-width: 576px) {
+                font-size: 30px;
             }
         }
         .content{
@@ -108,6 +124,17 @@
                 width: 75%;
             }
         }
+        @media screen and (max-width: 991px) {
+            img{
+                width: 65%;
+            }
+        }
+        @media screen and (max-width: 576px) {
+            left: -45px;
+            img{
+                width: 50%;
+            }
+        }
     }
     .icon-bg-bottom{
         position: absolute;
@@ -121,8 +148,18 @@
             }
         }
         @media screen and (max-width: 991px) {
-            right: -25%;
-            bottom: 8%;
+            right: -30%;
+            bottom: 17%;
+            img{
+                width: 65%;
+            }
+        }
+        @media screen and (max-width: 576px) {
+            right: -60%;
+            bottom: 2%;
+            img{
+                width: 50%;
+            }
         }
     }
     
@@ -159,6 +196,10 @@
                 @media(max-width: 1919px){
                     font-size: 50px;
                 }
+                @media(max-width: 576px){
+                    font-size: 30px;
+                    text-align: center;
+                }
             }
             .link{
                 text-align: center;
@@ -171,6 +212,10 @@
                     font-family: $font-montserrat;
                     font-weight: 500;
                     color: #272727;
+                    @media(max-width: 576px){
+                        font-size: 18px;
+                        padding: 10px 20px;
+                    }
                 }
             }
         }

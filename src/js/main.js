@@ -200,8 +200,9 @@ function toogleMenu() {
   let bodyOverlay = document.querySelector(".body-overlay");
 
   menuButton.addEventListener("click", () => {
-      menu.classList.add('set-width')
+      menu.classList.toggle('set-width')
       body.style.backgroundColor = "rgba(0, 0, 0, 0.4)";
+      menuButton.classList.toggle('toggle')
       // bodyOverlay.style.display = "block";
   });
   // closeBtn.addEventListener("click", () => {

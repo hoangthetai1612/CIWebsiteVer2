@@ -20,11 +20,17 @@
             margin-bottom: 50px;
             font-size: 36px;
         }
+        @media screen and(max-width: 521px) {
+            font-size: 30px;
+        }
     }
     .content {
         font-size: 18px;
         font-weight: 400;
         color: #BFA871;
+        @media screen and(max-width: 521px) {
+            font-size: 16px;
+        }
         ul {
             li {
                 position: relative;

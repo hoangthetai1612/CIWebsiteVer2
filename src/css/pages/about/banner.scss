@@ -8,6 +8,9 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    // @media screen and(max-width: 521px) {
+    //     height: 80vh;
+    // }
     // border-bottom: 0.5px solid rgba($color: #BFA871, $alpha: 0.5);
     .circle {
         position: absolute;
@@ -27,11 +30,18 @@
         font-weight: 800;
         color: #BFA871;
         font-family: $font-montserrat;
+        @media screen and(max-width: 521px) {
+            font-size: 60px;
+        }
     }
     .description {
         font-size: 18px;
         font-weight: 400;
         color: #BFA871;
         width: 520px;
+        @media screen and(max-width: 521px) {
+            width: 90%;
+            font-size: 16px;
+        }
     }
 }

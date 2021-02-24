@@ -454,9 +454,17 @@ img {
       .products .section-product_mia .content .right {
         order: 1;
         margin-bottom: 50px; } }
+    @media screen and (max-width: 521px) {
+      .products .section-product_mia .content .right {
+        display: flex;
+        align-items: center;
+        justify-content: center; } }
     .products .section-product_mia .content .left {
       position: relative;
       margin-right: 150px; }
+      @media screen and (max-width: 521px) {
+        .products .section-product_mia .content .left {
+          margin-right: 0; } }
       @media screen and (max-width: 991px) {
         .products .section-product_mia .content .left {
           order: 2; } }
@@ -470,11 +478,17 @@ img {
           font-weight: 600;
           color: #BFA871;
           font-family: 'Montserrat', sans-serif; }
+          @media screen and (max-width: 521px) {
+            .products .section-product_mia .content .left .text .title {
+              font-size: 26px; } }
         .products .section-product_mia .content .left .text .subtitle {
           font-size: 24px;
           font-weight: 500;
           color: #BFA871;
           font-family: 'Montserrat', sans-serif; }
+          @media screen and (max-width: 521px) {
+            .products .section-product_mia .content .left .text .subtitle {
+              font-size: 18px; } }
       .products .section-product_mia .content .left a {
         position: absolute;
         right: -50px;
@@ -494,12 +508,18 @@ img {
           outline: none; }
         .products .section-product_mia .content .left a:active {
           box-shadow: 5px 5px rgba(0, 0, 0, 0.16); }
+        @media screen and (max-width: 521px) {
+          .products .section-product_mia .content .left a {
+            right: 0; } }
 
 .products .section-product_hopital {
   border-top: 2px solid #3a3a3a;
   height: 100vh;
   background-color: #272727;
   display: flex; }
+  @media screen and (max-width: 521px) {
+    .products .section-product_hopital {
+      height: 80vh; } }
   @media screen and (max-width: 1441px) {
     .products .section-product_hopital {
       height: 120vh; } }
@@ -532,11 +552,17 @@ img {
           font-weight: 600;
           color: #BFA871;
           font-family: 'Montserrat', sans-serif; }
+          @media screen and (max-width: 521px) {
+            .products .section-product_hopital .content .right .text .title {
+              font-size: 26px; } }
         .products .section-product_hopital .content .right .text .subtitle {
           font-size: 24px;
           font-weight: 500;
           color: #BFA871;
           font-family: 'Montserrat', sans-serif; }
+          @media screen and (max-width: 521px) {
+            .products .section-product_hopital .content .right .text .subtitle {
+              font-size: 18px; } }
       .products .section-product_hopital .content .right button {
         position: absolute;
         right: -100px;
@@ -546,10 +572,13 @@ img {
         color: #BFA871;
         text-align: center;
         height: 39px;
-        box-shadow: 3px 1px 8px #000000, 0px -1px 6px #6F6D6D;
+        box-shadow: 3px 1px 8px #000000, 0px -1px 6px #6F6D6D;
         padding: 0 10px;
         font-weight: 600;
         cursor: pointer; }
+        @media screen and (max-width: 521px) {
+          .products .section-product_hopital .content .right button {
+            right: 0; } }
         .products .section-product_hopital .content .right button:focus {
           outline: none; }
         .products .section-product_hopital .content .right button:active {
@@ -1552,11 +1581,18 @@ img {
     font-weight: 800;
     color: #BFA871;
     font-family: "Montserrat", sans-serif; }
+    @media screen and (max-width: 521px) {
+      .banner-section .heading {
+        font-size: 60px; } }
   .banner-section .description {
     font-size: 18px;
     font-weight: 400;
     color: #BFA871;
     width: 520px; }
+    @media screen and (max-width: 521px) {
+      .banner-section .description {
+        width: 90%;
+        font-size: 16px; } }
 
 .section-timeline {
   padding: 300px 0;
@@ -1597,6 +1633,9 @@ img {
         font-size: 18px;
         font-weight: 400;
         color: #BFA871; }
+        @media screen and (max-width: 521px) {
+          .section-timeline .chicago .right .content {
+            font-size: 16px; } }
   .section-timeline .vietnam .left {
     display: flex;
     flex-direction: column;
@@ -1617,6 +1656,9 @@ img {
       @media screen and (max-width: 769px) {
         .section-timeline .vietnam .left .content {
           text-align: left; } }
+      @media screen and (max-width: 521px) {
+        .section-timeline .vietnam .left .content {
+          font-size: 16px; } }
   .section-timeline .vietnam .right {
     display: flex;
     align-items: center;
@@ -1639,16 +1681,27 @@ img {
   justify-content: flex-start;
   position: relative;
   overflow: hidden; }
+  @media screen and (max-width: 521px) {
+    .result {
+      justify-content: center; } }
   .result .title {
     font-size: 36px;
     font-weight: 600;
     color: #BFA871;
     padding-top: 100px; }
+    @media screen and (max-width: 521px) {
+      .result .title {
+        font-size: 26px;
+        text-align: center; } }
   .result .content {
     font-size: 18px;
     font-weight: 400;
     color: #BFA871;
     width: 55%; }
+    @media screen and (max-width: 521px) {
+      .result .content {
+        width: 90% !important;
+        font-size: 16px; } }
     @media screen and (max-width: 1025px) {
       .result .content {
         width: 70%; } }
@@ -1725,6 +1778,9 @@ img {
   @media screen and (max-width: 769px) {
     .banner {
       height: 70vh; } }
+  @media screen and (max-width: 521px) {
+    .banner {
+      height: 50vh; } }
 
 .discovery {
   background-color: #272727;
@@ -1747,10 +1803,16 @@ img {
       .discovery .title {
         margin-bottom: 50px;
         font-size: 36px; } }
+    @media screen and (max-width: 521px) {
+      .discovery .title {
+        font-size: 30px; } }
   .discovery .content {
     font-size: 18px;
     font-weight: 400;
     color: #BFA871; }
+    @media screen and (max-width: 521px) {
+      .discovery .content {
+        font-size: 16px; } }
     .discovery .content ul li {
       position: relative;
       line-height: 32px;
@@ -1783,11 +1845,15 @@ img {
     padding-top: 100px;
     text-align: left;
     font-family: "Poppins", sans-serif; }
+    @media screen and (max-width: 521px) {
+      .foot .title {
+        font-size: 34px;
+        text-align: center; } }
   .foot a {
     width: 575px;
     height: 64px;
     background-color: #BFA871;
-    font-style: 24px;
+    font-size: 24px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1795,16 +1861,26 @@ img {
     color: #272727;
     border-radius: 50px;
     font-weight: 500; }
+    @media screen and (max-width: 521px) {
+      .foot a {
+        width: 300px;
+        font-size: 14px; } }
   .foot .left {
     position: absolute;
     bottom: -100px;
     width: 420px;
     left: -100px; }
+    @media screen and (max-width: 521px) {
+      .foot .left {
+        width: 200px; } }
   .foot .right {
     position: absolute;
     width: 405px;
     bottom: -50px;
     right: -50px; }
+    @media screen and (max-width: 521px) {
+      .foot .right {
+        width: 200px; } }
 
 .infor {
   background-color: #272727;
@@ -1825,17 +1901,24 @@ img {
       color: #BFA871;
       font-family: "Montserrat", sans-serif;
       width: 80%; }
+      @media screen and (max-width: 521px) {
+        .infor .top .title {
+          font-size: 36px;
+          width: 100%; } }
       @media screen and (max-width: 769px) {
         .infor .top .title {
           margin-bottom: 50px; } }
       @media screen and (max-width: 1025px) {
         .infor .top .title {
           width: 75%;
-          font-size: 36px; } }
+          font-size: 26px; } }
     .infor .top .content {
       font-size: 18px;
       font-weight: 400;
       color: #BFA871; }
+      @media screen and (max-width: 521px) {
+        .infor .top .content {
+          font-size: 16px; } }
       .infor .top .content ul li {
         position: relative;
         line-height: 32px;
@@ -1863,10 +1946,17 @@ img {
       @media screen and (max-width: 769px) {
         .infor .bottom .title {
           margin-bottom: 50px; } }
+      @media screen and (max-width: 521px) {
+        .infor .bottom .title {
+          font-size: 26px;
+          width: 100%; } }
     .infor .bottom .content {
       font-size: 18px;
       font-weight: 400;
       color: #BFA871; }
+      @media screen and (max-width: 521px) {
+        .infor .bottom .content {
+          font-size: 16px; } }
       .infor .bottom .content ul li {
         position: relative;
         line-height: 32px;
@@ -1893,12 +1983,22 @@ img {
       .intro .grape {
         width: 400px;
         height: 450px; } }
+    @media screen and (max-width: 521px) {
+      .intro .grape {
+        width: 200px;
+        height: 250px;
+        left: -50px; } }
   .intro .banana {
     position: absolute;
     width: 350px;
     height: 300px;
     bottom: 0;
     right: -70px; }
+    @media screen and (max-width: 521px) {
+      .intro .banana {
+        width: 200px;
+        height: 250px;
+        right: -50px; } }
   .intro .title {
     font-size: 60px;
     font-weight: 700;
@@ -1906,6 +2006,9 @@ img {
     padding-top: 100px;
     text-align: left;
     font-family: "Montserrat", sans-serif; }
+    @media screen and (max-width: 521px) {
+      .intro .title {
+        font-size: 40px; } }
   .intro .content {
     font-size: 18px;
     font-weight: 400;

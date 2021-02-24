@@ -10,7 +10,11 @@
         justify-content: center;
         flex-direction: column;
         @media screen and (max-width: 768px) {
-            margin-left: 130px;
+            margin-left: 190px;
+        }
+        @media screen and (min-width: 375px) and (max-width: 430px) {
+            margin-left: 0;
+            width: 90%;
         }
         h1 {
             font-family: Montserrat;
@@ -34,6 +38,9 @@
         p {
             color: $color-heading;
             margin-top: 64px;
+            font-size: 18px;
+            font-family: "Helvetica";
+            text-align: justify;
         }
         a {
             border: none;
@@ -51,7 +58,6 @@
     }
 }
 .product {
-    border-top: 2px solid #3a3a3a;
     height: 100vh;
     @media screen and (max-width: 991px) {
         height: 120vh;
@@ -60,22 +66,32 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    .product-text-respon {
+        @media screen and (min-width: 375px) and (max-width: 430px) {
+            justify-content: flex-end !important;
+        }
+    }
     .product-text {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
+        @media screen and (min-width: 375px) and (max-width: 430px) {
+            margin-top: 100px;
+        }
         h3 {
             font-size: 36px;
             font-weight: 600;
-            color: #bfa871;
+            color: $color-heading;
             font-family: "Montserrat", sans-serif;
         }
         p {
             font-size: 24px;
             font-weight: 500;
-            color: #bfa871;
-            font-family: "Montserrat", sans-serif;
+            color: $color-heading;
+            font-family: "Helvetica";
+            text-align: justify;
+            font-size: 18px;
         }
         button {
             border: none;
@@ -90,16 +106,47 @@
             outline: none;
         }
     }
+    .product-img-respon {
+        @media screen and (min-width: 375px) and (max-width: 430px) {
+            width: 375px !important;
+            height: 475px !important;
+            display: flex;
+            justify-content: center;
+        }
+    }
     .product-img {
         width: 375px;
         height: 786px;
         position: relative;
         transform-style: preserve-3d;
+        @media screen and (min-width: 375px) and (max-width: 430px) {
+            width: 375px;
+            height: 400px;
+        }
         .product-mia {
             width: 375px;
             height: 786px;
             position: absolute;
             z-index: -1;
+            @media screen and (min-width: 375px) and (max-width: 430px) {
+                width: 375px;
+                height: 415px;
+                margin-top: 100px;
+            }
+            @media screen and (max-width: 768px) {
+                width: 209px;
+                height: 786px;
+            }
+        }
+        .product-mia-respon {
+            @media screen and (min-width: 375px) and (max-width: 430px) {
+                width: 220px;
+                height: 412px;
+                margin-top: 100px;
+            }
+            @media screen and (max-width: 768px) {
+                height: 470px;
+            }
         }
         .product-erp {
             width: 675px;
@@ -108,6 +155,15 @@
             z-index: -1;
             @media screen and (min-width: 1024px) and(max-width:1200px) {
                 width: 515px;
+            }
+            @media screen and (min-width: 375px) and (max-width: 430px) {
+                width: 100%;
+                height: 415px;
+                margin-top: 100px;
+            }
+            @media screen and (max-width: 768px) {
+                width: 425px;
+                height: 786px;
             }
         }
     }
@@ -124,8 +180,9 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        @media screen and (max-width: 768px) {
-            margin-left: 130px;
+
+        @media screen and (min-width: 375px) and (max-width: 430px) {
+            margin-left: 0;
         }
         h1 {
             font-family: Montserrat;
@@ -159,6 +216,12 @@
             padding: 10px;
             margin-top: 40px;
             cursor: pointer;
+            @media screen and (min-width: 768px) and(max-width:900px) {
+                width: 40%;
+            }
+            @media screen and (min-width: 375px) and (max-width: 430px) {
+                width: 60%;
+            }
         }
         a:not([href]):not([tabindex]):hover {
             color: $color-heading;

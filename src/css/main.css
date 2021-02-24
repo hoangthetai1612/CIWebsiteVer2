@@ -745,14 +745,34 @@ img {
     @media screen and (max-width: 768px) {
       .ourservice .ourservice-item {
         margin-left: 130px; } }
-    .ourservice .ourservice-item img {
-      width: 530px;
-      height: 100px;
-      margin-left: -43px; }
+    @media screen and (min-width: 375px) and (max-width: 430px) {
+      .ourservice .ourservice-item {
+        margin-left: 0;
+        width: 90%; } }
+    .ourservice .ourservice-item h1 {
+      font-family: Montserrat;
+      font-weight: 700;
+      font-size: 80px;
+      color: #bfa871;
+      white-space: nowrap; }
+      @media screen and (min-width: 1440px) and (max-width: 1600px) {
+        .ourservice .ourservice-item h1 {
+          font-size: 73px; } }
+      @media screen and (min-width: 1366px) and (max-width: 1439px) {
+        .ourservice .ourservice-item h1 {
+          font-size: 70px; } }
+      @media screen and (min-width: 1024px) and (max-width: 1365px) {
+        .ourservice .ourservice-item h1 {
+          font-size: 50px; } }
+      @media screen and (max-width: 768px) {
+        .ourservice .ourservice-item h1 {
+          font-size: 30px; } }
     .ourservice .ourservice-item p {
       color: #bfa871;
       margin-top: 64px;
-      margin-left: -44px; }
+      font-family: "Helvetica";
+      text-align: justify;
+      font-size: 18px; }
 
 .enterpriseapp {
   height: 100vh;
@@ -773,6 +793,13 @@ img {
         width: 330px;
         height: 330px;
         margin-left: 320px; } }
+    @media screen and (min-width: 375px) and (max-width: 430px) {
+      .enterpriseapp .enter-img {
+        width: 220px;
+        height: 220px;
+        margin-top: 50px;
+        margin-left: 50px;
+        margin-bottom: 45px; } }
   .enterpriseapp .enter-img1 {
     margin-left: 200px;
     width: 405px;
@@ -788,6 +815,12 @@ img {
         height: 330px;
         margin-top: 380px;
         margin-left: 0; } }
+    @media screen and (min-width: 375px) and (max-width: 430px) {
+      .enterpriseapp .enter-img1 {
+        width: 220px;
+        height: 220px;
+        margin-top: 50px;
+        margin-left: 50px; } }
   .enterpriseapp .enterpriseapp-text h1 {
     font-family: Montserrat;
     font-weight: 700;
@@ -808,7 +841,10 @@ img {
         font-size: 30px; } }
   .enterpriseapp .enterpriseapp-text p {
     color: #bfa871;
-    margin-top: 36px; }
+    margin-top: 36px;
+    font-family: "Helvetica";
+    text-align: justify;
+    font-size: 18px; }
   .enterpriseapp .enterpriseapp-text .enterpriseapp-button {
     width: 100%;
     display: flex;
@@ -847,7 +883,11 @@ img {
     flex-direction: column; }
     @media screen and (max-width: 768px) {
       .enterpriseapp .enterpriseapp-item {
-        margin-left: 130px; } }
+        margin-left: 190px; } }
+    @media screen and (min-width: 375px) and (max-width: 430px) {
+      .enterpriseapp .enterpriseapp-item {
+        margin-left: 0;
+        width: 90%; } }
     .enterpriseapp .enterpriseapp-item h1 {
       font-family: Montserrat;
       font-weight: 700;
@@ -868,7 +908,10 @@ img {
           font-size: 30px; } }
     .enterpriseapp .enterpriseapp-item p {
       color: #bfa871;
-      margin-top: 64px; }
+      margin-top: 64px;
+      font-size: 18px;
+      font-family: "Helvetica";
+      text-align: justify; }
     .enterpriseapp .enterpriseapp-item a {
       border: none;
       border-radius: 60px;
@@ -883,7 +926,6 @@ img {
       padding: 10px; }
 
 .product {
-  border-top: 2px solid #3a3a3a;
   height: 100vh;
   background-color: #272727;
   display: flex;
@@ -892,11 +934,17 @@ img {
   @media screen and (max-width: 991px) {
     .product {
       height: 120vh; } }
+  @media screen and (min-width: 375px) and (max-width: 430px) {
+    .product .product-text-respon {
+      justify-content: flex-end !important; } }
   .product .product-text {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center; }
+    @media screen and (min-width: 375px) and (max-width: 430px) {
+      .product .product-text {
+        margin-top: 100px; } }
     .product .product-text h3 {
       font-size: 36px;
       font-weight: 600;
@@ -906,7 +954,9 @@ img {
       font-size: 24px;
       font-weight: 500;
       color: #bfa871;
-      font-family: "Montserrat", sans-serif; }
+      font-family: "Helvetica";
+      text-align: justify;
+      font-size: 18px; }
     .product .product-text button {
       border: none;
       border-radius: 60px;
@@ -918,16 +968,43 @@ img {
       padding: 0 10px;
       font-weight: 600;
       outline: none; }
+  @media screen and (min-width: 375px) and (max-width: 430px) {
+    .product .product-img-respon {
+      width: 375px !important;
+      height: 475px !important;
+      display: flex;
+      justify-content: center; } }
   .product .product-img {
     width: 375px;
     height: 786px;
     position: relative;
     transform-style: preserve-3d; }
+    @media screen and (min-width: 375px) and (max-width: 430px) {
+      .product .product-img {
+        width: 375px;
+        height: 400px; } }
     .product .product-img .product-mia {
       width: 375px;
       height: 786px;
       position: absolute;
       z-index: -1; }
+      @media screen and (min-width: 375px) and (max-width: 430px) {
+        .product .product-img .product-mia {
+          width: 375px;
+          height: 415px;
+          margin-top: 100px; } }
+      @media screen and (max-width: 768px) {
+        .product .product-img .product-mia {
+          width: 209px;
+          height: 786px; } }
+    @media screen and (min-width: 375px) and (max-width: 430px) {
+      .product .product-img .product-mia-respon {
+        width: 220px;
+        height: 412px;
+        margin-top: 100px; } }
+    @media screen and (max-width: 768px) {
+      .product .product-img .product-mia-respon {
+        height: 470px; } }
     .product .product-img .product-erp {
       width: 675px;
       height: 786px;
@@ -936,6 +1013,15 @@ img {
       @media screen and (min-width: 1024px) and (max-width: 1200px) {
         .product .product-img .product-erp {
           width: 515px; } }
+      @media screen and (min-width: 375px) and (max-width: 430px) {
+        .product .product-img .product-erp {
+          width: 100%;
+          height: 415px;
+          margin-top: 100px; } }
+      @media screen and (max-width: 768px) {
+        .product .product-img .product-erp {
+          width: 425px;
+          height: 786px; } }
 
 .enterpriseapp-send {
   height: 100vh;
@@ -949,9 +1035,9 @@ img {
     justify-content: center;
     align-items: center;
     flex-direction: column; }
-    @media screen and (max-width: 768px) {
+    @media screen and (min-width: 375px) and (max-width: 430px) {
       .enterpriseapp-send .enterpriseapp-send-item {
-        margin-left: 130px; } }
+        margin-left: 0; } }
     .enterpriseapp-send .enterpriseapp-send-item h1 {
       font-family: Montserrat;
       font-weight: 700;
@@ -983,6 +1069,12 @@ img {
       padding: 10px;
       margin-top: 40px;
       cursor: pointer; }
+      @media screen and (min-width: 768px) and (max-width: 900px) {
+        .enterpriseapp-send .enterpriseapp-send-item a {
+          width: 40%; } }
+      @media screen and (min-width: 375px) and (max-width: 430px) {
+        .enterpriseapp-send .enterpriseapp-send-item a {
+          width: 60%; } }
     .enterpriseapp-send .enterpriseapp-send-item a:not([href]):not([tabindex]):hover {
       color: #bfa871;
       text-decoration: none; }
@@ -1384,8 +1476,7 @@ img {
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: center;
-  border-bottom: 0.5px solid rgba(191, 168, 113, 0.5); }
+  justify-content: center; }
   .banner-section .circle {
     position: absolute;
     top: 0;
@@ -1418,13 +1509,13 @@ img {
     padding-bottom: 600px; }
     .section-timeline .chicago .fly {
       position: absolute;
-      width: 90px;
-      bottom: -200px;
+      width: 80px;
+      bottom: -100px;
       left: 50%; }
       @media screen and (max-width: 1025px) {
         .section-timeline .chicago .fly {
-          width: 80px;
-          bottom: -160px; } }
+          width: 73px;
+          bottom: -67px; } }
       @media screen and (max-width: 769px) {
         .section-timeline .chicago .fly {
           width: 70px;
@@ -1530,7 +1621,6 @@ img {
         top: 200px; } }
 
 .section-email {
-  border-top: 2px solid #3a3a3a;
   height: 100vh;
   background-color: #272727;
   display: flex;
@@ -1570,10 +1660,7 @@ img {
   height: 100vh;
   background-color: #272727;
   width: 100%;
-  height: 100vh;
   overflow: hidden; }
-  .banner img {
-    height: 100%; }
   @media screen and (max-width: 1025px) {
     .banner {
       height: 80vh; } }
@@ -1593,13 +1680,15 @@ img {
   .discovery img {
     width: 70%; }
   .discovery .title {
-    font-size: 36px;
+    font-size: 48px;
     font-weight: 600;
     color: #BFA871;
-    padding-top: 100px; }
+    padding-top: 100px;
+    font-family: "Montserrat", sans-serif; }
     @media screen and (max-width: 769px) {
       .discovery .title {
-        margin-bottom: 50px; } }
+        margin-bottom: 50px;
+        font-size: 36px; } }
   .discovery .content {
     font-size: 18px;
     font-weight: 400;
@@ -1634,7 +1723,8 @@ img {
     font-weight: 600;
     color: #BFA871;
     padding-top: 100px;
-    text-align: left; }
+    text-align: left;
+    font-family: "Poppins", sans-serif; }
   .foot a {
     width: 575px;
     height: 64px;
@@ -1644,8 +1734,9 @@ img {
     align-items: center;
     justify-content: center;
     font-family: "Montserrat", sans-serif;
-    color: black;
-    border-radius: 50px; }
+    color: #272727;
+    border-radius: 50px;
+    font-weight: 500; }
   .foot .left {
     position: absolute;
     bottom: -100px;
@@ -1671,17 +1762,18 @@ img {
       .infor .top {
         padding: 100px 0; } }
     .infor .top .title {
-      font-size: 36px;
+      font-size: 48px;
       font-weight: 600;
       color: #BFA871;
-      padding-top: 100px;
-      width: 55%; }
+      font-family: "Montserrat", sans-serif;
+      width: 80%; }
       @media screen and (max-width: 769px) {
         .infor .top .title {
           margin-bottom: 50px; } }
       @media screen and (max-width: 1025px) {
         .infor .top .title {
-          width: 75%; } }
+          width: 75%;
+          font-size: 36px; } }
     .infor .top .content {
       font-size: 18px;
       font-weight: 400;
@@ -1701,14 +1793,15 @@ img {
       .infor .bottom {
         padding: 100px 0; } }
     .infor .bottom .title {
-      font-size: 36px;
+      font-size: 48px;
       font-weight: 600;
       color: #BFA871;
-      padding-top: 100px;
-      width: 55%; }
+      font-family: "Montserrat", sans-serif;
+      width: 80%; }
       @media screen and (max-width: 1025px) {
         .infor .bottom .title {
-          width: 75%; } }
+          width: 75%;
+          font-size: 36px; } }
       @media screen and (max-width: 769px) {
         .infor .bottom .title {
           margin-bottom: 50px; } }
@@ -1749,11 +1842,12 @@ img {
     bottom: 0;
     right: -70px; }
   .intro .title {
-    font-size: 36px;
-    font-weight: 600;
+    font-size: 60px;
+    font-weight: 700;
     color: #BFA871;
     padding-top: 100px;
-    text-align: left; }
+    text-align: left;
+    font-family: "Montserrat", sans-serif; }
   .intro .content {
     font-size: 18px;
     font-weight: 400;

@@ -370,150 +370,6 @@ img {
       .header .container-fluid .set-width {
         width: 250px; } }
 
-.products .section-product_mia {
-  border-top: 2px solid #3a3a3a;
-  height: 100vh;
-  background-color: #272727;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  @media screen and (max-width: 991px) {
-    .products .section-product_mia {
-      height: 120vh; } }
-  .products .section-product_mia .content {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    @media screen and (max-width: 991px) {
-      .products .section-product_mia .content {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center; } }
-    @media screen and (max-width: 1560px) {
-      .products .section-product_mia .content .right img {
-        width: 80%; } }
-    @media screen and (max-width: 991px) {
-      .products .section-product_mia .content .right {
-        order: 1;
-        margin-bottom: 50px; } }
-    .products .section-product_mia .content .left {
-      position: relative;
-      margin-right: 150px; }
-      @media screen and (max-width: 991px) {
-        .products .section-product_mia .content .left {
-          order: 2; } }
-      .products .section-product_mia .content .left .text {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center; }
-        .products .section-product_mia .content .left .text .title {
-          font-size: 36px;
-          font-weight: 600;
-          color: #BFA871;
-          font-family: 'Montserrat', sans-serif; }
-        .products .section-product_mia .content .left .text .subtitle {
-          font-size: 24px;
-          font-weight: 500;
-          color: #BFA871;
-          font-family: 'Montserrat', sans-serif; }
-      .products .section-product_mia .content .left a {
-        position: absolute;
-        right: -50px;
-        border: none;
-        border-radius: 60px;
-        background-color: #282828;
-        color: #BFA871;
-        text-align: center;
-        height: 39px;
-        box-shadow: 3px 1px 8px #000000, 0px -1px 6px #6F6D6D;
-        padding: 0 10px;
-        font-weight: 600;
-        display: flex;
-        align-items: center;
-        justify-content: center; }
-        .products .section-product_mia .content .left a:focus {
-          outline: none; }
-        .products .section-product_mia .content .left a:active {
-          box-shadow: 5px 5px rgba(0, 0, 0, 0.16); }
-
-.products .section-product_hopital {
-  border-top: 2px solid #3a3a3a;
-  height: 100vh;
-  background-color: #272727;
-  display: flex; }
-  @media screen and (max-width: 1441px) {
-    .products .section-product_hopital {
-      height: 120vh; } }
-  .products .section-product_hopital .content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative; }
-    @media screen and (max-width: 1441px) {
-      .products .section-product_hopital .content {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center; } }
-    .products .section-product_hopital .content .left img {
-      margin-right: 200px; }
-      @media screen and (max-width: 1560px) {
-        .products .section-product_hopital .content .left img {
-          margin-right: 0;
-          width: 100%;
-          margin-bottom: 50px; } }
-    .products .section-product_hopital .content .right {
-      position: relative; }
-      .products .section-product_hopital .content .right .text {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center; }
-        .products .section-product_hopital .content .right .text .title {
-          font-size: 36px;
-          font-weight: 600;
-          color: #BFA871;
-          font-family: 'Montserrat', sans-serif; }
-        .products .section-product_hopital .content .right .text .subtitle {
-          font-size: 24px;
-          font-weight: 500;
-          color: #BFA871;
-          font-family: 'Montserrat', sans-serif; }
-      .products .section-product_hopital .content .right button {
-        position: absolute;
-        right: -100px;
-        border: none;
-        border-radius: 60px;
-        background-color: #282828;
-        color: #BFA871;
-        text-align: center;
-        height: 39px;
-        box-shadow: 3px 1px 8px #000000, 0px -1px 6px #6F6D6D;
-        padding: 0 10px;
-        font-weight: 600;
-        cursor: pointer; }
-        .products .section-product_hopital .content .right button:focus {
-          outline: none; }
-        .products .section-product_hopital .content .right button:active {
-          box-shadow: 5px 5px rgba(0, 0, 0, 0.16); }
-  .products .section-product_hopital .view-all {
-    position: absolute;
-    right: 50px;
-    bottom: 40px;
-    border: none;
-    border-radius: 60px;
-    background-color: #282828;
-    color: #BFA871;
-    text-align: center;
-    height: 39px;
-    box-shadow: 3px 1px 8px #000000, 0px -1px 6px #6F6D6D;
-    padding: 0 70px;
-    font-weight: 600; }
-    .products .section-product_hopital .view-all:focus {
-      outline: none; }
-    .products .section-product_hopital .view-all:active {
-      box-shadow: 5px 5px rgba(0, 0, 0, 0.16); }
-
 .section-email {
   border-top: 2px solid #3a3a3a;
   height: 100vh;
@@ -730,6 +586,172 @@ img {
       @media screen and (max-width: 576px) {
         .home-partner .logo .container-fluid .item {
           padding: 20px 0; } }
+
+.products .section-product_mia {
+  border-top: 2px solid #3a3a3a;
+  height: 100vh;
+  background-color: #272727;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  @media screen and (max-width: 991px) {
+    .products .section-product_mia {
+      height: 120vh; } }
+  .products .section-product_mia .content {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    @media screen and (max-width: 991px) {
+      .products .section-product_mia .content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; } }
+    @media screen and (max-width: 1560px) {
+      .products .section-product_mia .content .right img {
+        width: 80%; } }
+    @media screen and (max-width: 991px) {
+      .products .section-product_mia .content .right {
+        order: 1;
+        margin-bottom: 50px; } }
+    @media screen and (width: 375px) and (max-width: 430px) {
+      .products .section-product_mia .content .right {
+        display: flex;
+        justify-content: center; } }
+    .products .section-product_mia .content .left {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      @media screen and (max-width: 991px) {
+        .products .section-product_mia .content .left {
+          order: 2; } }
+      .products .section-product_mia .content .left .text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center; }
+        .products .section-product_mia .content .left .text .title {
+          font-size: 36px;
+          font-weight: 600;
+          color: #bfa871;
+          font-family: "Montserrat", sans-serif; }
+        .products .section-product_mia .content .left .text .subtitle {
+          font-size: 24px;
+          font-weight: 500;
+          color: #bfa871;
+          font-family: "Montserrat", sans-serif; }
+      .products .section-product_mia .content .left a {
+        right: -50px;
+        border: none;
+        border-radius: 60px;
+        background-color: #282828;
+        color: #bfa871;
+        text-align: center;
+        height: 39px;
+        box-shadow: 3px 1px 8px #000000, 0px -1px 6px #6f6d6d;
+        padding: 0 10px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .products .section-product_mia .content .left a:focus {
+          outline: none; }
+        .products .section-product_mia .content .left a:active {
+          box-shadow: 5px 5px rgba(0, 0, 0, 0.16); }
+
+.products .section-product_hopital {
+  border-top: 2px solid #3a3a3a;
+  height: 100vh;
+  background-color: #272727;
+  display: flex; }
+  @media screen and (max-width: 1441px) {
+    .products .section-product_hopital {
+      height: 120vh; } }
+  .products .section-product_hopital .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; }
+    @media screen and (max-width: 1441px) {
+      .products .section-product_hopital .content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; } }
+    .products .section-product_hopital .content .left img {
+      margin-right: 200px; }
+      @media screen and (max-width: 1560px) {
+        .products .section-product_hopital .content .left img {
+          margin-right: 0;
+          width: 100%;
+          margin-bottom: 50px; } }
+      @media screen and (min-width: 375px) and (max-width: 430px) {
+        .products .section-product_hopital .content .left img {
+          margin-right: 0; } }
+    .products .section-product_hopital .content .right {
+      position: relative; }
+      .products .section-product_hopital .content .right .text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center; }
+        @media screen and (min-width: 375px) and (max-width: 430px) {
+          .products .section-product_hopital .content .right .text {
+            width: 100%; } }
+        .products .section-product_hopital .content .right .text .title {
+          font-size: 36px;
+          font-weight: 600;
+          color: #bfa871;
+          font-family: "Montserrat", sans-serif; }
+        .products .section-product_hopital .content .right .text .subtitle {
+          font-size: 24px;
+          font-weight: 500;
+          color: #bfa871;
+          font-family: "Montserrat", sans-serif; }
+      .products .section-product_hopital .content .right button {
+        position: absolute;
+        right: -100px;
+        border: none;
+        border-radius: 60px;
+        background-color: #282828;
+        color: #bfa871;
+        text-align: center;
+        height: 39px;
+        box-shadow: 3px 1px 8px #000000, 0px -1px 6px #6f6d6d;
+        padding: 0 10px;
+        font-weight: 600;
+        cursor: pointer; }
+        @media screen and (min-width: 375px) and (max-width: 430px) {
+          .products .section-product_hopital .content .right button {
+            right: 0px; } }
+        .products .section-product_hopital .content .right button:focus {
+          outline: none; }
+        .products .section-product_hopital .content .right button:active {
+          box-shadow: 5px 5px rgba(0, 0, 0, 0.16); }
+  .products .section-product_hopital .view-all {
+    position: absolute;
+    right: 50px;
+    bottom: 40px;
+    border: none;
+    border-radius: 60px;
+    background-color: #282828;
+    color: #bfa871;
+    text-align: center;
+    height: 39px;
+    box-shadow: 3px 1px 8px #000000, 0px -1px 6px #6f6d6d;
+    padding: 0 70px;
+    font-weight: 600; }
+    @media screen and (width: 375px) {
+      .products .section-product_hopital .view-all {
+        right: 162px;
+        bottom: 253px; } }
+    @media screen and (width: 425px) {
+      .products .section-product_hopital .view-all {
+        right: 182px;
+        bottom: 233px; } }
+    .products .section-product_hopital .view-all:focus {
+      outline: none; }
+    .products .section-product_hopital .view-all:active {
+      box-shadow: 5px 5px rgba(0, 0, 0, 0.16); }
 
 .ourservice {
   height: 100vh;

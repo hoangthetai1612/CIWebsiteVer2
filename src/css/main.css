@@ -825,14 +825,6 @@ img {
     box-shadow: 3px 1px 8px #000000, 0px -1px 6px #6f6d6d;
     padding: 0 70px;
     font-weight: 600; }
-    @media screen and (width: 375px) {
-      .products .section-product_hopital .view-all {
-        right: 162px;
-        bottom: 229px; } }
-    @media screen and (width: 425px) {
-      .products .section-product_hopital .view-all {
-        right: 182px;
-        bottom: 233px; } }
     .products .section-product_hopital .view-all:focus {
       outline: none; }
     .products .section-product_hopital .view-all:active {

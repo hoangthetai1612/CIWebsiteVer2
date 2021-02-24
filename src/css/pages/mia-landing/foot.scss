@@ -16,12 +16,16 @@
         padding-top: 100px;
         text-align: left;
         font-family: $font-poppins;
+        @media screen and(max-width: 521px) {
+            font-size: 34px;
+            text-align: center;
+        }
     }
     a {
         width: 575px;
         height: 64px;
         background-color: #BFA871;
-        font-style: 24px;
+        font-size: 24px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -29,17 +33,27 @@
         color: #272727;
         border-radius: 50px;
         font-weight: 500;
+        @media screen and(max-width: 521px) {
+            width: 300px;
+            font-size: 14px;
+        }
     }
     .left {
         position: absolute;
         bottom: -100px;
         width: 420px;
         left: -100px;
+        @media screen and(max-width: 521px) {
+            width: 200px
+        }
     }
     .right {
         position: absolute;
         width: 405px;
         bottom: -50px;
         right: -50px;
+        @media screen and(max-width: 521px) {
+            width: 200px
+        }
     }
 }

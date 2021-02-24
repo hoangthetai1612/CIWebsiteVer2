@@ -28,12 +28,18 @@
                     order: 1;
                     margin-bottom: 50px;
                 }
-                @media screen and (width: 375px) and (max-width: 430px) {
+                @media screen and(max-width: 521px) {
                     display: flex;
+                    align-items: center;
                     justify-content: center;
                 }
             }
             .left {
+                position: relative;
+                margin-right: 150px;
+                @media screen and(max-width: 521px) {
+                    margin-right: 0;
+                }
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -49,14 +55,20 @@
                     .title {
                         font-size: 36px;
                         font-weight: 600;
-                        color: #bfa871;
-                        font-family: "Montserrat", sans-serif;
+                        color: #BFA871;
+                        font-family: 'Montserrat', sans-serif;
+                        @media screen and(max-width: 521px) {
+                            font-size: 26px;
+                        }
                     }
                     .subtitle {
                         font-size: 24px;
                         font-weight: 500;
-                        color: #bfa871;
-                        font-family: "Montserrat", sans-serif;
+                        color: #BFA871;
+                        font-family: 'Montserrat', sans-serif;
+                        @media screen and(max-width: 521px) {
+                            font-size: 18px;
+                        }
                     }
                 }
                 a {
@@ -79,6 +91,9 @@
                     &:active {
                         box-shadow: 5px 5px rgba($color: #000000, $alpha: 0.16);
                     }
+                    @media screen and(max-width: 521px) {
+                        right: 0;
+                    }
                 }
             }
         }
@@ -86,6 +101,9 @@
     .section-product_hopital {
         // border-top: 2px solid #3a3a3a;
         height: 100vh;
+        @media screen and(max-width: 521px) {
+            height: 80vh;
+        }
         background-color: #272727;
         display: flex;
         @media screen and (max-width: 1441px) {
@@ -127,26 +145,36 @@
                     .title {
                         font-size: 36px;
                         font-weight: 600;
-                        color: #bfa871;
-                        font-family: "Montserrat", sans-serif;
+                        color: #BFA871;
+                        font-family: 'Montserrat', sans-serif;
+                        @media screen and(max-width: 521px) {
+                            font-size: 26px;
+                        }
                     }
                     .subtitle {
                         font-size: 24px;
                         font-weight: 500;
-                        color: #bfa871;
-                        font-family: "Montserrat", sans-serif;
+                        color: #BFA871;
+                        font-family: 'Montserrat', sans-serif;
+                        @media screen and(max-width: 521px) {
+                            font-size: 18px;
+                        }
                     }
                 }
                 button {
                     position: absolute;
                     right: -100px;
+                    @media screen and(max-width: 521px) {
+                        right: 0;
+                    }
                     border: none;
                     border-radius: 60px;
                     background-color: #282828;
                     color: #bfa871;
                     text-align: center;
                     height: 39px;
-                    box-shadow: 3px 1px 8px #000000, 0px -1px 6px #6f6d6d;
+                    box-shadow: 3px 1px 8px #000000,
+                    0px -1px 6px #6F6D6D;
                     padding: 0 10px;
                     font-weight: 600;
                     @media screen and (min-width: 375px) and (max-width: 430px) {
@@ -175,15 +203,14 @@
             box-shadow: 3px 1px 8px #000000, 0px -1px 6px #6f6d6d;
             padding: 0 70px;
             font-weight: 600;
-
-            @media screen and (width: 375px) {
-                right: 162px;
-                bottom: 229px;
-            }
-            @media screen and (width: 425px) {
-                right: 182px;
-                bottom: 233px;
-            }
+            // @media screen and (width: 375px) {
+            //     right: 162px;
+            //     bottom: 229px;
+            // }
+            // @media screen and (width: 425px) {
+            //     right: 182px;
+            //     bottom: 233px;
+            // }
             &:focus {
                 outline: none;
             }

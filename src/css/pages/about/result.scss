@@ -7,17 +7,28 @@
     justify-content: flex-start;
     position: relative;
     overflow: hidden;
+    @media screen and(max-width: 521px) {
+        justify-content: center;
+    }
     .title {
         font-size: 36px;
         font-weight: 600;
         color: #BFA871;
         padding-top: 100px;
+        @media screen and(max-width: 521px) {
+            font-size: 26px;
+            text-align: center;
+        }
     }
     .content {
         font-size: 18px;
         font-weight: 400;
         color: #BFA871;
         width: 55%;
+        @media screen and(max-width: 521px) {
+            width: 90% !important;
+            font-size: 16px;
+        }
         @media screen and(max-width: 1025px) {
             width: 70%;
         }

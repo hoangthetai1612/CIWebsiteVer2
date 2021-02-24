@@ -144,6 +144,7 @@
             }
         }
         .header__menu-icon{
+          display: none;
           .toggle-icon{
             width: 30px;
             height: 2px;
@@ -153,17 +154,42 @@
             position: relative;
           }
         }
+        @media screen and(max-width: 767px) {
+          .header__menu{
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 0;
+            height: 100vh;
+            transition: 0.5s;
+            background-color: black;
+            z-index: 99;
+            &-list{
+              flex-direction: column;
+              padding-top: 30px;
+              align-items: center;
+              li{
+                margin-top: 20px;
+                a{
+                  font-size: 25px;
+                }
+              }
+            }
+            img{
+              width: unset;
+            }
+          }
+          .header__menu-icon{
+            display: block;
+          }
+          .set-width{
+            width: 250px;
+          }
+        }
     }
 }
-@media(max-with: 769px) {
-  .header{
-    .container-fluid{
-      .header__menu{
-        display: none;
-      }
-    }
-  }
-}
+
 
    
 

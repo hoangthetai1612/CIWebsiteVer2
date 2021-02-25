@@ -208,10 +208,18 @@ function toogleMenu() {
       menuButton.classList.toggle('toggle')
       // bodyOverlay.style.display = "block";
   });
-  // closeBtn.addEventListener("click", () => {
-  //     menu.classList.remove('set-width')
-  //     bodyOverlay.style.display = "none";
-  // });
+  // window.addEventListener('click', function(e){
+  //   if (!document.getElementById('l2').contains(e.target) && (!document.getElementById('logo-menu').contains(e.target))){
+  //   alert("Clicked outside l2 and logo-menu");
+  //    document.getElementById('l2').style.height="0px"; //the same code you've used to hide the menu
+  // } 
+  // })
+  window.addEventListener('click', function(e) {
+    if(!menu.contains(e.target) && !menuButton.contains(e.target)){
+      menu.classList.remove('set-width')
+      menuButton.classList.remove('toggle')
+    }
+  })
 }
 toogleMenu();
 

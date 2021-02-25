@@ -1,6 +1,5 @@
 .products {
     .section-product_mia {
-        // border-top: 2px solid #3a3a3a;
         height: 100vh;
         @media screen and (max-width: 991px) {
             height: 120vh;
@@ -55,8 +54,8 @@
                     .title {
                         font-size: 36px;
                         font-weight: 600;
-                        color: #BFA871;
-                        font-family: 'Montserrat', sans-serif;
+                        color: #bfa871;
+                        font-family: "Montserrat", sans-serif;
                         @media screen and(max-width: 521px) {
                             font-size: 26px;
                         }
@@ -64,8 +63,8 @@
                     .subtitle {
                         font-size: 24px;
                         font-weight: 500;
-                        color: #BFA871;
-                        font-family: 'Montserrat', sans-serif;
+                        color: #bfa871;
+                        font-family: "Montserrat", sans-serif;
                         @media screen and(max-width: 521px) {
                             font-size: 18px;
                         }
@@ -99,7 +98,6 @@
         }
     }
     .section-product_hopital {
-        // border-top: 2px solid #3a3a3a;
         height: 100vh;
         @media screen and(max-width: 521px) {
             height: 80vh;
@@ -146,8 +144,8 @@
                     .title {
                         font-size: 36px;
                         font-weight: 600;
-                        color: #BFA871;
-                        font-family: 'Montserrat', sans-serif;
+                        color: #bfa871;
+                        font-family: "Montserrat", sans-serif;
                         @media screen and(max-width: 521px) {
                             font-size: 26px;
                         }
@@ -155,8 +153,8 @@
                     .subtitle {
                         font-size: 24px;
                         font-weight: 500;
-                        color: #BFA871;
-                        font-family: 'Montserrat', sans-serif;
+                        color: #bfa871;
+                        font-family: "Montserrat", sans-serif;
                         @media screen and(max-width: 521px) {
                             font-size: 18px;
                         }
@@ -174,8 +172,7 @@
                     color: #bfa871;
                     text-align: center;
                     height: 39px;
-                    box-shadow: 3px 1px 8px #000000,
-                    0px -1px 6px #6F6D6D;
+                    box-shadow: 3px 1px 8px #000000, 0px -1px 6px #6f6d6d;
                     padding: 0 10px;
                     font-weight: 600;
                     @media screen and (min-width: 375px) and (max-width: 430px) {

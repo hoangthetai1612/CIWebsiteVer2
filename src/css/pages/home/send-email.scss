@@ -1,5 +1,4 @@
 .section-email {
-    // border-top: 2px solid #3a3a3a;
     height: 100vh;
     background-color: #272727;
     display: flex;
@@ -13,8 +12,8 @@
         .title {
             font-size: 60px;
             font-weight: 700;
-            color: #BFA871;
-            font-family: 'Montserrat', sans-serif;
+            color: #bfa871;
+            font-family: "Montserrat", sans-serif;
             @media screen and(max-width: 576px) {
                 font-size: 25px !important;
             }
@@ -24,11 +23,11 @@
             height: 68px;
             border: #707070;
             background-color: #272727;
-            color: #BFA871;
+            color: #bfa871;
             font-size: 24px;
-            font-family: 'Montserrat', sans-serif;
+            font-family: "Montserrat", sans-serif;
             border-radius: 50px;
-            box-shadow: 3px 1px 8px #000000, 0px -1px 6px #6F6D6D;
+            box-shadow: 3px 1px 8px #000000, 0px -1px 6px #6f6d6d;
             @media screen and(max-width: 576px) {
                 font-size: 18px !important;
                 width: 175px !important;

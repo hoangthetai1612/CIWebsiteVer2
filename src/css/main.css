@@ -47,7 +47,8 @@ img {
   width: 100%;
   left: 0;
   top: 0;
-  z-index: 999; }
+  z-index: 999;
+  box-shadow: 1px 0 15px 2px #bfa871; }
   .header .container-fluid {
     display: flex;
     justify-content: space-between;
@@ -262,7 +263,8 @@ img {
   width: 100%;
   left: 0;
   top: 0;
-  z-index: 999; }
+  z-index: 999;
+  box-shadow: 1px 0 15px 2px #bfa871; }
   .header .container-fluid {
     display: flex;
     justify-content: space-between;
@@ -429,7 +431,6 @@ img {
         display: none; } }
 
 .section-email {
-  border-top: 2px solid #3a3a3a;
   height: 100vh;
   background-color: #272727;
   display: flex;
@@ -490,7 +491,6 @@ img {
   display: flex;
   align-items: center;
   background-color: #272727;
-  border-top: 2px solid #3a3a3a;
   padding: 10% 0; }
   .home-about .title {
     color: #bfa871;
@@ -515,8 +515,7 @@ img {
   background-color: #272727;
   display: flex;
   justify-content: center;
-  align-items: center;
-  border-top: 2px solid #3a3a3a; }
+  align-items: center; }
   .home-slogan .slogan {
     cursor: pointer; }
     .home-slogan .slogan p {
@@ -540,7 +539,6 @@ img {
 .home-partner {
   height: 100vh;
   background-color: #272727;
-  border-top: 2px solid #3a3a3a;
   position: relative; }
   .home-partner::after {
     content: '';
@@ -646,7 +644,6 @@ img {
           padding: 20px 0; } }
 
 .products .section-product_mia {
-  border-top: 2px solid #3a3a3a;
   height: 100vh;
   background-color: #272727;
   display: flex;
@@ -733,7 +730,6 @@ img {
             right: 0; } }
 
 .products .section-product_hopital {
-  border-top: 2px solid #3a3a3a;
   height: 100vh;
   background-color: #272727;
   display: flex; }
@@ -753,16 +749,18 @@ img {
         flex-direction: column;
         justify-content: center;
         align-items: center; } }
-    .products .section-product_hopital .content .left img {
-      margin-right: 200px; }
-      @media screen and (max-width: 1560px) {
-        .products .section-product_hopital .content .left img {
-          margin-right: 0;
-          width: 100%;
-          margin-bottom: 50px; } }
-      @media screen and (min-width: 375px) and (max-width: 430px) {
-        .products .section-product_hopital .content .left img {
-          margin-right: 0; } }
+    .products .section-product_hopital .content .left {
+      margin-right: 20px; }
+      .products .section-product_hopital .content .left img {
+        margin-right: 200px; }
+        @media screen and (max-width: 1560px) {
+          .products .section-product_hopital .content .left img {
+            margin-right: 0;
+            width: 100%;
+            margin-bottom: 50px; } }
+        @media screen and (min-width: 375px) and (max-width: 430px) {
+          .products .section-product_hopital .content .left img {
+            margin-right: 0; } }
     .products .section-product_hopital .content .right {
       position: relative; }
       .products .section-product_hopital .content .right .text {
@@ -1262,8 +1260,7 @@ img {
   background-color: #272727;
   display: flex;
   justify-content: center;
-  align-items: center;
-  border-top: 2px solid #3a3a3a; }
+  align-items: center; }
   .cloud-doctor-video .video {
     width: 45%; }
     @media screen and (max-width: 991px) {
@@ -1275,8 +1272,7 @@ img {
   background-color: #272727;
   display: flex;
   justify-content: center;
-  align-items: center;
-  border-top: 2px solid #3a3a3a; }
+  align-items: center; }
   @media screen and (max-width: 576px) {
     .cloud-doctor-result {
       height: unset;
@@ -1323,7 +1319,6 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top: 2px solid #3a3a3a;
   position: relative;
   overflow: hidden; }
   .cloud-doctor-viewmore img {
@@ -1469,7 +1464,6 @@ img {
   background-image: url("../images/time-tracker/introduce-bg.png");
   background-position: center;
   background-size: cover;
-  border-top: 2px solid #3a3a3a;
   overflow: hidden; }
   @media screen and (max-width: 991px) {
     .time-tracker-introduce {
@@ -1503,8 +1497,7 @@ img {
 
 .time-tracker-about .product-top {
   padding: 50px 0;
-  background-color: #272727;
-  border-top: 2px solid #3a3a3a; }
+  background-color: #272727; }
   .time-tracker-about .product-top .container-fluid {
     height: 100%; }
     .time-tracker-about .product-top .container-fluid .row {
@@ -1544,8 +1537,7 @@ img {
 
 .time-tracker-about .product-bottom {
   padding: 50px 0;
-  background-color: #272727;
-  border-top: 2px solid #3a3a3a; }
+  background-color: #272727; }
   .time-tracker-about .product-bottom .container-fluid {
     height: 100%; }
     .time-tracker-about .product-bottom .container-fluid .row {
@@ -1584,7 +1576,6 @@ img {
 .time-tracker-about .viewmore {
   height: 100vh;
   background-color: #272727;
-  border-top: 2px solid #3a3a3a;
   display: flex;
   justify-content: center;
   align-items: center;

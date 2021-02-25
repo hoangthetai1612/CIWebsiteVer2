@@ -20,20 +20,23 @@ function menuDot() {
   if (page == 'index.html') {
     document.getElementById("home-icon").classList.add('menu-dot')
   }
-  if (page == 'service.html') {
+  else if (page == 'service.html') {
     document.getElementById("service-icon").classList.add('menu-dot')
   }
-  if (page == 'packageapp.html') {
+  else if (page == 'packageapp.html') {
     document.getElementById("service-icon").classList.add('menu-dot')
   }
-  if (page == 'enterpriseapp.html') {
+  else if (page == 'enterpriseapp.html') {
     document.getElementById("service-icon").classList.add('menu-dot')
   }
-  if (page == 'about.html') {
+  else if (page == 'about.html') {
     document.getElementById("about-icon").classList.add('menu-dot')
   }
-  if (page == 'contact.html') {
+  else if (page == 'contact.html') {
     document.getElementById("contact-icon").classList.add('menu-dot')
+  }
+  else{
+    document.getElementById("home-icon").classList.add('menu-dot')
   }
 }
 menuDot();

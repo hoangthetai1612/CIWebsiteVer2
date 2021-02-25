@@ -1661,7 +1661,8 @@ img {
     font-size: 18px;
     font-weight: 400;
     color: #BFA871;
-    width: 520px; }
+    width: 520px;
+    font-family: Helvetica, sans-serif; }
     @media screen and (max-width: 521px) {
       .banner-section .description {
         width: 90%;
@@ -1701,11 +1702,13 @@ img {
       .section-timeline .chicago .right .title {
         font-size: 36px;
         font-weight: 600;
-        color: #BFA871; }
+        color: #BFA871;
+        font-family: "Montserrat", sans-serif !important; }
       .section-timeline .chicago .right .content {
         font-size: 18px;
         font-weight: 400;
-        color: #BFA871; }
+        color: #BFA871;
+        font-family: Helvetica, sans-serif; }
         @media screen and (max-width: 521px) {
           .section-timeline .chicago .right .content {
             font-size: 16px; } }
@@ -1720,12 +1723,14 @@ img {
     .section-timeline .vietnam .left .title {
       font-size: 36px;
       font-weight: 600;
-      color: #BFA871; }
+      color: #BFA871;
+      font-family: "Montserrat", sans-serif !important; }
     .section-timeline .vietnam .left .content {
       font-size: 18px;
       font-weight: 400;
       color: #BFA871;
-      text-align: right; }
+      text-align: right;
+      font-family: Helvetica, sans-serif; }
       @media screen and (max-width: 769px) {
         .section-timeline .vietnam .left .content {
           text-align: left; } }
@@ -1761,7 +1766,8 @@ img {
     font-size: 36px;
     font-weight: 600;
     color: #BFA871;
-    padding-top: 100px; }
+    padding-top: 100px;
+    font-family: "Montserrat", sans-serif !important; }
     @media screen and (max-width: 521px) {
       .result .title {
         font-size: 26px;
@@ -1770,7 +1776,8 @@ img {
     font-size: 18px;
     font-weight: 400;
     color: #BFA871;
-    width: 55%; }
+    width: 55%;
+    font-family: Helvetica, sans-serif; }
     @media screen and (max-width: 521px) {
       .result .content {
         width: 90% !important;
@@ -1871,7 +1878,7 @@ img {
     font-weight: 600;
     color: #BFA871;
     padding-top: 100px;
-    font-family: "Montserrat", sans-serif; }
+    font-family: "Montserrat", sans-serif !important; }
     @media screen and (max-width: 769px) {
       .discovery .title {
         margin-bottom: 50px;
@@ -1882,7 +1889,8 @@ img {
   .discovery .content {
     font-size: 18px;
     font-weight: 400;
-    color: #BFA871; }
+    color: #BFA871;
+    font-family: Helvetica, sans-serif; }
     @media screen and (max-width: 521px) {
       .discovery .content {
         font-size: 16px; } }
@@ -1972,7 +1980,7 @@ img {
       font-size: 48px;
       font-weight: 600;
       color: #BFA871;
-      font-family: "Montserrat", sans-serif;
+      font-family: "Montserrat", sans-serif !important;
       width: 80%; }
       @media screen and (max-width: 521px) {
         .infor .top .title {
@@ -2010,7 +2018,7 @@ img {
       font-size: 48px;
       font-weight: 600;
       color: #BFA871;
-      font-family: "Montserrat", sans-serif;
+      font-family: "Montserrat", sans-serif !important;
       width: 80%; }
       @media screen and (max-width: 1025px) {
         .infor .bottom .title {

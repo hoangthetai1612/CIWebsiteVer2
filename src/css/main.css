@@ -444,8 +444,8 @@ img {
     .section-email .content .title {
       font-size: 60px;
       font-weight: 700;
-      color: #BFA871;
-      font-family: 'Montserrat', sans-serif; }
+      color: #bfa871;
+      font-family: "Montserrat", sans-serif; }
       @media screen and (max-width: 576px) {
         .section-email .content .title {
           font-size: 25px !important; } }
@@ -454,11 +454,11 @@ img {
       height: 68px;
       border: #707070;
       background-color: #272727;
-      color: #BFA871;
+      color: #bfa871;
       font-size: 24px;
-      font-family: 'Montserrat', sans-serif;
+      font-family: "Montserrat", sans-serif;
       border-radius: 50px;
-      box-shadow: 3px 1px 8px #000000, 0px -1px 6px #6F6D6D; }
+      box-shadow: 3px 1px 8px #000000, 0px -1px 6px #6f6d6d; }
       @media screen and (max-width: 576px) {
         .section-email .content button {
           font-size: 18px !important;
@@ -694,16 +694,16 @@ img {
         .products .section-product_mia .content .left .text .title {
           font-size: 36px;
           font-weight: 600;
-          color: #BFA871;
-          font-family: 'Montserrat', sans-serif; }
+          color: #bfa871;
+          font-family: "Montserrat", sans-serif; }
           @media screen and (max-width: 521px) {
             .products .section-product_mia .content .left .text .title {
               font-size: 26px; } }
         .products .section-product_mia .content .left .text .subtitle {
           font-size: 24px;
           font-weight: 500;
-          color: #BFA871;
-          font-family: 'Montserrat', sans-serif; }
+          color: #bfa871;
+          font-family: "Montserrat", sans-serif; }
           @media screen and (max-width: 521px) {
             .products .section-product_mia .content .left .text .subtitle {
               font-size: 18px; } }
@@ -774,16 +774,16 @@ img {
         .products .section-product_hopital .content .right .text .title {
           font-size: 36px;
           font-weight: 600;
-          color: #BFA871;
-          font-family: 'Montserrat', sans-serif; }
+          color: #bfa871;
+          font-family: "Montserrat", sans-serif; }
           @media screen and (max-width: 521px) {
             .products .section-product_hopital .content .right .text .title {
               font-size: 26px; } }
         .products .section-product_hopital .content .right .text .subtitle {
           font-size: 24px;
           font-weight: 500;
-          color: #BFA871;
-          font-family: 'Montserrat', sans-serif; }
+          color: #bfa871;
+          font-family: "Montserrat", sans-serif; }
           @media screen and (max-width: 521px) {
             .products .section-product_hopital .content .right .text .subtitle {
               font-size: 18px; } }
@@ -796,7 +796,7 @@ img {
         color: #bfa871;
         text-align: center;
         height: 39px;
-        box-shadow: 3px 1px 8px #000000, 0px -1px 6px #6F6D6D;
+        box-shadow: 3px 1px 8px #000000, 0px -1px 6px #6f6d6d;
         padding: 0 10px;
         font-weight: 600;
         cursor: pointer; }
@@ -972,7 +972,8 @@ img {
   background-color: #272727;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  margin-top: -1px; }
   .enterpriseapp .enterpriseapp-item {
     width: 50%;
     display: flex;
@@ -1024,6 +1025,7 @@ img {
 
 .product {
   height: 100vh;
+  margin-top: -1px;
   background-color: #272727;
   display: flex;
   justify-content: center;
@@ -1125,7 +1127,8 @@ img {
   background-color: #272727;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  margin-top: -1px; }
   .enterpriseapp-send .enterpriseapp-send-item {
     width: 100%;
     display: flex;

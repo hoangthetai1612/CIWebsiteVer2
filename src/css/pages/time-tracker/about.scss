@@ -2,7 +2,7 @@
     .product-top {
         padding: 50px 0;
         background-color: $color-background;
-        border-top: 2px solid $color-border-top;
+        // border-top: 2px solid $color-border-top;
         .container-fluid{
             height: 100%;
             .row{
@@ -35,6 +35,9 @@
             }
             .content{
                 width: 75%;
+                @media screen and(max-width: 576px) {
+                    width: 85%;
+                }
             }
             .title{
                 width: 75%;
@@ -45,13 +48,18 @@
                 @media screen and (max-width: 1560px) {
                     font-size: 35px;
                 }
+                @media screen and (max-width: 576px) {
+                    font-size: 30px;
+                    margin-bottom: 30px;
+                    width: 85%;
+                }
             }
         } 
     }
     .product-bottom {
         padding: 50px 0;
         background-color: $color-background;
-        border-top: 2px solid $color-border-top;
+        // border-top: 2px solid $color-border-top;
         .container-fluid{
             height: 100%;
             .row{
@@ -70,6 +78,9 @@
             align-items: center;
             .content{
                 width: 75%;
+                @media screen and(max-width: 576px) {
+                    width: 85%;
+                }
             }
             .title{
                 width: 75%;
@@ -79,6 +90,11 @@
                 margin-bottom: 35px;
                 @media screen and (max-width: 1560px) {
                     font-size: 35px;
+                }
+                @media screen and (max-width: 576px) {
+                    font-size: 30px;
+                    margin-bottom: 30px;
+                    width: 85%;
                 }
             }
         } 
@@ -98,11 +114,12 @@
     .viewmore{
         height: 100vh;
         background-color: $color-background;
-        border-top: 2px solid $color-border-top;
+        // border-top: 2px solid $color-border-top;
         display: flex;
         justify-content: center;
         align-items: center;
         position: relative;
+        overflow: hidden;
         .content{
             .title{
                 font-size: 60px;
@@ -111,6 +128,9 @@
                 color: $color-white;
                 @media(max-width: 1919px){
                     font-size: 50px;
+                }
+                @media(max-width: 576px){
+                    font-size: 30px;
                 }
             }
             .link{
@@ -124,6 +144,10 @@
                     font-family: $font-poppins;
                     font-weight: 500;
                     color: $color-white;
+                    @media(max-width: 576px){
+                        font-size: 18px;
+                        padding: 10px 20px;
+                    }
                 }
             }
         }
@@ -149,6 +173,13 @@
             right: 10%;
             img{
                 width: 70%;
+            }
+            @media screen and(max-width: 991px) {
+                bottom: 22%;
+            }
+            @media screen and(max-width: 576px) {
+                bottom: 10%;
+                right: -7%;
             }
         }
     }

@@ -14,13 +14,11 @@
   });
 
 }(jQuery));
-function menuDot() {
-  let arr = window.location.href.split('/');
-  let page = arr[arr.length - 1];
+function menuDot(page) {
   if (page == 'index.html') {
     document.getElementById("home-icon").classList.add('menu-dot')
   }
-  else if (page == 'service.html' || page == 'packageapp.html' || page == 'enterpriseapp.html' || page == 'cloud-doctor.html' || page == 'time-tracker.html') {
+  else if (page == 'service.html' || page == 'packageapp.html' || page == 'enterpriseapp.html') {
     document.getElementById("service-icon").classList.add('menu-dot')
   }
   else if (page == 'about.html') {
@@ -33,7 +31,20 @@ function menuDot() {
     document.getElementById("home-icon").classList.add('menu-dot')
   }
 }
-menuDot();
+function checkDot() {
+  let arr = window.location.href.split('/');
+  let page = arr[arr.length - 1];
+  if(page == 'cloud-doctor.html' || page == 'time-tracker.html' || page == 'mia-landing.html'){
+    let preArr = document.referrer.split('/');
+    let prePage = preArr[preArr.length - 1];
+    // console.log(prePage);
+    menuDot(prePage);
+  }
+  else{
+    menuDot(page)
+  }
+}
+checkDot();
 
 var dragItem = document.querySelector("#item");
 var container = document.querySelector("#container");
@@ -96,7 +107,8 @@ function toogleMenu() {
   menuButton.addEventListener("click", () => {
       menu.classList.toggle('set-width')
       body.style.backgroundColor = "rgba(0, 0, 0, 0.4)";
-      menuButton.classList.toggle('toggle')
+      menuButton.classList.toggle('toggle');
+      
       // bodyOverlay.style.display = "block";
   });
   // window.addEventListener('click', function(e){

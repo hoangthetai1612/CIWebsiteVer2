@@ -14,175 +14,80 @@
   });
 
 }(jQuery));
-function menuDot() {
-  let arr = window.location.href.split('/');
-  let page = arr[arr.length - 1];
+function menuDot(page) {
   if (page == 'index.html') {
     document.getElementById("home-icon").classList.add('menu-dot')
   }
-  if (page == 'service.html') {
+  else if (page == 'service.html' || page == 'packageapp.html' || page == 'enterpriseapp.html') {
     document.getElementById("service-icon").classList.add('menu-dot')
   }
-  if (page == 'packageapp.html') {
-    document.getElementById("service-icon").classList.add('menu-dot')
-  }
-  if (page == 'enterpriseapp.html') {
-    document.getElementById("service-icon").classList.add('menu-dot')
-  }
-  if (page == 'about.html') {
+  else if (page == 'about.html') {
     document.getElementById("about-icon").classList.add('menu-dot')
   }
-  if (page == 'contact.html') {
+  else if (page == 'contact.html') {
     document.getElementById("contact-icon").classList.add('menu-dot')
   }
+  else{
+    document.getElementById("home-icon").classList.add('menu-dot')
+  }
 }
-menuDot();
+function checkDot() {
+  let arr = window.location.href.split('/');
+  let page = arr[arr.length - 1];
+  if(page == 'cloud-doctor.html' || page == 'time-tracker.html' || page == 'mia-landing.html'){
+    let preArr = document.referrer.split('/');
+    let prePage = preArr[preArr.length - 1];
+    // console.log(prePage);
+    menuDot(prePage);
+  }
+  else{
+    menuDot(page)
+  }
+}
+checkDot();
 
 var dragItem = document.querySelector("#item");
 var container = document.querySelector("#container");
+var dragItem1 = document.querySelector("#item1");
+var container1 = document.querySelector("#container1");
 
-var active = false;
-var currentX;
-var currentY;
-var initialX;
-var initialY;
-var itemClick;
-var xOffset = 0;
-var yOffset = 0;
-
-
-if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
-  container.addEventListener("mouseup", dragEnd, false);
-  container.addEventListener("click", toggleSwitch, false);
-} else {
-  container.addEventListener("touchstart", dragStart, false);
-  container.addEventListener("touchend", dragEnd, false);
-  container.addEventListener("touchmove", drag, false);
-
-  container.addEventListener("mousedown", dragStart, false);
-  dragItem.addEventListener("mousedown", itemDragStart, false);
-
-  container.addEventListener("mousemove", drag, false);
-
-  container.addEventListener("mouseup", dragEnd, false);
-  container.addEventListener("click", toggleSwitch, false);
-}
-
-function dragStart(e) {
-  var elm = $(this);
-  var xPos = e.pageX - elm.offset().left;
-
-  if (e.type === "touchstart") {
-    var xPosMobile = e.touches[0].pageX - elm.offset().left;
-    initialX = xPosMobile;
-  } else {
-    initialX = xPos;
-  }
-
-  dragItem.style.transition = "all .2s cubic-bezier(0.04, 0.46, 0.36, 0.99)";
-
-  if (e.target === dragItem) {
-    active = true;
-  }
-}
-
-function itemDragStart(e) {
-  var elm = $(this);
-  var xPos = e.pageX - elm.offset().left;
-
-  itemClick = xPos;
-}
-
-function toggleSwitch(e) {
-  if (initialX > 100) {
-    currentX = 0;
-  } else {
-    currentX = 200;
-  }
-}
-
-function dragEnd(e) {
-  initialX = currentX;
-
-  active = false;
-
-  if (initialX > 25) {
-    currentX = 61;
-    dragItem.style.transition = "all .2s cubic-bezier(0.04, 0.46, 0.36, 0.99)";
-    container.classList.add('select-right');
-    container.classList.remove('select-left');
-  } else {
-    currentX = 0;
-    dragItem.style.transition = "all .2s cubic-bezier(0.04, 0.46, 0.36, 0.99)";
-    container.classList.remove('select-right');
-    container.classList.add('select-left');
-  }
-
-  setTranslate(currentX, dragItem);
-}
-
-function drag(e) {
-  var elm = $(this);
-  var xPos = e.pageX - elm.offset().left;
-  if (!(xPos > 100 || xPos < 0)) {
-    if (active) {
-      e.preventDefault();
-
-      if (e.type === "touchmove") {
-        var xPosMobile = e.touches[0].pageX - elm.offset().left;
-        currentX = xPosMobile - initialX;
-        if (initialX > 50) {
-          currentX = xPosMobile - itemClick;
-        }
-        if (currentX > 50) {
-          currentX = 50;
-          active = false;
-          container.classList.add('select-right');
-          container.classList.remove('select-left');
-        } else if (currentX < 0) {
-          currentX = 0;
-          active = false;
-          container.classList.remove('select-right');
-          container.classList.add('select-left');
-        }
-      } else {
-        currentX = xPos - initialX;
-        if (initialX > 50) {
-          currentX = xPos - itemClick;
-        }
-        if (currentX > 50) {
-          currentX = 50;
-          active = false;
-          container.classList.add('select-right');
-          container.classList.remove('select-left');
-        } else if (currentX < 0) {
-          currentX = 0;
-          active = false;
-          container.classList.remove('select-right');
-          container.classList.add('select-left');
-        }
-      }
-
-      dragItem.style.transition = "all .05s cubic-bezier(0.04, 0.46, 0.36, 0.99)";
-
-      xOffset = currentX;
-
-      setTranslate(currentX, dragItem);
+function languageMode() {
+  container.addEventListener('click',function(e) {
+    let className = container.classList[0];
+    if(className == 'select-left') {
+      container.classList.remove('select-left');
+      container.classList.add('select-right');
+      dragItem.classList.remove('item-left');
+      dragItem.classList.add('item-right');
     }
-  } else {
-    active = false;
-
-    if (initialX > 200) {
-      dragItem.style.transform = "translate3d(50px, 0px, 0)";
-    } else {
-      dragItem.style.transform = "translate3d(0, 0px, 0)";
+    if(className == 'select-right') {
+      container.classList.remove('select-right');
+      container.classList.add('select-left');
+      dragItem.classList.remove('item-right');
+      dragItem.classList.add('item-left');
     }
-  }
-}
+  })
 
-function setTranslate(xPos, el) {
-  el.style.transform = "translate3d(" + xPos + "px, 0px, 0)";
+  container1.addEventListener('click',function(e) {
+    let className = container1.classList[0];
+    if(className == 'select-left') {
+      // document.getElementById("menu1").style.display = "block";
+      container1.classList.remove('select-left');
+      container1.classList.add('select-right');
+      dragItem1.classList.remove('item-left');
+      dragItem1.classList.add('item-right');
+    }
+    if(className == 'select-right') {
+      container1.classList.remove('select-right');
+      container1.classList.add('select-left');
+      dragItem1.classList.remove('item-right');
+      dragItem1.classList.add('item-left');
+    }
+  })
+  
 }
+languageMode();
+
 new WOW().init();
 
 function tiltcustom() {
@@ -192,6 +97,34 @@ function tiltcustom() {
 }
 tiltcustom();
 
+function toogleMenu() {
+  let menuButton = document.querySelector(".header__menu-icon ");
+  let menu = document.querySelector(".header__menu");
+  let closeBtn = document.querySelector(".close-menu");
+  let body = document.getElementsByTagName("body")[0];
+  let bodyOverlay = document.querySelector(".body-overlay");
+
+  menuButton.addEventListener("click", () => {
+      menu.classList.toggle('set-width')
+      body.style.backgroundColor = "rgba(0, 0, 0, 0.4)";
+      menuButton.classList.toggle('toggle');
+      
+      // bodyOverlay.style.display = "block";
+  });
+  // window.addEventListener('click', function(e){
+  //   if (!document.getElementById('l2').contains(e.target) && (!document.getElementById('logo-menu').contains(e.target))){
+  //   alert("Clicked outside l2 and logo-menu");
+  //    document.getElementById('l2').style.height="0px"; //the same code you've used to hide the menu
+  // } 
+  // })
+  window.addEventListener('click', function(e) {
+    if(!menu.contains(e.target) && !menuButton.contains(e.target)){
+      menu.classList.remove('set-width')
+      menuButton.classList.remove('toggle')
+    }
+  })
+}
+toogleMenu();
 
 
 

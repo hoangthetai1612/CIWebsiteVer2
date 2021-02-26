@@ -1792,8 +1792,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  overflow: hidden; }
+  position: relative; }
   .time-tracker-about .viewmore .content .title {
     font-size: 60px;
     font-family: "Poppins", sans-serif;

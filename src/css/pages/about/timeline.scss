@@ -36,11 +36,13 @@
                 font-size: 36px;
                 font-weight: 600;
                 color: #BFA871;
+                font-family: $font-montserrat !important;
             }
             .content {
                 font-size: 18px;
                 font-weight: 400;
                 color: #BFA871;
+                font-family: Helvetica, sans-serif;
                 @media screen and(max-width: 521px) {
                     font-size: 16px;
                 }
@@ -61,12 +63,14 @@
                 font-size: 36px;
                 font-weight: 600;
                 color: #BFA871;
+                font-family: $font-montserrat !important;
             }
             .content {
                 font-size: 18px;
                 font-weight: 400;
                 color: #BFA871;
                 text-align: right;
+                font-family: Helvetica, sans-serif;
                 @media screen and(max-width: 769px) {
                     text-align: left;
                 }

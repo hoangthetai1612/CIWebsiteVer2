@@ -16,19 +16,24 @@
 }(jQuery));
 function menuDot(page) {
   if (page == 'index.html') {
-    document.getElementById("home-icon").classList.add('menu-dot')
+    document.getElementById("home-icon").classList.add('menu-dot');
+    document.getElementById('home-image').src = "images/home/home-icon-full.svg";
   }
   else if (page == 'service.html' || page == 'packageapp.html' || page == 'enterpriseapp.html') {
-    document.getElementById("service-icon").classList.add('menu-dot')
+    document.getElementById("service-icon").classList.add('menu-dot');
+    document.getElementById('service-image').src = "images/home/service-icon-full.svg";
   }
   else if (page == 'about.html') {
     document.getElementById("about-icon").classList.add('menu-dot')
+    document.getElementById('about-image').src = "images/home/about-icon-full.svg";
   }
   else if (page == 'contact.html') {
-    document.getElementById("contact-icon").classList.add('menu-dot')
+    document.getElementById("contact-icon").classList.add('menu-dot');
+    // document.getElementById('contact-image').src = "images/home/contact-icon-full.svg";
   }
   else{
-    document.getElementById("home-icon").classList.add('menu-dot')
+    document.getElementById("home-icon").classList.add('menu-dot');
+    document.getElementById('home-image').src = "images/home/home-icon-full.svg";
   }
 }
 function checkDot() {
@@ -59,12 +64,14 @@ function languageMode() {
       container.classList.add('select-right');
       dragItem.classList.remove('item-left');
       dragItem.classList.add('item-right');
+      console.log(1);
     }
     if(className == 'select-right') {
       container.classList.remove('select-right');
       container.classList.add('select-left');
       dragItem.classList.remove('item-right');
       dragItem.classList.add('item-left');
+      console.log(2);
     }
   })
 

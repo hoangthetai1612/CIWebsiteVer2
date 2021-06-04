@@ -29,7 +29,7 @@ function menuDot() {
   else if (page == 'contact.html') {
     document.getElementById("contact-icon").classList.add('menu-dot')
   }
-  else{
+  else {
     document.getElementById("home-icon").classList.add('menu-dot')
   }
 }
@@ -41,15 +41,15 @@ var dragItem1 = document.querySelector("#item1");
 var container1 = document.querySelector("#container1");
 
 function languageMode() {
-  container.addEventListener('click',function(e) {
+  container.addEventListener('click', function (e) {
     let className = container.classList[0];
-    if(className == 'select-left') {
+    if (className == 'select-left') {
       container.classList.remove('select-left');
       container.classList.add('select-right');
       dragItem.classList.remove('item-left');
       dragItem.classList.add('item-right');
     }
-    if(className == 'select-right') {
+    if (className == 'select-right') {
       container.classList.remove('select-right');
       container.classList.add('select-left');
       dragItem.classList.remove('item-right');
@@ -57,23 +57,23 @@ function languageMode() {
     }
   })
 
-  container1.addEventListener('click',function(e) {
+  container1.addEventListener('click', function (e) {
     let className = container1.classList[0];
-    if(className == 'select-left') {
+    if (className == 'select-left') {
       // document.getElementById("menu1").style.display = "block";
       container1.classList.remove('select-left');
       container1.classList.add('select-right');
       dragItem1.classList.remove('item-left');
       dragItem1.classList.add('item-right');
     }
-    if(className == 'select-right') {
+    if (className == 'select-right') {
       container1.classList.remove('select-right');
       container1.classList.add('select-left');
       dragItem1.classList.remove('item-right');
       dragItem1.classList.add('item-left');
     }
   })
-  
+
 }
 languageMode();
 
@@ -94,10 +94,10 @@ function toogleMenu() {
   let bodyOverlay = document.querySelector(".body-overlay");
 
   menuButton.addEventListener("click", () => {
-      menu.classList.toggle('set-width')
-      body.style.backgroundColor = "rgba(0, 0, 0, 0.4)";
-      menuButton.classList.toggle('toggle')
-      // bodyOverlay.style.display = "block";
+    menu.classList.toggle('set-width')
+    body.style.backgroundColor = "rgba(0, 0, 0, 0.4)";
+    menuButton.classList.toggle('toggle')
+    // bodyOverlay.style.display = "block";
   });
   // window.addEventListener('click', function(e){
   //   if (!document.getElementById('l2').contains(e.target) && (!document.getElementById('logo-menu').contains(e.target))){
@@ -105,8 +105,8 @@ function toogleMenu() {
   //    document.getElementById('l2').style.height="0px"; //the same code you've used to hide the menu
   // } 
   // })
-  window.addEventListener('click', function(e) {
-    if(!menu.contains(e.target) && !menuButton.contains(e.target)){
+  window.addEventListener('click', function (e) {
+    if (!menu.contains(e.target) && !menuButton.contains(e.target)) {
       menu.classList.remove('set-width')
       menuButton.classList.remove('toggle')
     }
